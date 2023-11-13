@@ -1,197 +1,72 @@
-body{
-  background-color: #1A0B43;
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: white; /* Sets text color to white */
+body {
+    background-color: #0d122b; /* Updated to a deep blue/navy background */
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: white; /* Keeps text color white */
 }
 
-input, select{
-  outline: none !important;
-  padding: 4px;
-  margin-bottom: 4px;
-  border-radius: 8px;
-  border-width: 1px;
-  border-color: #bdbdbd;
-  color: white; /* Sets text color to white */
+input, select {
+    background-color: #0d122b; /* Updated to a deep blue/navy background */
+    outline: none !important;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #5a6078; /* Lighter shade for border */
+    color: white; /* Keeps text color white */
 }
 
-select option{
-  margin: 40px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-  color: white; /* Sets text color to white */
+select option {
+    background-color: #0d122b; /* Updated to a deep blue/navy background */
+    color: white; /* Keeps text color white */
 }
 
-input:focus, select:focus{
-  outline: none !important;
-  border-width: 2px;
-  border-color: #0F866C;
+input:focus, select:focus {
+    border: 2px solid #f58634; /* Bright orange for focus */
 }
 
-ol {
-    list-style: none;
-    display: block;
-    padding: 0;
-    counter-reset: my-counter;
-    color: white; /* Sets text color to white */
+ol li::before, .greenBG {
+    background-color: #f58634; /* Bright orange for bullet points and background */
+    color: white;
+    border-radius: 12px;
+    padding: 2px 6px;
 }
 
-ol li {
-  counter-increment: my-counter;
+button {
+    background-color: #f58634; /* Bright orange for buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 44px;
+    padding: 8px;
+    cursor: pointer; /* Adds a pointer cursor on hover */
 }
 
-ol li::before {
-  content: counter(my-counter) "";
-  background-color: #0F866C;
-  color: white;
-  border-radius: 12px;
-  padding: 2px 6px;
+button:hover {
+    background-color: #cc6f2f; /* Darker shade of orange for hover */
+    box-shadow: 0px 0px 8px 4px rgba(245, 134, 52, 0.2);
 }
 
-.greenBG{
-  background-color: #0F866C;
-  color: white;
-  border-radius: 12px;
-  padding: 4px 8px;
+button:active {
+    background-color: #ac5c26; /* Even darker shade for active state */
 }
 
-#mainTitle{
-  margin: 0, auto;
-  text-align: center;
-  margin-bottom: 30px;
-  color: white; /* Sets text color to white */
+#generate-btn {
+    width: 100%; /* Makes the button full width */
 }
 
-.grid-container {
-  max-width: 60%;
-  margin: 0 auto;
-  color: white; /* Sets text color to white */
+.resultContainer #copy-btn {
+    background-color: #4a90e2; /* Blue for the secondary button */
+    color: white;
+    /* Rest of the styles for copy-btn */
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  align-content: stretch;
-  color: white; /* Sets text color to white */
+#result {
+    /* Style for result box */
+    background-color: white; /* Assuming you want a white background for contrast */
+    color: #0d122b; /* Dark text for readability */
+    /* Rest of the styles for result box */
 }
 
-.item {
-  padding: 20px;
-  align-self: start;
-  width: 100%;
-  color: white; /* Sets text color to white */
-}
-
-.item-1 {
-  margin-top: 30px;
-  grid-column: 1;
-  color: white; /* Sets text color to white */
-}
-
-.item-2 {
-  grid-column: 2;
-  font-size: 12px;
-  color: white; /* Sets text color to white */
-}
-
-.baseRedirectLink{
-  background-color:rgba(158, 222, 146, .45);
-  color: white; /* Sets text color to white */
-}
-
-.personalID{
-  background-color:rgba(146, 207, 222, .45);
-  color: white; /* Sets text color to white */
-}
-
-.landingPageID{
-  background-color:rgba(162, 146, 222, .45);
-  color: white; /* Sets text color to white */
-}
-
-.xvID{
-  background-color:rgba(222, 159, 146, .45);
-  color: white; /* Sets text color to white */
-}
-
-.subID{
-  background-color:rgba(214, 201, 150, .45);
-  color: white; /* Sets text color to white */
-}
-
-.map {
-  display: inline-block;
-  width: auto;
-  color: white; /* Sets text color to white */
-}
-
-#result{
-  padding: 10px;
-  text-align: left;
-  font-weight: bold;
-  color: black; /* You might want to change this to white if you want the text in the result box to be white */
-  border-style: solid;
-  border-width: 4px;
-  border-radius: 12px;
-  border-color: #0F866C;
-}
-
-#instructions{
-  margin-top: 0px;
-  color: white; /* Sets text color to white */
-}
-
-.resultContainer {
-  display: flex;
-  justify-content: safe center;
-  align-items: center;
-  color: white; /* Sets text color to white */
-}
-
-input, select{
-  background-color: #1A0B43;
-  color: white; /* Sets text color to white */
-}
-
-button{
-  outline: none !important;
-  background-color: #0F866C;
-  color: white;
-  border-width: 0px;
-  border-radius: 8px;
-  line-height: 24px;
-  font-size: 20px;
-  height: 44px;
-  padding: 8px;
-}
-
-button:hover{
-  background-color: #085c4a;
-  box-shadow: 0px 0px 8px 4px rgba(15, 134, 108, 0.2);
-}
-
-button:focus{
-  border-width: 2px;
-  border-color: #0F866C;
-}
-
-button:active{
-  background-color: #064033;
-}
-
-#generate-btn{
-  color: white; /* Sets text color to white */
-}
-
-.resultContainer #copy-btn{
-  margin-left: 20px;
-  color: white; /* Sets text color to white */
-}
-
-#copy{
-  text-align: center;
-  color: white; /* Sets text color to white */
-}
+/* Apply other styles as needed to match the design */
