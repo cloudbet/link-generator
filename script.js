@@ -18,6 +18,13 @@ const partnerPages = {
     // ... more mappings as needed
 };
 
+// Partner to Affiliate ID mapping
+const partnerToAffiliateIdMap = {
+    '1234': 'i98327te6r3fdvyb',
+    '5678': '236517891230'
+    // ... more mappings as needed
+};
+
 // Get partner ID from URL
 const urlParams = new URLSearchParams(window.location.search);
 const partnerId = urlParams.get('partner');
@@ -27,9 +34,14 @@ const pageSelector = document.getElementById("page-selector");
 const languageSelector = document.getElementById("language-selector");
 const generateBtn = document.getElementById("generate-btn");
 const result = document.getElementById("result");
+const affiliateIdInput = document.getElementById("personal-id"); // Assuming this is your affiliate ID input's ID
 
-// Set default values
-document.getElementById("personal-id").value = "Your Impact ID";
+// Set the affiliate ID based on partner parameter
+if (partnerId && partnerToAffiliateIdMap[partnerId]) {
+    affiliateIdInput.value = partnerToAffiliateIdMap[partnerId];
+} else {
+    affiliateIdInput.value = "Your Impact ID"; // Default value
+}
 
 // Populate the page selector with options based on partner ID
 for (let i = 0; i < pages.length; i++) {
@@ -61,7 +73,7 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 
 // Event listener for generate button click
 generateBtn.addEventListener("click", function() {
-    const personalId = document.getElementById("personal-id").value;
+    const personalId = affiliateIdInput.value;
     const aftmSource = document.getElementById("label1").value;
     const referrer = document.getElementById("label2").value;
     const selectedLanguageCode = languageSelector.value;
