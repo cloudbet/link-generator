@@ -11,48 +11,43 @@
         </div>
 
         <div class="grid-container">
-            <div class="grid">
-                <div class="item item-1">
-                    <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate ID:</label> 
-                    <input class="inputFields" type="text" id="personal-id" name="personal-id"><br><br>
-                    <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
-                    <select class="selectFields" id="page-selector" name="page-selector"></select><br><br>
-                    <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:</label>
-                    <select class="selectFields" id="language-selector" name="language-selector"></select><br>
+            <div class="item item-1">
+                <!-- Left column content -->
+                <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate ID:</label> 
+                <input class="inputFields" type="text" id="personal-id" name="personal-id"><br><br>
+                <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
+                <select class="selectFields" id="page-selector" name="page-selector"></select><br><br>
+                <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:</label>
+                <select class="selectFields" id="language-selector" name="language-selector"></select><br>
 
-                    <p><span class="greenBG">4</span> Additional parameters (optional):</p>
+                <p><span class="greenBG">4</span> Additional parameters (optional):</p>
 
-                    <label class="labels" for="label1">Source:</label>
-                    <input class="inputFields" type="text" id="label1" name="label1"><br>
+                <label class="labels" for="label1">Source:</label>
+                <input class="inputFields" type="text" id="label1" name="label1"><br>
 
-                    <label class="labels" for="label2">Referrer:</label>
-                    <input class="inputFields" type="text" id="label2" name="label2"><br><br>
+                <label class="labels" for="label2">Referrer:</label>
+                <input class="inputFields" type="text" id="label2" name="label2"><br><br>
 
-                    <button id="generate-btn">Generate Link</button><br><br>
-                    
-                </div>
-                <div class="item item-2">
-                    <p id="instructions"><b>How to use</b></p>
-                    <ol id="instructionSteps">
-                        <li>Enter your Affiliate ID number.</li><br>
-                        <li>Choose a page from the list.</li><br>
-                        <li>Pick a language for the page.</li><br>
-                        <li>Optionally, add 'Source' and 'Referrer' parameters for more detailed tracking.</li>
-                    </ol>
-                    <p><b>The link should have the following structure:</b></p>
-                    <ul>
-                        <li>Example with no tracking parameters: <span class="baseRedirectLink">https://www.cloudbet.com/en/landing/[page]/</span><span class="personalID">?af_token=YourAffiliateID</span></li>
-                        <li>Example with tracking parameters: <span class="baseRedirectLink">https://www.cloudbet.com/en/landing/[page]/</span><span class="personalID">?af_token=YourAffiliateID</span><span class="subID">&aftm_source=YourSource&referrer=YourReferrer</span></li>
-                        <li>Please check if the link leads to the desired page.</li>  
-                    </ul>
-                </div>
+                <button id="generate-btn">Generate Link</button><br><br>
             </div>
-            <section class="resultContainer">
-                <p id="result">Please enter your Affiliate ID and select the desired page and language</p><button id="copy-btn" type="button" onclick="copyToClipboard()">Copy</button>
-            </section>
-            <p id="copy">v2.0.8</p>
+
+            <div class="item item-2">
+                <!-- Right column content for How to Use -->
+                <h2>How to Use</h2>
+                <p>Step 1: Enter your Affiliate ID in the provided field.</p>
+                <p>Step 2: Select the desired page from the dropdown menu.</p>
+                <p>Step 3: Choose the language for the page from another dropdown menu.</p>
+                <p>Step 4: Optionally, you can add 'Source' and 'Referrer' parameters for more detailed tracking.</p>
+            </div>
         </div>
-        </div>
+
+        <section class="resultContainer">
+            <p id="result">Please enter your Affiliate ID and select the desired page and language</p>
+            <button id="copy-btn" type="button" onclick="copyToClipboard()">Copy</button>
+        </section>
+
+        <p id="copy">v2.0.8</p>
+
         <script src="script.js"></script>
     </body>
 </html>
