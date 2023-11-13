@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>ExpressVPN Link Generator</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div id="mainTitle">
-			<img src="images/ver_3_resize.png">
-		</div>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloudbet Link Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="mainTitle">
+            <img src="images/ver_3_resize.png">
+        </div>
 
-		<div class="grid-container">
-			<div class="grid">
-				<div class="item item-1">
-					<label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Impact ID number:</label> 
-					<input class="inputFields" type="text" id="personal-id" name="personal-id"><br><br>
-					<label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
-					<select class="selectFields" id="page-selector" name="page-selector"></select><br><br>
-					<label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:</label>
-					<select class="selectFields" id="language-selector" name="language-selector"></select><br>
+        <div class="grid-container">
+            <div class="grid">
+                <div class="item item-1">
+                    <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate ID:</label> 
+                    <input class="inputFields" type="text" id="personal-id" name="personal-id"><br><br>
+                    <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
+                    <select class="selectFields" id="page-selector" name="page-selector"></select><br><br>
+                    <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:</label>
+                    <select class="selectFields" id="language-selector" name="language-selector"></select><br>
 
-					<p><span class="greenBG">4</span> Additional parameters:</p>
+                    <p><span class="greenBG">4</span> Additional parameters (optional):</p>
 
-					<label class="labels subid" for="label4">Shared ID*:</label>
-					<input class="inputFields" type="text" id="label4" name="label4"><br>
+                    <label class="labels" for="label1">Source:</label>
+                    <input class="inputFields" type="text" id="label1" name="label1"><br>
 
-					<label class="labels subid" for="label1">SubID 1:</label>
-					<input class="inputField" type="text" id="label1" name="label1"><br>
+                    <label class="labels" for="label2">Referrer:</label>
+                    <input class="inputFields" type="text" id="label2" name="label2"><br><br>
 
-					<label class="labels subid" for="label2">SubID 2:</label>
-					<input class="inputFields" type="text" id="label2" name="label2"><br>
-
-					<label class="labels subid" for="label3">SubID 3:</label>
-					<input class="inputFields" type="text" id="label3" name="label3"><br><br>
-
-					
-
-					<button id="generate-btn">Generate Link</button><br><br>
-					
-				</div>
-				<div class="item item-2">
-					<p id="instructions"><b>How to use</b></p>
-					<ol id="instructionSteps">
-						<li> Enter your Affiliate ID number.</li><br>
-						<li> Choose a Landing Page from the list. Pages with “*” are recommended.</li><br>
-						<li> Pick a language for the Landing Page.</li><br>
-						<li> Add parameters like SharedID, SubID 1, SubID 2, and SubID 3  to get more details about the click’s origin from specific sources like articles or CTAs.</li>
-					</ol>
-					<p><b>The link should have the following structure:</b></p>
-					<ul>
-						<li>Example with no tracking parameters: <span class="baseRedirectLink">https://go.expressvpn.com/c/</span><span class=
-							"personalID">YourPersonalImpactID number</span><span class="landingPageID">/LandingPageID/</span><span class="xvID">16063</span></li>
-						<li>Example with tracking parameters: <span class="baseRedirectLink">https://go.expressvpn.com/c/</span><span class=
-							"personalID">YourPersonalImpactID number</span><span class="landingPageID">/LandingPageID number/</span><span class="xvID">16063</span><span class="subID">?subId1=Streaming&subId2=Banner</span></li>
-						<li>Please check if the link leads to the desired landing page.</li>	
-					</ul>
-					<p><b>Link section explanation:</b></p>
-					<p>
-						<span class="map baseRedirectLink">Base redirect url</span>, 
-						<span class="map personalID">Your Impact ID number</span>, 
-						<span class="map landingPageID">Landing Page ID number - Every landing page on Impact has its own, unique identifier number.</span>, 
-						<span class="map xvID">Advertiser ID - This number won’t change, it is ExpressVPN ID.</span>, 
-						<span class="map subID">Additional Parameters (SubID 1, SubID 2, SubID 3 and Shared ID)</span><br>
-
-					</p>
-				</div>
-			</div>
-			<section class="resultContainer">
-				<p id="result">Please enter your Impact ID and select the desired Landing page and language</p><button id="copy-btn" type="button" onclick="copyToClipboard()">Copy</button>
-			</section>
-			<p id="copy">v2.0.8</p>
-		</div>
-		</div>
-		<script src="script.js"></script>
-	</body>
+                    <button id="generate-btn">Generate Link</button><br><br>
+                    
+                </div>
+                <div class="item item-2">
+                    <p id="instructions"><b>How to use</b></p>
+                    <ol id="instructionSteps">
+                        <li>Enter your Affiliate ID number.</li><br>
+                        <li>Choose a page from the list.</li><br>
+                        <li>Pick a language for the page.</li><br>
+                        <li>Optionally, add 'Source' and 'Referrer' parameters for more detailed tracking.</li>
+                    </ol>
+                    <p><b>The link should have the following structure:</b></p>
+                    <ul>
+                        <li>Example with no tracking parameters: <span class="baseRedirectLink">https://www.cloudbet.com/en/landing/[page]/</span><span class="personalID">?af_token=YourAffiliateID</span></li>
+                        <li>Example with tracking parameters: <span class="baseRedirectLink">https://www.cloudbet.com/en/landing/[page]/</span><span class="personalID">?af_token=YourAffiliateID</span><span class="subID">&aftm_source=YourSource&referrer=YourReferrer</span></li>
+                        <li>Please check if the link leads to the desired page.</li>  
+                    </ul>
+                </div>
+            </div>
+            <section class="resultContainer">
+                <p id="result">Please enter your Affiliate ID and select the desired page and language</p><button id="copy-btn" type="button" onclick="copyToClipboard()">Copy</button>
+            </section>
+            <p id="copy">v2.0.8</p>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
