@@ -110,8 +110,8 @@ ol li::before {
 .resultContainer {
     grid-column: 1 / -1; /* Span across all columns */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     padding: 20px;
     
 }
@@ -121,6 +121,7 @@ button {
     color: white; /* White text */
     border: none;
     border-radius: 8px;
+    margin: 0 5px; /* Add margin for spacing if needed */
     font-size: 16px;
     padding: 10px 20px;
     cursor: pointer;
