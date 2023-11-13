@@ -98,13 +98,12 @@ ol li::before {
 
 #result {
     background-color: #ffffff;
-    color: #0d122b; /* Dark text for readability against the white background */
+    color: #0d122b;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
-    border: 4px solid #f58634; /* Bright orange border */
+    border: 4px solid #f58634;
     border-radius: 12px;
-    margin-top: 20px;
 }
 
 .resultContainer {
@@ -113,7 +112,13 @@ ol li::before {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     padding: 20px;
-    
+
+}
+
+.copyButtonContainer {
+    grid-column: 1 / -1; /* Span across all columns */
+    text-align: center; /* Center the button */
+    padding: 10px; /* Adjust padding as needed */
 }
 
 button {
