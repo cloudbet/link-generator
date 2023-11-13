@@ -112,9 +112,14 @@ generateBtn.addEventListener("click", function() {
     const aftmSource = document.getElementById("label1").value;
     const referrer = document.getElementById("label2").value;
     const selectedLanguageCode = languageSelector.value;
-    const pageName = pageSelector.value.replace(/\*/g, '');
 
-    let url = `https://www.cloudbet.com/${selectedLanguageCode}/landing/${pageName}/?af_token=${personalId}`;
+    // Find the selected page object using the selected page name
+    const selectedPage = pages.find(page => page.name === pageSelector.value);
+    
+    // Find the id for the selected language within the selected page
+    const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
+
+    let url = `https://www.cloudbet.com/${selectedLanguageCode}/landing/${selectedLanguageId}/?af_token=${personalId}`;
     if (aftmSource) {
         url += `&aftm_source=${encodeURIComponent(aftmSource)}`;
     }
