@@ -35,12 +35,12 @@ const pages = [
     {
         "name": "General Referral",
         "languages": [
-            {"code": "en", "id": "bitcoin-casino"},
-            {"code": "de", "id": "bitcoin-casino"},
-            {"code": "es", "id": "bitcoin-casino"},
-            {"code": "fr", "id": "bitcoin-casino"},
-            {"code": "it", "id": "bitcoin-casino"},
-            {"code": "ja", "id": "bitcoin-casino"},
+            {"code": "en", "id": "refer"},
+            {"code": "de", "id": "refer"},
+            {"code": "es", "id": "refer"},
+            {"code": "fr", "id": "refer"},
+            {"code": "it", "id": "refer"},
+            {"code": "ja", "id": "refer"},
         ]
     },
     
@@ -48,7 +48,7 @@ const pages = [
 
 // Partner specific pages
 const partnerPages = {
-    '1234': ['Bitcoin Bonus', 'Another Page'],
+    '1234': ['Bitcoin Betting', 'Bitcoin Casino', 'General Referral', 'Bitcoin Bonus'],
     '5678': ['Different Page', 'Bitcoin Bonus']
     // ... more mappings as needed
 };
