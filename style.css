@@ -1,72 +1,166 @@
 body {
-    background-color: #0d122b; /* Updated to a deep blue/navy background */
+    background-color: #0d122b; /* Deep blue/navy background */
     font-family: sans-serif;
     font-size: 16px;
     line-height: 20px;
-    color: white; /* Keeps text color white */
+    color: white; /* Text color white */
 }
 
 input, select {
-    background-color: #0d122b; /* Updated to a deep blue/navy background */
-    outline: none !important;
+    background-color: #1A0B43; /* Dark background for input fields */
+    color: white; /* Text color white */
+    outline: none;
     padding: 8px;
     margin-bottom: 8px;
     border-radius: 8px;
-    border: 1px solid #5a6078; /* Lighter shade for border */
-    color: white; /* Keeps text color white */
+    border: 1px solid #5a6078; /* Lighter shade for the border */
 }
 
 select option {
-    background-color: #0d122b; /* Updated to a deep blue/navy background */
-    color: white; /* Keeps text color white */
+    background-color: #1A0B43; /* Dark background for select options */
+    color: white; /* Text color white */
 }
 
 input:focus, select:focus {
     border: 2px solid #f58634; /* Bright orange for focus */
 }
 
-ol li::before, .greenBG {
+ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: my-counter;
+}
+
+ol li {
+    counter-increment: my-counter;
+    color: white; /* Text color white */
+}
+
+ol li::before {
+    content: counter(my-counter) "";
     background-color: #f58634; /* Bright orange for bullet points and background */
     color: white;
     border-radius: 12px;
     padding: 2px 6px;
 }
 
-button {
-    background-color: #f58634; /* Bright orange for buttons */
+.greenBG {
+    background-color: #f58634; /* Bright orange for highlights */
     color: white;
-    border: none;
+    border-radius: 12px;
+    padding: 4px 8px;
+}
+
+#mainTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two columns */
+    gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    background-color: #16203a; /* A darker shade to contrast against the body background */
     border-radius: 8px;
-    font-size: 20px;
-    height: 44px;
-    padding: 8px;
-    cursor: pointer; /* Adds a pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-button:hover {
-    background-color: #cc6f2f; /* Darker shade of orange for hover */
-    box-shadow: 0px 0px 8px 4px rgba(245, 134, 52, 0.2);
+.item-1 {
+    align-self: start;
+    order: 1; /* Make sure the item-1 is on the left */
+    grid-column: 1 / span 1;
 }
 
-button:active {
-    background-color: #ac5c26; /* Even darker shade for active state */
+.item-2 {
+    order: 2; /* Make sure the item-2 is on the right */
+    grid-column: 2 / span 1;
+    font-size: 12px;
 }
 
-#generate-btn {
-    width: 100%; /* Makes the button full width */
+/* Adding styling for the links and IDs */
+.baseRedirectLink, .personalID, .landingPageID, .xvID, .subID {
+    background-color: rgba(158, 222, 146, .45);
+    color: white; /* White text for readability */
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
-.resultContainer #copy-btn {
-    background-color: #4a90e2; /* Blue for the secondary button */
-    color: white;
-    /* Rest of the styles for copy-btn */
+.map {
+    display: inline-block;
+    width: auto;
 }
 
 #result {
-    /* Style for result box */
-    background-color: white; /* Assuming you want a white background for contrast */
-    color: #0d122b; /* Dark text for readability */
-    /* Rest of the styles for result box */
+    background-color: #ffffff;
+    color: #0d122b; /* Dark text for readability against the white background */
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 4px solid #f58634; /* Bright orange border */
+    border-radius: 12px;
+    margin-top: 20px;
 }
 
-/* Apply other styles as needed to match the design */
+.resultContainer {
+    grid-column: 1 / -1; /* Span across all columns */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+button {
+    background-color: #f58634; /* Bright orange */
+    color: white; /* White text */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #cc6f2f; /* A slightly darker orange on hover */
+}
+
+button:active {
+    background-color: #ac5c26; /* An even darker orange when the button is clicked */
+}
+
+#generate-btn {
+    width: 100%; /* Makes the generate button full width of the container */
+}
+
+#copy-btn {
+    background-color: #4a90e2; /* Secondary button color - blue */
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+#copy-btn:hover {
+    background-color: #3078c1; /* A slightly darker blue on hover */
+}
+
+#copy-btn:active {
+    background-color: #20588c; /* An even darker blue when the button is clicked */
+}
+
+#copy {
+    text-align: center;
+    color: white; /* White text */
+    padding: 4px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
