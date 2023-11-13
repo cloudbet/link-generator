@@ -5,10 +5,45 @@ const pages = [
         "languages": [
             {"code": "en", "id": "bitcoin-bonus"},
             {"code": "de", "id": "bitcoin-bonus"},
+            {"code": "es", "id": "bitcoin-bonus"},
+            {"code": "fr", "id": "bitcoin-bonus"},
+            {"code": "it", "id": "bitcoin-bonus"},
+            {"code": "pt", "id": "bitcoin-bonus"},
+            {"code": "ja", "id": "bitcoin-bonus"},
             // ... other languages
         ]
     },
-    // ... other pages
+    {
+        "name": "Bitcoin Betting",
+        "languages": [
+            {"code": "en", "id": "bitcoin-betting"},
+            {"code": "de", "id": "bitcoin-betting"},
+            {"code": "es", "id": "bitcoin-betting"},
+            {"code": "fr", "id": "bitcoin-betting"},
+            {"code": "it", "id": "bitcoin-betting"},
+            {"code": "pt", "id": "bitcoin-betting"},
+            {"code": "ja", "id": "bitcoin-betting"},
+            {"code": "tr", "id": "bitcoin-betting"},
+        ]
+    },
+    {
+        "name": "Bitcoin Casino",
+        "languages": [
+            {"code": "en", "id": "bitcoin-casino"},
+        ]
+    },
+    {
+        "name": "General Referral",
+        "languages": [
+            {"code": "en", "id": "bitcoin-casino"},
+            {"code": "de", "id": "bitcoin-casino"},
+            {"code": "es", "id": "bitcoin-casino"},
+            {"code": "fr", "id": "bitcoin-casino"},
+            {"code": "it", "id": "bitcoin-casino"},
+            {"code": "ja", "id": "bitcoin-casino"},
+        ]
+    },
+    
 ];
 
 // Partner specific pages
