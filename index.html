@@ -12,7 +12,9 @@
 
         <div class="grid-container">
             <div class="item item-1">
-                <!-- Left column content -->
+                <!-- Header for the left column -->
+                <h2>Generate Your Link</h2>
+
                 <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate ID:</label> 
                 <input class="inputFields" type="text" id="personal-id" name="personal-id"><br><br>
                 <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
@@ -32,22 +34,20 @@
             </div>
 
             <div class="item item-2">
-                <!-- Right column content for How to Use -->
-                <h2>How to Use</h2>
-                <p>Step 1: Enter your Affiliate ID in the provided field.</p>
-                <p>Step 2: Select the desired page from the dropdown menu.</p>
-                <p>Step 3: Choose the language for the page from another dropdown menu.</p>
-                <p>Step 4: Add 'Source' and 'Referrer' parameters for more detailed tracking.</p>
+                <!-- Right column content with matching circles -->
+                <p><span class="greenBG">1</span> Enter your Affiliate ID in the provided field.</p>
+                <p><span class="greenBG">2</span> Select the desired page from the dropdown menu.</p>
+                <p><span class="greenBG">3</span> Choose the language for the page from another dropdown menu.</p>
+                <p><span class="greenBG">4</span> Add 'Source' and 'Referrer' parameters for more detailed tracking.</p>
             </div>
         </div>
 
-            <section class="resultContainer">
-                <p id="result">Enter your Affiliate ID and select the desired page and language</p>
-            </section>
-            <div class="copyButtonContainer">
-                <button id="copy-btn" type="button" onclick="copyToClipboard()">Copy</button>
-            </div>
-
+        <section class="resultContainer">
+            <p id="result">Enter your Affiliate ID and select the desired page and language</p>
+        </section>
+        <div class="copyButtonContainer">
+            <button id="copy-btn" type="button" onclick="copyToClipboard()">Copy</button>
+        </div>
 
         <p id="copy">v2.0.8</p>
 
