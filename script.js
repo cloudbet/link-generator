@@ -57,13 +57,15 @@ const partnerPages = {
 
 // Partner to Affiliate ID mapping
 const partnerToAffiliateIdMap = {
-    '1234': 'affiliateID1234',
-    '5678': 'affiliateID5678'
+    '1234': 'i98327te6r3fdvyb',
+    '5678': '236517891230'
+    // ... more mappings as needed
 };
 
 // Get partner ID from URL
 const urlParams = new URLSearchParams(window.location.search);
 const partnerId = urlParams.get('partner');
+
 
 // Get references to elements
 const pageSelector = document.getElementById("page-selector");
@@ -76,7 +78,7 @@ const affiliateIdInput = document.getElementById("personal-id");
 if (partnerId && partnerToAffiliateIdMap[partnerId]) {
     affiliateIdInput.value = partnerToAffiliateIdMap[partnerId];
 } else {
-    affiliateIdInput.value = "DefaultAffiliateID"; // Default value
+    affiliateIdInput.value = "Your Affiliate ID"; // Default value
 }
 
 // Populate the page selector with options based on partner ID
