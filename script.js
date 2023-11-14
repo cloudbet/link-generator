@@ -43,22 +43,48 @@ const pages = [
             {"code": "ja", "id": "refer"},
         ]
     },
+        {
+        "name": "Influencer: Casino/eSports",
+        "languages": [
+            {"code": "en", "id": "creator-offer"},
+            {"code": "es", "id": "creator-offer"},
+        ]
+    },
+        {
+        "name": "Influencer: Sports/eSports",
+        "languages": [
+            {"code": "en", "id": "creator-offer-sport"},
+        ]
+    },
+        {
+        "name": "Gennci: Co-Branded",
+        "languages": [
+            {"code": "en", "id": "gennci"},
+        ]
+    },
+      {
+        "name": "Cryptomaniaks: Co-Branded",
+        "languages": [
+            {"code": "en", "id": "cryptomaniaks"},
+        ]
+    },
+    
     
 ];
 
 // Default pages available to all partners
-const defaultPages = ['Bitcoin Bonus', 'Bitcoin Betting', 'Bitcoin Casino', 'General Referral'];
+const defaultPages = ['Bitcoin Bonus', 'Bitcoin Betting', 'Bitcoin Casino', 'General Referral', 'Influencer: Casino/eSports', 'Influencer: Sports/eSports'];
 
 // Special access pages for specific partners
 const partnerPages = {
-    '1234': ['Exclusive Page for 1234', 'Special Offer Page'],
-    '5678': ['Exclusive Page for 5678', 'Special Discount Page']
+    'gennci': ['Gennci: Co-Branded'],
+    'cryptomaniaks': ['Cryptomaniaks: Co-Branded']
 };
 
 // Partner to Affiliate ID mapping
 const partnerToAffiliateIdMap = {
-    '1234': 'i98327te6r3fdvyb',
-    '5678': '236517891230'
+    'gennci': 'i98327te6r3fdvyb',
+    'cryptomaniaks': '236517891230'
     // ... more mappings as needed
 };
 
