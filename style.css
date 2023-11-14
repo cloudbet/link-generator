@@ -4,11 +4,14 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: white;
+
 }
 
 input, select {
-    min-width: 100px; /* Set a minimum width */
-    width: 50%; /* Use 100% width to fill the container */
+    width: auto; /* Allow input to expand with content */
+    /* Remove text-overflow and white-space properties */
+    
+    /* Additional CSS properties you can customize based on your design */
     background-color: #1A0B43;
     color: white;
     outline: none;
@@ -16,10 +19,10 @@ input, select {
     margin-bottom: 8px;
     border-radius: 8px;
     border: 1px solid #5a6078;
-    font-size: 16px;
-    transition: width 0.3s ease; /* Smooth transition for width change */
-
+    font-size: 14px;
+    /* Add other styles as needed */
 }
+
 
 input.inputFields#personal-id {
     min-width: 150px;;
