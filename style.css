@@ -7,7 +7,7 @@ body {
 }
 
 input, select {
-    min-width: 200px; /* Set a minimum width */
+    min-width: 100px; /* Set a minimum width */
     width: 100%; /* Use 100% width to fill the container */
     background-color: #1A0B43;
     color: white;
@@ -18,11 +18,7 @@ input, select {
     border: 1px solid #5a6078;
     font-size: 16px;
     transition: width 0.3s ease; /* Smooth transition for width change */
-}
 
-input:focus, select:focus {
-    border: 2px solid #f58634;
-    width: 120%; /* Increase width on focus */
 }
 
 
