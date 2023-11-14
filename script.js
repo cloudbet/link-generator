@@ -83,8 +83,8 @@ const partnerPages = {
 
 // Partner to Affiliate ID mapping
 const partnerToAffiliateIdMap = {
-    'gennci': 'i98327te6r3fdvyb',
-    'cryptomaniaks': '236517891230'
+    'gennci': '2960602116f3dce96c4525219fdedb72',
+    'cryptomaniaks': '97ab6f554e12167d3dd796c1487c78b4'
     // ... more mappings as needed
 };
 
