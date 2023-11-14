@@ -17,6 +17,11 @@ input, select {
     width: 75%; /* Full width for smaller screens */
 }
 
+/* Add padding-left to indent the labels */
+label[for="source"], label[for="referrer"] {
+    padding-left: 10px; /* Adjust the value as needed */
+}
+
 select option {
     background-color: #1A0B43;
     color: white;
