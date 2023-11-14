@@ -1,28 +1,29 @@
 body {
-    background-color: #0d122b; /* Deep blue/navy background */
+    background-color: #0d122b;
     font-family: sans-serif;
     font-size: 16px;
     line-height: 20px;
-    color: white; /* Text color white */
+    color: white;
 }
 
 input, select {
-    background-color: #1A0B43; /* Dark background for input fields */
-    color: white; /* Text color white */
+    background-color: #1A0B43;
+    color: white;
     outline: none;
     padding: 8px;
     margin-bottom: 8px;
     border-radius: 8px;
-    border: 1px solid #5a6078; /* Lighter shade for the border */
+    border: 1px solid #5a6078;
+    width: 100%; /* Full width for smaller screens */
 }
 
 select option {
-    background-color: #1A0B43; /* Dark background for select options */
-    color: white; /* Text color white */
+    background-color: #1A0B43;
+    color: white;
 }
 
 input:focus, select:focus {
-    border: 2px solid #f58634; /* Bright orange for focus */
+    border: 2px solid #f58634;
 }
 
 ol {
@@ -33,19 +34,19 @@ ol {
 
 ol li {
     counter-increment: my-counter;
-    color: white; /* Text color white */
+    color: white;
 }
 
 ol li::before {
     content: counter(my-counter) "";
-    background-color: #f58634; /* Bright orange for bullet points and background */
+    background-color: #f58634;
     color: white;
     border-radius: 12px;
     padding: 2px 6px;
 }
 
 .greenBG {
-    background-color: #f58634; /* Bright orange for highlights */
+    background-color: #f58634;
     color: white;
     border-radius: 12px;
     padding: 4px 8px;
@@ -60,33 +61,32 @@ ol li::before {
     max-width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Split into two columns */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .item {
     padding: 20px;
-    background-color: #16203a; /* A darker shade to contrast against the body background */
+    background-color: #16203a;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .item-1 {
     align-self: start;
-    order: 1; /* Make sure the item-1 is on the left */
+    order: 1;
     grid-column: 1 / span 1;
 }
 
 .item-2 {
-    order: 2; /* Make sure the item-2 is on the right */
+    order: 2;
     grid-column: 2 / span 1;
     font-size: 12px;
 }
 
-/* Adding styling for the links and IDs */
 .baseRedirectLink, .personalID, .landingPageID, .xvID, .subID {
     background-color: rgba(158, 222, 146, .45);
-    color: white; /* White text for readability */
+    color: white;
     padding: 2px 4px;
     border-radius: 4px;
 }
@@ -107,66 +107,84 @@ ol li::before {
 }
 
 .resultContainer {
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-
 }
 
 .copyButtonContainer {
-    grid-column: 1 / -1; /* Span across all columns */
-    text-align: center; /* Center the button */
-    padding: 10px; /* Adjust padding as needed */
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 10px;
 }
 
 button {
-    background-color: #f58634; /* Bright orange */
-    color: white; /* White text */
+    background-color: #f58634;
+    color: white;
     border: none;
     border-radius: 8px;
-    margin: 0 5px; /* Add margin for spacing if needed */
+    margin: 0 5px;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Larger padding for easier interaction */
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effects */
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #cc6f2f; /* A slightly darker orange on hover */
+    background-color: #cc6f2f;
 }
 
 button:active {
-    background-color: #ac5c26; /* An even darker orange when the button is clicked */
+    background-color: #ac5c26;
 }
 
 #generate-btn {
-    width: 100%; /* Makes the generate button full width of the container */
+    width: 100%;
 }
 
 #copy-btn {
-    background-color: #4a90e2; /* Secondary button color - blue */
+    background-color: #4a90e2;
     color: white;
     border-radius: 8px;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effects */
+    transition: background-color 0.3s;
 }
 
 #copy-btn:hover {
-    background-color: #3078c1; /* A slightly darker blue on hover */
+    background-color: #3078c1;
 }
 
 #copy-btn:active {
-    background-color: #20588c; /* An even darker blue when the button is clicked */
+    background-color: #20588c;
 }
 
 #copy {
     text-align: center;
-    color: white; /* White text */
+    color: white;
     padding: 4px 0;
     font-size: 14px;
     margin-top: 30px;
+}
+
+/* Responsive grid layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    }
+
+    .item-1, .item-2 {
+        grid-column: auto; /* Adjust grid column settings */
+    }
+
+    body {
+        font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+
+    .item-2 {
+        font-size: 10px; /* Adjust font size for specific elements if needed */
+    }
 }
