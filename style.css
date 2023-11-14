@@ -14,7 +14,7 @@ input, select {
     margin-bottom: 8px;
     border-radius: 8px;
     border: 1px solid #5a6078;
-    width: 50%; /* Full width for smaller screens */
+    width: 75%; /* Full width for smaller screens */
 }
 
 select option {
