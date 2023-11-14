@@ -66,12 +66,6 @@ const partnerToAffiliateIdMap = {
 const urlParams = new URLSearchParams(window.location.search);
 const partnerId = urlParams.get('partner');
 
-// Mapping of page names to their preview image paths
-const pagePreviews = {
-    "Bitcoin Bonus": "images/bitcoin-bonus.png",
-    "Bitcoin Betting": "images/bitcoin-betting.png",
-    // ... other pages with their corresponding image file names ...
-};
 
 // Get references to elements
 const pageSelector = document.getElementById("page-selector");
@@ -107,9 +101,9 @@ function populatePages() {
     updateLanguageSelector();
 }
 
-// Function to update the language selector options and the preview image
+// Function to update the language selector options
 function updateLanguageSelector() {
-    languageSelector.innerHTML = '';
+    languageSelector.innerHTML = "";
     const selectedPage = pages.find(page => page.name === pageSelector.value);
     
     for (let i = 0; i < selectedPage.languages.length; i++) {
@@ -118,14 +112,10 @@ function updateLanguageSelector() {
         option.text = selectedPage.languages[i].code.toUpperCase();
         languageSelector.appendChild(option);
     }
-
-    // Update the preview image
-    previewImage.src = pagePreviews[selectedPage.name] || 'images/default-preview.png';
 }
 
 // Event listener for page selector change
 pageSelector.addEventListener("change", updateLanguageSelector);
-
 
 // Event listener for generate button click
 generateBtn.addEventListener("click", function() {
@@ -155,3 +145,4 @@ populatePages();
 function copyToClipboard() {
     // Existing copy to clipboard logic
 }
+
