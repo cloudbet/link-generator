@@ -4,12 +4,11 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: white;
-
 }
 
 input, select {
-    min-width: 100px; /* Set a minimum width */
-    width: 50%; /* Use 100% width to fill the container */
+    min-width: 300px;
+    width: 50%;
     background-color: #1A0B43;
     color: white;
     outline: none;
@@ -18,60 +17,20 @@ input, select {
     border-radius: 8px;
     border: 1px solid #5a6078;
     font-size: 16px;
-    transition: width 0.3s ease; /* Smooth transition for width change */
-
-}
-
-
-input.inputFields#personal-id {
-    min-width: 300px;;
-    
-}
-
-/* Add padding-left to indent the labels */
-label[for="source"], label[for="referrer"] {
-    padding-left: 20px; /* Adjust the value as needed */
-}
-
-select option {
-    background-color: #1A0B43;
-    color: white;
-}
-
-input:focus, select:focus {
-    border: 2px solid #f58634;
-}
-
-ol {
-    list-style: none;
-    padding: 0;
-    counter-reset: my-counter;
-}
-
-ol li {
-    counter-increment: my-counter;
-    color: white;
-}
-
-ol li::before {
-    content: counter(my-counter) "";
-    background-color: #f58634;
-    color: white;
-    border-radius: 12px;
-    padding: 4px 8px; /* Increased padding */
-    margin-right: 8px; /* Increased margin to create space */
-    /* Reduce the size of the circles */
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-    font-size: 12px;
+    transition: width 0.3s ease;
 }
 
 .greenBG {
     background-color: #f58634;
     color: white;
-    border-radius: 12px;
-    padding: 4px 8px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
 }
 
 #mainTitle {
@@ -92,6 +51,13 @@ ol li::before {
     background-color: #16203a;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin: 10px;
+}
+
+.item h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .item-1 {
@@ -103,7 +69,6 @@ ol li::before {
 .item-2 {
     order: 2;
     grid-column: 2 / span 1;
-    font-size: 12px;
 }
 
 .baseRedirectLink, .personalID, .landingPageID, .xvID, .subID {
