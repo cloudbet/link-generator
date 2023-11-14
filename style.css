@@ -6,7 +6,13 @@ body {
     color: white;
 }
 
-input, select {
+    input, select {
+    max-width: 100%; /* Allow input to grow to container width */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Display ellipsis for overflowed content */
+    white-space: nowrap; /* Prevent text from wrapping */
+
+    /* Additional CSS properties you can customize based on your design */
     background-color: #1A0B43;
     color: white;
     outline: none;
@@ -14,7 +20,8 @@ input, select {
     margin-bottom: 8px;
     border-radius: 8px;
     border: 1px solid #5a6078;
-    width: 75%; /* Full width for smaller screens */
+    font-size: 16px;
+    /* Add other styles as needed */
 }
 
 /* Add padding-left to indent the labels */
