@@ -21,6 +21,10 @@ input, select {
 
 }
 
+input.inputFields#personal-id {
+    min-width: 150px;;
+    
+}
 
 /* Add padding-left to indent the labels */
 label[for="source"], label[for="referrer"] {
