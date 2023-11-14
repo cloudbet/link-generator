@@ -6,11 +6,11 @@ body {
     color: white;
 }
 
-    input, select {
-    max-width: 120%; /* Allow input to grow to container width */
+input, select {
+    width: auto; /* Allow input to expand with content */
     overflow: hidden;
     text-overflow: ellipsis; /* Display ellipsis for overflowed content */
-    white-space: normal; /* Prevent text from wrapping */
+    white-space: nowrap; /* Prevent text from wrapping */
 
     /* Additional CSS properties you can customize based on your design */
     background-color: #1A0B43;
@@ -23,6 +23,7 @@ body {
     font-size: 16px;
     /* Add other styles as needed */
 }
+
 
 /* Add padding-left to indent the labels */
 label[for="source"], label[for="referrer"] {
