@@ -169,6 +169,11 @@ populatePages();
 
 // Copy to Clipboard Function
 function copyToClipboard() {
-    // Existing copy to clipboard logic
+    const textToCopy = document.getElementById('result').innerText;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        alert('Text copied to clipboard');
+    }).catch(err => {
+        console.error('Error in copying text: ', err);
+    });
 }
 
