@@ -7,8 +7,8 @@ body {
 }
 
 input, select {
-    min-width: 52px; /* Set a minimum width */
-    width: 62%; /* Use 100% width to fill the container */
+    min-width: 50px; /* Set a minimum width */
+    width: 65%; /* Use 100% width to fill the container */
     background-color: #1A0B43;
     color: white;
     outline: none;
