@@ -7,7 +7,7 @@ body {
 }
 
     input, select {
-    max-width: 100%; /* Allow input to grow to container width */
+    max-width: 120%; /* Allow input to grow to container width */
     overflow: hidden;
     text-overflow: ellipsis; /* Display ellipsis for overflowed content */
     white-space: nowrap; /* Prevent text from wrapping */
