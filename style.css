@@ -10,7 +10,7 @@ body {
     max-width: 120%; /* Allow input to grow to container width */
     overflow: hidden;
     text-overflow: ellipsis; /* Display ellipsis for overflowed content */
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: normal; /* Prevent text from wrapping */
 
     /* Additional CSS properties you can customize based on your design */
     background-color: #1A0B43;
