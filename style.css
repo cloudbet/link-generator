@@ -7,7 +7,7 @@ body {
 }
 
 input, select {
-    width: 150%; /* Allow input to expand with content */
+    width: 200%; /* Allow input to expand with content */
     /* Remove text-overflow and white-space properties */
     
     /* Additional CSS properties you can customize based on your design */
