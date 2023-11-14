@@ -14,7 +14,7 @@ input, select {
     margin-bottom: 8px;
     border-radius: 8px;
     border: 1px solid #5a6078;
-    width: 100%; /* Full width for smaller screens */
+    width: 50%; /* Full width for smaller screens */
 }
 
 select option {
@@ -42,8 +42,15 @@ ol li::before {
     background-color: #f58634;
     color: white;
     border-radius: 12px;
-    padding: 2px 6px;
+    padding: 4px 8px; /* Increased padding */
+    margin-right: 8px; /* Increased margin to create space */
+    /* Reduce the size of the circles */
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
 }
+
 
 .greenBG {
     background-color: #f58634;
