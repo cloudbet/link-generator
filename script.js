@@ -103,8 +103,6 @@ const affiliateIdInput = document.getElementById("personal-id");
 // Set the affiliate ID based on partner parameter
 if (partnerId && partnerToAffiliateIdMap[partnerId]) {
     affiliateIdInput.value = partnerToAffiliateIdMap[partnerId];
-} else {
-    affiliateIdInput.value = ""; // Default value
 }
 
 // Populate the page selector with options based on partner ID
