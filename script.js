@@ -296,7 +296,6 @@ const partnerToAffiliateIdMap = {
 const urlParams = new URLSearchParams(window.location.search);
 const partnerId = urlParams.get('partner');
 
-
 // Get references to elements
 const pageSelector = document.getElementById("page-selector");
 const languageSelector = document.getElementById("language-selector");
@@ -314,17 +313,26 @@ function populatePages() {
     const partnerSpecificPages = partnerPages[partnerId] || [];
     const accessiblePages = [...new Set([...defaultPages, ...partnerSpecificPages])];
 
-    pageSelector.innerHTML = ''; // Clear existing options
+    // Create an array of page names from the pages array that are also in accessiblePages
+    const pageNames = pages
+        .filter(page => accessiblePages.includes(page.name))
+        .map(page => page.name);
 
-    pages.forEach(page => {
-        if (accessiblePages.includes(page.name)) {
-            const option = document.createElement("option");
-            option.value = page.name;
-            option.text = page.name;
-            pageSelector.appendChild(option);
-        }
+    // Sort the page names alphabetically
+    pageNames.sort();
+
+    // Clear existing options in the dropdown
+    pageSelector.innerHTML = '';
+
+    // Add sorted page names as options to the dropdown
+    pageNames.forEach(pageName => {
+        const option = document.createElement("option");
+        option.value = pageName;
+        option.text = pageName;
+        pageSelector.appendChild(option);
     });
 
+    // Update language selector for the first page
     pageSelector.selectedIndex = 0;
     updateLanguageSelector();
 }
@@ -358,7 +366,7 @@ generateBtn.addEventListener("click", function() {
     const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
 
     let url = `https://www.cloudbet.com/${selectedLanguageCode}/landing/${selectedLanguageId}/?af_token=${personalId}`;
-     if (aftmCampaign) {
+    if (aftmCampaign) {
         url += `&aftm_campaign=${encodeURIComponent(aftmCampaign)}`;
     }   
     if (aftmSource) {
@@ -386,4 +394,3 @@ function copyToClipboard() {
         console.error('Error in copying text: ', err);
     });
 }
-
