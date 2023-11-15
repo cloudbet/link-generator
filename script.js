@@ -389,6 +389,34 @@ generateBtn.addEventListener("click", function() {
     result.innerText = url;
 });
 
+    // New: Copy URL to clipboard
+    navigator.clipboard.writeText(result.innerText).then(() => {
+        // New: Call the function to show a temporary message
+        showTemporaryMessage("URL copied to clipboard!", 2000); // 2000 ms = 2 seconds
+    }).catch(err => {
+        console.error('Error in copying text: ', err);
+    });
+});
+
+// New: Function to show a temporary message
+function showTemporaryMessage(message, duration) {
+    const tempMessage = document.createElement("div");
+    tempMessage.innerText = message;
+    tempMessage.style.position = "absolute";
+    tempMessage.style.bottom = "20px";
+    tempMessage.style.left = "50%";
+    tempMessage.style.transform = "translateX(-50%)";
+    tempMessage.style.backgroundColor = "#ddd";
+    tempMessage.style.padding = "10px";
+    tempMessage.style.borderRadius = "5px";
+    document.body.appendChild(tempMessage);
+
+    // New: Remove the message after the specified duration
+    setTimeout(() => {
+        document.body.removeChild(tempMessage);
+    }, duration);
+}
+
 // Initialize the page options when the script loads
 populatePages();
 
