@@ -387,7 +387,6 @@ generateBtn.addEventListener("click", function() {
     }
 
     result.innerText = url;
-});
 
     // New: Copy URL to clipboard
     navigator.clipboard.writeText(result.innerText).then(() => {
@@ -417,15 +416,6 @@ function showTemporaryMessage(message, duration) {
     }, duration);
 }
 
+
 // Initialize the page options when the script loads
 populatePages();
-
-// Copy to Clipboard Function
-function copyToClipboard() {
-    const textToCopy = document.getElementById('result').innerText;
-    navigator.clipboard.writeText(textToCopy).then(() => {
-        alert('Text copied to clipboard');
-    }).catch(err => {
-        console.error('Error in copying text: ', err);
-    });
-}
