@@ -147,7 +147,7 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 generateBtn.addEventListener("click", function() {
     const personalId = affiliateIdInput.value;
     const aftmSource = document.getElementById("label1").value;
-    const referrer = document.getElementById("label2").value;
+    const aftmMedium = document.getElementById("label2").value;
     const selectedLanguageCode = languageSelector.value;
 
     const selectedPage = pages.find(page => page.name === pageSelector.value);
@@ -157,8 +157,8 @@ generateBtn.addEventListener("click", function() {
     if (aftmSource) {
         url += `&aftm_source=${encodeURIComponent(aftmSource)}`;
     }
-    if (referrer) {
-        url += `&referrer=${encodeURIComponent(referrer)}`;
+    if (aftmMedium) {
+        url += `&aftm_medium=${encodeURIComponent(aftmMedium)}`;
     }
 
     result.innerText = url;
