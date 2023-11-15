@@ -146,8 +146,8 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 // Event listener for generate button click
 generateBtn.addEventListener("click", function() {
     const personalId = affiliateIdInput.value;
-    const aftmSource = document.getElementById("label1").value;
-    const aftmMedium = document.getElementById("label2").value;
+    const aftmSource = document.getElementById("label2").value;
+    const aftmMedium = document.getElementById("label3").value;
     const selectedLanguageCode = languageSelector.value;
 
     const selectedPage = pages.find(page => page.name === pageSelector.value);
