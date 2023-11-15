@@ -264,7 +264,7 @@ const partnerPages = {
     'top10casinosites': ['Top10CasinoSites: Co-Branded + 50 FS'],
     'casinotest': ['CasinoTest - Co-Branded + 200 FS'],
     'casinoblockchain': ['CasinoBlockChain: Co-Branded'],
-    'admin': [...defaultPages, ...Object.values(partnerPages).flat()]
+    'admin': ['CasinoBlockChain: Co-Branded']
 };
 
 // Partner to Affiliate ID mapping
