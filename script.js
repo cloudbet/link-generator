@@ -237,7 +237,7 @@ const defaultPages = [
     'Influencer: Sports/eSports',
     'Affiliate Welcome Offer',
     'Sports: NFL',
-    'Sports Betting'
+    'Sports Betting',
     'Sports: Welcome Bonus',
     '[Old] Offer: 100 Free Spins',
     '[Old] Offer: 200 Free Spins',
