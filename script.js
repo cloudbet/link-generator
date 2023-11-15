@@ -397,20 +397,23 @@ generateBtn.addEventListener("click", function() {
     });
 });
 
-// New: Function to show a temporary message
+// Function to show a temporary message
 function showTemporaryMessage(message, duration) {
     const tempMessage = document.createElement("div");
     tempMessage.innerText = message;
-    tempMessage.style.position = "absolute";
-    tempMessage.style.bottom = "20px";
-    tempMessage.style.left = "50%";
-    tempMessage.style.transform = "translateX(-50%)";
+    tempMessage.style.position = "fixed"; // Changed to 'fixed' to position relative to the viewport
+    tempMessage.style.top = "50%"; // Center vertically
+    tempMessage.style.left = "50%"; // Center horizontally
+    tempMessage.style.transform = "translate(-50%, -50%)"; // Adjust to center accurately
     tempMessage.style.backgroundColor = "#ddd";
     tempMessage.style.padding = "10px";
     tempMessage.style.borderRadius = "5px";
+    tempMessage.style.zIndex = "1000"; // Ensure it's on top of other elements
+    tempMessage.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.5)"; // Optional: Adds a shadow for better visibility
+    tempMessage.style.textAlign = "center"; // Optional: Center-aligns the text
     document.body.appendChild(tempMessage);
 
-    // New: Remove the message after the specified duration
+    // Remove the message after the specified duration
     setTimeout(() => {
         document.body.removeChild(tempMessage);
     }, duration);
