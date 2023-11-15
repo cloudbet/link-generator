@@ -239,6 +239,7 @@ const defaultPages = [
     'Sports: NFL',
     'Sports Betting',
     'Sports: Welcome Bonus',
+    'Offer: 50 Free Spins',
     '[Old] Offer: 100 Free Spins',
     '[Old] Offer: 200 Free Spins',
     '[Old] Offer: 50 Free Spins'
