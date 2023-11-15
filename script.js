@@ -264,8 +264,15 @@ const partnerPages = {
     'top10casinosites': ['*Top10CasinoSites: Co-Branded + 50 FS'],
     'casinotest': ['*CasinoTest - Co-Branded + 200 FS'],
     'casinoblockchain': ['*CasinoBlockChain: Co-Branded'],
-    'admin': ['*CasinoBlockChain: Co-Branded']
+    'admin': []
 };
+
+// Consolidate all partner pages for 'admin'
+for (const partner in partnerPages) {
+    if (partner !== 'admin') {
+        partnerPages['admin'] = [...new Set([...partnerPages['admin'], ...partnerPages[partner]])];
+    }
+}
 
 // Partner to Affiliate ID mapping
 const partnerToAffiliateIdMap = {
