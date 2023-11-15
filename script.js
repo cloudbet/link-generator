@@ -146,19 +146,27 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 // Event listener for generate button click
 generateBtn.addEventListener("click", function() {
     const personalId = affiliateIdInput.value;
+    const aftmCampaign = document.getElementById("label1").value;
     const aftmSource = document.getElementById("label2").value;
     const aftmMedium = document.getElementById("label3").value;
+    const aftmContent = document.getElementById("label4").value;
     const selectedLanguageCode = languageSelector.value;
 
     const selectedPage = pages.find(page => page.name === pageSelector.value);
     const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
 
     let url = `https://www.cloudbet.com/${selectedLanguageCode}/landing/${selectedLanguageId}/?af_token=${personalId}`;
+     if (aftmCampaign) {
+        url += `&aftm_campaign=${encodeURIComponent(aftmCampaign)}`;
+    }   
     if (aftmSource) {
         url += `&aftm_source=${encodeURIComponent(aftmSource)}`;
     }
     if (aftmMedium) {
         url += `&aftm_medium=${encodeURIComponent(aftmMedium)}`;
+    }
+    if (aftmContent) {
+        url += `&aftm_content=${encodeURIComponent(aftmContent)}`;
     }
 
     result.innerText = url;
