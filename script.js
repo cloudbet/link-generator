@@ -365,7 +365,7 @@ generateBtn.addEventListener("click", function() {
     const selectedPage = pages.find(page => page.name === pageSelector.value);
     const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
 
-    let url = `https://www.cloudbet.com/${selectedLanguageCode}/landing/${selectedLanguageId}/?af_token=${personalId}`;
+    let url = `https://www.cloudbet.com/${selectedLanguageCode}/landing/${selectedLanguageId}?af_token=${personalId}`;
     if (aftmCampaign) {
         url += `&aftm_campaign=${encodeURIComponent(aftmCampaign)}`;
     }   
