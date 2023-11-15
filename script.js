@@ -213,7 +213,7 @@ const pages = [
         ]
     },
     {
-        "name": "*CasinoBlockChain: Co-Branded",
+        "name": "*CasinosBlockChain: Co-Branded",
         "languages": [
             {"code": "en", "id": "casinosblockchain"},
         ]
@@ -254,7 +254,7 @@ const partnerPages = {
     'actufinance': ['*ActuFinance: Co-Branded + 200 FS'],
     'casinodaddy': ['*CasinoDaddy: Co-Branded + 200 FS'],
     'casinoguide': ['*CasinoGuide: Co-Branded + 200 FS'],
-    'casinosblockchain': ['*CasinosBlockchain: Co-Branded + 100 FS'],
+    'casinosblockchain': ['*CasinosBlockchain: Co-Branded + 100 FS', '*CasinosBlockChain: Co-Branded'],
     'coincierge': ['*CoinCierge: Co-Branded + 200 FS'],
     'cryptocasinos': ['*CryptoCasinos: Co-Branded + 200 FS'],
     'cryptonaute': ['*Cryptonaute: Co-Branded + 200 FS'],
@@ -263,7 +263,6 @@ const partnerPages = {
     'kryptoszene': ['*Kryptoszene: Co-Branded + 200 FS'],
     'top10casinosites': ['*Top10CasinoSites: Co-Branded + 50 FS'],
     'casinotest': ['*CasinoTest - Co-Branded + 200 FS'],
-    'casinoblockchain': ['*CasinoBlockChain: Co-Branded'],
     'admin': []
 };
 
@@ -279,10 +278,10 @@ const partnerToAffiliateIdMap = {
     'gennci': '2960602116f3dce96c4525219fdedb72',
     'cryptomaniaks': '97ab6f554e12167d3dd796c1487c78b4',
     'globalextramoney': 'abcdef345678',
-    'kryptobuchmacher': 'abcdef456789',
+    'kryptobuchmacher': '2dc3fe853e50c7a2bab32b806f885e11',
     'sportwettenvergleich': 'abcdef567890',
     'actufinance': 'abcdef678901',
-    'casinodaddy': 'abcdef789012',
+    'casinodaddy': '25b1e5b3f6bcd84862024dce0b99b871',
     'casinoguide': 'abcdef890123',
     'casinosblockchain': 'abcdef901234',
     'coincierge': 'abcdef012345',
@@ -293,7 +292,7 @@ const partnerToAffiliateIdMap = {
     'kryptoszene': 'abcdef567891',
     'top10casinosites': 'abcdef678902',
     'casinotest': 'abcdef789013',
-    'casinoblockchain': 'abcdef890124',
+    'casinoblockchain': 'aa938b8c991e47071094b255abd00cfd',
     'admin': 'admin',
     // ... more mappings as needed
 };
