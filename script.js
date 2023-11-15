@@ -26,31 +26,31 @@ const pages = [
         ]
     },
     {
-        "name": "**Cryrptomaniaks: Co-Branded",
+        "name": "*Cryrptomaniaks: Co-Branded",
         "languages": [
             {"code": "en", "id": "cryptomaniaks"},
         ]
     },
     {
-        "name": "**Cryptomaniaks: Co-Branded + 200FS",
+        "name": "*Cryptomaniaks: Co-Branded + 200FS",
         "languages": [
             {"code": "en", "id": "cryptomaniaks-freespins"},
         ]
     },
     {
-        "name": "**GlobalExtraMoney: Co-Branded + 100 FS",
+        "name": "*GlobalExtraMoney: Co-Branded + 100 FS",
         "languages": [
             {"code": "en", "id": "bitcoin-betting/globalextramoney"},
         ]
     },
     {
-        "name": "**Kryptobuchmacher: Co-Branded",
+        "name": "*Kryptobuchmacher: Co-Branded",
         "languages": [
             {"code": "de", "id": "kryptobuchmacher-com"},
         ]
     },
     {
-        "name": "**Sportwettenvergleich: Co-Branded",
+        "name": "*Sportwettenvergleich: Co-Branded",
         "languages": [
             {"code": "de", "id": "swv"},
         ]
@@ -68,73 +68,73 @@ const pages = [
         ]
     },
     {
-        "name": "**ActuFinance: Co-Branded + 200 FS",
+        "name": "*ActuFinance: Co-Branded + 200 FS",
         "languages": [
             {"code": "fr", "id": "actufinance"},
         ]
     },
         {
-        "name": "**CasinoDaddy: Co-Branded + 200 FS",
+        "name": "*CasinoDaddy: Co-Branded + 200 FS",
         "languages": [
             {"code": "en", "id": "casinodaddy"},
         ]
     },
     {
-        "name": "**CasinoGuide: Co-Branded + 200 FS",
+        "name": "*CasinoGuide: Co-Branded + 200 FS",
         "languages": [
             {"code": "en", "id": "casino-guide"},
         ]
     },
     {
-        "name": "**CasinosBlockchain: Co-Branded + 100 FS",
+        "name": "*CasinosBlockchain: Co-Branded + 100 FS",
         "languages": [
             {"code": "en", "id": "100-free-spins/casinosblockchain"},
         ]
     },
     {
-        "name": "**CoinCierge: Co-Branded + 200 FS",
+        "name": "*CoinCierge: Co-Branded + 200 FS",
         "languages": [
             {"code": "de", "id": "coincierge"},
         ]
     },
     {
-        "name": "**CryptoCasinos: Co-Branded + 200 FS",
+        "name": "*CryptoCasinos: Co-Branded + 200 FS",
         "languages": [
             {"code": "en", "id": "cryptocasinos"},
         ]
     },
     {
-        "name": "**Cryptonaute: Co-Branded + 200 FS",
+        "name": "*Cryptonaute: Co-Branded + 200 FS",
         "languages": [
             {"code": "fr", "id": "cryptonaute"},
         ]
     },
     {
-        "name": "**Gaming.net: Co-Branded + 100 FS",
+        "name": "*Gaming.net: Co-Branded + 100 FS",
         "languages": [
             {"code": "en", "id": "gamingnet"},
         ]
     },
     {
-        "name": "**[OLD] GlobalExtraMoney: Co-Branded + 100 FS",
+        "name": "*[OLD] GlobalExtraMoney: Co-Branded + 100 FS",
         "languages": [
             {"code": "en", "id": "globalextramoney"},
         ]
     },
     {
-        "name": "**InsideBitcoins: Co-Branded + 200 FS",
+        "name": "*InsideBitcoins: Co-Branded + 200 FS",
         "languages": [
             {"code": "en", "id": "insidebitcoins"},
         ]
     },
     {
-        "name": "**Kryptoszene: Co-Branded + 200 FS",
+        "name": "*Kryptoszene: Co-Branded + 200 FS",
         "languages": [
             {"code": "de", "id": "kryptoszene"},
         ]
     },
     {
-        "name": "**Top10CasinoSites: Co-Branded + 50 FS",
+        "name": "*Top10CasinoSites: Co-Branded + 50 FS",
         "languages": [
             {"code": "en", "id": "top10-casinosites"},
         ]
@@ -165,7 +165,7 @@ const pages = [
         ]
     },
     {
-        "name": "**CasinoTest - Co-Branded + 200 FS",
+        "name": "*CasinoTest - Co-Branded + 200 FS",
         "languages": [
             {"code": "de", "id": "casinotest-de"},
         ]
@@ -207,13 +207,13 @@ const pages = [
         ]
     },
     {
-        "name": "**Gennci: Co-Branded",
+        "name": "*Gennci: Co-Branded",
         "languages": [
             {"code": "en", "id": "gennci"},
         ]
     },
     {
-        "name": "**CasinoBlockChain: Co-Branded",
+        "name": "*CasinoBlockChain: Co-Branded",
         "languages": [
             {"code": "en", "id": "casinosblockchain"},
         ]
@@ -246,25 +246,25 @@ const defaultPages = [
 
 // Special access pages for specific partners
 const partnerPages = {
-    'gennci': ['**Gennci: Co-Branded'],
-    'cryptomaniaks': ['**Cryptomaniaks: Co-Branded', '**Cryptomaniaks: Co-Branded + 200FS'],
-    'globalextramoney': ['**GlobalExtraMoney: Co-Branded + 100 FS', '**[OLD] GlobalExtraMoney: Co-Branded + 100 FS'],
-    'kryptobuchmacher': ['**Kryptobuchmacher: Co-Branded'],
-    'sportwettenvergleich': ['**Sportwettenvergleich: Co-Branded'],
-    'actufinance': ['**ActuFinance: Co-Branded + 200 FS'],
-    'casinodaddy': ['**CasinoDaddy: Co-Branded + 200 FS'],
-    'casinoguide': ['**CasinoGuide: Co-Branded + 200 FS'],
-    'casinosblockchain': ['**CasinosBlockchain: Co-Branded + 100 FS'],
-    'coincierge': ['**CoinCierge: Co-Branded + 200 FS'],
-    'cryptocasinos': ['**CryptoCasinos: Co-Branded + 200 FS'],
-    'cryptonaute': ['**Cryptonaute: Co-Branded + 200 FS'],
-    'gamingnet': ['**Gaming.net: Co-Branded + 100 FS'],
-    'insidebitcoins': ['**InsideBitcoins: Co-Branded + 200 FS'],
-    'kryptoszene': ['**Kryptoszene: Co-Branded + 200 FS'],
-    'top10casinosites': ['**Top10CasinoSites: Co-Branded + 50 FS'],
-    'casinotest': ['**CasinoTest - Co-Branded + 200 FS'],
-    'casinoblockchain': ['**CasinoBlockChain: Co-Branded'],
-    'admin': ['**CasinoBlockChain: Co-Branded']
+    'gennci': ['*Gennci: Co-Branded'],
+    'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS'],
+    'globalextramoney': ['*GlobalExtraMoney: Co-Branded + 100 FS', '*[OLD] GlobalExtraMoney: Co-Branded + 100 FS'],
+    'kryptobuchmacher': ['*Kryptobuchmacher: Co-Branded'],
+    'sportwettenvergleich': ['*Sportwettenvergleich: Co-Branded'],
+    'actufinance': ['*ActuFinance: Co-Branded + 200 FS'],
+    'casinodaddy': ['*CasinoDaddy: Co-Branded + 200 FS'],
+    'casinoguide': ['*CasinoGuide: Co-Branded + 200 FS'],
+    'casinosblockchain': ['*CasinosBlockchain: Co-Branded + 100 FS'],
+    'coincierge': ['*CoinCierge: Co-Branded + 200 FS'],
+    'cryptocasinos': ['*CryptoCasinos: Co-Branded + 200 FS'],
+    'cryptonaute': ['*Cryptonaute: Co-Branded + 200 FS'],
+    'gamingnet': ['*Gaming.net: Co-Branded + 100 FS'],
+    'insidebitcoins': ['*InsideBitcoins: Co-Branded + 200 FS'],
+    'kryptoszene': ['*Kryptoszene: Co-Branded + 200 FS'],
+    'top10casinosites': ['*Top10CasinoSites: Co-Branded + 50 FS'],
+    'casinotest': ['*CasinoTest - Co-Branded + 200 FS'],
+    'casinoblockchain': ['*CasinoBlockChain: Co-Branded'],
+    'admin': ['*CasinoBlockChain: Co-Branded']
 };
 
 // Partner to Affiliate ID mapping
