@@ -201,7 +201,7 @@ const pages = [
         ]
     },
     {
-        "name": "Influencer: Sports Page",
+        "name": "Influencer: Sports/eSports",
         "languages": [
             {"code": "en", "id": "creator-offer-sport"},
         ]
