@@ -140,31 +140,6 @@ const pages = [
         ]
     },
     {
-        "name": "[Old] Offer: 100 Free Spins",
-        "languages": [
-            {"code": "en", "id": "100-free-spins"},
-        ]
-    },
-    {
-        "name": "[Old] Offer: 200 Free Spins",
-        "languages": [
-            {"code": "en", "id": "200-free-spins"},
-        ]
-    },
-    {
-        "name": "[Old] Offer: 50 Free Spins",
-        "languages": [
-            {"code": "de", "id": "50-free-spins"},
-            {"code": "es", "id": "50-free-spins"},
-        ]
-    },
-    {
-        "name": "Offer: 50 Free Spins",
-        "languages": [
-            {"code": "es", "id": "bitcoin-bonus-50freespins"},
-        ]
-    },
-    {
         "name": "*CasinoTest - Co-Branded + 200 FS",
         "languages": [
             {"code": "de", "id": "casinotest-de"},
@@ -174,17 +149,6 @@ const pages = [
         "name": "Bitcoin Casino",
         "languages": [
             {"code": "en", "id": "bitcoin-casino"},
-        ]
-    },
-    {
-        "name": "General Referral",
-        "languages": [
-            {"code": "en", "id": "refer"},
-            {"code": "de", "id": "refer"},
-            {"code": "es", "id": "refer"},
-            {"code": "fr", "id": "refer"},
-            {"code": "it", "id": "refer"},
-            {"code": "ja", "id": "refer"},
         ]
     },
     {
@@ -232,17 +196,12 @@ const defaultPages = [
     'Bitcoin Bonus',
     'Bitcoin Betting',
     'Bitcoin Casino',
-    'General Referral',
     'Influencer: Casino/eSports',
     'Influencer: Sports/eSports',
     'Affiliate Welcome Offer',
     'Sports: NFL',
     'Sports Betting',
-    'Sports: Welcome Bonus',
-    'Offer: 50 Free Spins',
-    '[Old] Offer: 100 Free Spins',
-    '[Old] Offer: 200 Free Spins',
-    '[Old] Offer: 50 Free Spins'
+    'Sports: Welcome Bonus'
 ];
 
 // Special access pages for specific partners
