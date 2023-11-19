@@ -323,8 +323,8 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 generateBtn.addEventListener("click", function() {
     const personalId = affiliateIdInput.value;
     const aftmCampaign = document.getElementById("label1").value;
-    const aftmSource = document.getElementById("label2").value;
-    const aftmMedium = document.getElementById("label3").value;
+    const aftmMedium = document.getElementById("label2").value;
+    const aftmSource = document.getElementById("label3").value;
     const aftmContent = document.getElementById("label4").value;
     const selectedLanguageCode = languageSelector.value;
 
