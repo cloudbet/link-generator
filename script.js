@@ -179,7 +179,7 @@ const defaultPages = [
     'Affiliate: Sports',
     'Influencer: Casino',
     'Influencer: Sports/eSports',
-    'Sports: NFL'
+    'Sports: NFL',
 ];
 
 // Special access pages for specific partners
