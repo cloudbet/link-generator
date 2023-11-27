@@ -1,13 +1,7 @@
 // Data for pages and languages
 const pages = [
     {
-        "name": "Affiliate Welcome Offer",
-        "languages": [
-            {"code": "en", "id": "welcome-offer"},
-        ]
-    },
-    {
-        "name": "Bitcoin Betting",
+        "name": "Affiliate: Sports",
         "languages": [
             {"code": "en", "id": "bitcoin-betting"},
             {"code": "de", "id": "bitcoin-betting"},
@@ -20,7 +14,7 @@ const pages = [
         ]
     },
     {
-        "name": "Sports Betting",
+        "name": "*CryptoBetting.org: Sports",
         "languages": [
             {"code": "en", "id": "cryptobetting"},
         ]
@@ -56,7 +50,7 @@ const pages = [
         ]
     },
     {
-        "name": "Bitcoin Bonus",
+        "name": "Affiliate: Casino",
         "languages": [
             {"code": "en", "id": "bitcoin-bonus"},
             {"code": "de", "id": "bitcoin-bonus"},
@@ -146,19 +140,13 @@ const pages = [
         ]
     },
     {
-        "name": "Bitcoin Casino",
-        "languages": [
-            {"code": "en", "id": "bitcoin-casino"},
-        ]
-    },
-    {
         "name": "Sports: NFL",
         "languages": [
             {"code": "en", "id": "bet-on-nfl"},
         ]
     },
     {
-        "name": "Influencer: Casino/eSports",
+        "name": "Influencer: Casino",
         "languages": [
             {"code": "en", "id": "creator-offer"},
             {"code": "es", "id": "creator-offer"},
@@ -181,33 +169,23 @@ const pages = [
         "languages": [
             {"code": "en", "id": "casinosblockchain"},
         ]
-    },
-    {
-        "name": "Sports: Welcome Bonus",
-        "languages": [
-            {"code": "en", "id": "lp-welcome-bonus"},
-        ]
     }
 ];
 
 
 // Default pages available to all partners
 const defaultPages = [
-    'Bitcoin Bonus',
-    'Bitcoin Betting',
-    'Bitcoin Casino',
-    'Influencer: Casino/eSports',
+    'Affiliate: Casino',
+    'Affiliate: Sports',
+    'Influencer: Casino',
     'Influencer: Sports/eSports',
-    'Affiliate Welcome Offer',
-    'Sports: NFL',
-    'Sports Betting',
-    'Sports: Welcome Bonus'
+    'Sports: NFL'
 ];
 
 // Special access pages for specific partners
 const partnerPages = {
     'gennci': ['*Gennci: Co-Branded'],
-    'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS'],
+    'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS', '*CryptoBetting.org: Sports],
     'globalextramoney': ['*GlobalExtraMoney: Co-Branded + 100 FS', '*[OLD] GlobalExtraMoney: Co-Branded + 100 FS'],
     'kryptobuchmacher': ['*Kryptobuchmacher: Co-Branded'],
     'sportwettenvergleich': ['*Sportwettenvergleich: Co-Branded'],
