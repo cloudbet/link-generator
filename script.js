@@ -185,7 +185,7 @@ const defaultPages = [
 // Special access pages for specific partners
 const partnerPages = {
     'gennci': ['*Gennci: Co-Branded'],
-    'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS', '*CryptoBetting.org: Sports],
+    'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS', '*CryptoBetting.org: Sports'],
     'globalextramoney': ['*GlobalExtraMoney: Co-Branded + 100 FS', '*[OLD] GlobalExtraMoney: Co-Branded + 100 FS'],
     'kryptobuchmacher': ['*Kryptobuchmacher: Co-Branded'],
     'sportwettenvergleich': ['*Sportwettenvergleich: Co-Branded'],
