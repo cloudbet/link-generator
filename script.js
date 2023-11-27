@@ -20,7 +20,7 @@ const pages = [
         ]
     },
     {
-        "name": "*Cryrptomaniaks: Co-Branded",
+        "name": "*Cryptomaniaks: Co-Branded",
         "languages": [
             {"code": "en", "id": "cryptomaniaks"},
         ]
