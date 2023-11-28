@@ -50,7 +50,7 @@ const pages = [
         ]
     },
     {
-        "name": "Affiliate: Casino",
+        "name": "Affiliate: Bitcoin Bonus",
         "languages": [
             {"code": "en", "id": "bitcoin-bonus"},
             {"code": "de", "id": "bitcoin-bonus"},
@@ -59,6 +59,12 @@ const pages = [
             {"code": "it", "id": "bitcoin-bonus"},
             {"code": "pt", "id": "bitcoin-bonus"},
             {"code": "ja", "id": "bitcoin-bonus"},
+        ]
+    },
+     {
+        "name": "Affiliate: Casino",
+        "languages": [
+            {"code": "en", "id": "bitcoin-casino"},
         ]
     },
     {
@@ -175,6 +181,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
+    'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
     'Influencer: Casino',
@@ -309,7 +316,7 @@ generateBtn.addEventListener("click", function() {
     const selectedPage = pages.find(page => page.name === pageSelector.value);
     const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
 
-    let url = `https://www.cloudbet.com/${selectedLanguageCode}/landing/${selectedLanguageId}?af_token=${personalId}`;
+    let url = `https://cldbt.cloud/go/${selectedLanguageCode}/landing/${selectedLanguageId}?af_token=${personalId}`;
     if (aftmCampaign) {
         url += `&aftm_campaign=${encodeURIComponent(aftmCampaign)}`;
     }   
