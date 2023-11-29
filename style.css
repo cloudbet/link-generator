@@ -135,11 +135,9 @@ button:active {
 #custom-btn {
     background-color: #4a90e2;
     color: white;
-    border: none;
     border-radius: 8px;
-    margin: 0 5px;
-    font-size: 16px;
-    padding: 12px 24px; /* Larger padding for easier interaction */
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 
