@@ -127,6 +127,30 @@ button:active {
     background-color: #ac5c26;
 }
 
+.customButtonContainer {
+    text-align: center;
+    padding: 10px;
+}
+
+#custom-btn {
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#custom-btn:hover {
+    background-color: #3078c1;
+}
+
+#custom-btn:active {
+    background-color: #20588c;
+}
+
+
 #generate-btn {
     width: 100%;
 }
