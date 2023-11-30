@@ -176,7 +176,8 @@ input, select {
     }
 
     #generate-btn, #custom-btn {
-        position: static; /* Remove absolute positioning on small screens */
-        margin-top: 20px; /* Add margin for better spacing */
+        width: 100%; /* Full width within the container */
+        max-width: none; /* Removes any max-width if set */
+        padding: 10px 15px; /* Smaller padding on smaller screens */
     }
 }
