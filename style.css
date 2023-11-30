@@ -101,30 +101,17 @@ input, select {
     padding: 20px;
 }
 
-.copyButtonContainer {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 10px;
-}
-
-button {
+#generate-btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     background-color: #f58634;
     color: white;
     border: none;
     border-radius: 8px;
-    margin: 0 5px;
-    font-size: 16px;
-    padding: 12px 24px; /* Larger padding for easier interaction */
+    padding: 12px 24px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #cc6f2f;
-}
-
-button:active {
-    background-color: #ac5c26;
 }
 
 .customButtonContainer {
@@ -140,35 +127,13 @@ button:active {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+}
 
 #custom-btn:hover {
     background-color: #3078c1;
 }
 
 #custom-btn:active {
-    background-color: #20588c;
-}
-
-
-#generate-btn {
-    width: 100%;
-}
-
-#copy-btn {
-    background-color: #4a90e2;
-    color: white;
-    border-radius: 8px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#copy-btn:hover {
-    background-color: #3078c1;
-}
-
-#copy-btn:active {
     background-color: #20588c;
 }
 
