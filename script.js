@@ -349,7 +349,7 @@ function showTemporaryMessage(message, duration) {
     tempMessage.style.top = "50%"; // Center vertically
     tempMessage.style.left = "50%"; // Center horizontally
     tempMessage.style.transform = "translate(-50%, -50%)"; // Adjust to center accurately
-    tempMessage.style.backgroundColor = "#ddd";
+    tempMessage.style.backgroundColor = "#FFA07A";
     tempMessage.style.padding = "10px";
     tempMessage.style.borderRadius = "5px";
     tempMessage.style.zIndex = "1000"; // Ensure it's on top of other elements
