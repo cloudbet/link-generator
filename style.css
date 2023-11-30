@@ -6,6 +6,15 @@ body {
     color: white;
 }
 
+#popup-message {
+    background-color: #90EE90; /* Light green background */
+    color: white;
+    font-weight: bold; /* Bold text */
+    padding: 10px;
+    border-radius: 5px;
+    /* Additional styling as needed (e.g., positioning, box-shadow) */
+}
+
 input, select {
     min-width: 300px;
     width: 50%;
