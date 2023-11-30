@@ -118,6 +118,7 @@ input, select {
     padding: 12px 24px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: bold; /* This line makes the text bold */
 }
 
 #generate-btn {
