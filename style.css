@@ -165,18 +165,17 @@ input, select {
 
     .item-1, .item-2 {
         grid-column: auto; /* Adjust grid column settings */
+        padding-bottom: 90px;
+        font-size: 12px;
     }
 
     body {
         font-size: 14px; /* Slightly smaller font size for mobile */
-    }
-
-    .item-2 {
-        font-size: 10px; /* Adjust font size for specific elements if needed */
+        
     }
 
     #generate-btn, #custom-btn {
-        width: 100%; /* Full width within the container */
+        width: 80%; /* Full width within the container */
         max-width: none; /* Removes any max-width if set */
         padding: 10px 15px; /* Smaller padding on smaller screens */
     }
