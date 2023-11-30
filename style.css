@@ -108,7 +108,7 @@ input, select {
     width: 80%;
     margin: 0 auto;
     position: absolute; /* Position buttons absolutely */
-    bottom: 10px; /* Position from bottom */
+    bottom: 40px; /* Position from bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Align center */
     background-color: #f58634;
