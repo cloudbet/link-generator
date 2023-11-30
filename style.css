@@ -85,6 +85,16 @@ input, select {
     width: auto;
 }
 
+#copy a {
+    color: inherit; /* Optional: makes the link the same color as the surrounding text */
+    text-decoration: underline; /* Ensures the link is underlined */
+}
+
+#copy a:hover {
+    text-decoration: none; /* Optional: removes the underline on hover */
+}
+
+
 #result {
     background-color: #ffffff;
     color: #0d122b;
