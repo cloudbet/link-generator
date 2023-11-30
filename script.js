@@ -335,7 +335,7 @@ generateBtn.addEventListener("click", function() {
     // New: Copy URL to clipboard
     navigator.clipboard.writeText(result.innerText).then(() => {
         // New: Call the function to show a temporary message
-        showTemporaryMessage("URL copied to clipboard!", 2000); // 2000 ms = 2 seconds
+        showTemporaryMessage("URL copied to clipboard!", 2500); // 2000 ms = 2 seconds
     }).catch(err => {
         console.error('Error in copying text: ', err);
     });
