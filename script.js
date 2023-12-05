@@ -171,7 +171,7 @@ const pages = [
         ]
     },
     {
-        "name": "*CasinosBlockChain: Co-Branded",
+        "name": "*CasinosBlockchain: Co-Branded",
         "languages": [
             {"code": "en", "id": "casinosblockchain"},
         ]
@@ -192,22 +192,16 @@ const defaultPages = [
 // Special access pages for specific partners
 const partnerPages = {
     'gennci': ['*Gennci: Co-Branded'],
-    'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS', '*CryptoBetting.org: Sports'],
+    'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS'],
+    'cryptobetting': ['*CryptoBetting.org: Sports']
     'globalextramoney': ['*GlobalExtraMoney: Co-Branded + 100 FS', '*[OLD] GlobalExtraMoney: Co-Branded + 100 FS'],
-    'kryptobuchmacher': ['*Kryptobuchmacher: Co-Branded'],
-    'sportwettenvergleich': ['*Sportwettenvergleich: Co-Branded'],
-    'actufinance': ['*ActuFinance: Co-Branded + 200 FS'],
+    'finixio': ['*ActuFinance: Co-Branded + 200 FS', '*CoinCierge: Co-Branded + 200 FS', '*Cryptonaute: Co-Branded + 200 FS', '*InsideBitcoins: Co-Branded + 200 FS', '*Kryptoszene: Co-Branded + 200 FS'],
     'casinodaddy': ['*CasinoDaddy: Co-Branded + 200 FS'],
-    'casinoguide': ['*CasinoGuide: Co-Branded + 200 FS'],
-    'casinosblockchain': ['*CasinosBlockchain: Co-Branded + 100 FS', '*CasinosBlockChain: Co-Branded'],
-    'coincierge': ['*CoinCierge: Co-Branded + 200 FS'],
-    'cryptocasinos': ['*CryptoCasinos: Co-Branded + 200 FS'],
-    'cryptonaute': ['*Cryptonaute: Co-Branded + 200 FS'],
-    'gamingnet': ['*Gaming.net: Co-Branded + 100 FS'],
-    'insidebitcoins': ['*InsideBitcoins: Co-Branded + 200 FS'],
-    'kryptoszene': ['*Kryptoszene: Co-Branded + 200 FS'],
-    'top10casinosites': ['*Top10CasinoSites: Co-Branded + 50 FS'],
-    'casinotest': ['*CasinoTest - Co-Branded + 200 FS'],
+    'jsweb': ['*CasinoGuide: Co-Branded + 200 FS', '*CasinoTest - Co-Branded + 200 FS', '*Kryptobuchmacher: Co-Branded'],
+    'casinosblockchain': ['*CasinosBlockchain: Co-Branded + 100 FS', '*CasinosBlockchain: Co-Branded'],
+    'elevatedleads': ['*CryptoCasinos: Co-Branded + 200 FS'], //done
+    'blockventures': ['*Gaming.net: Co-Branded + 100 FS'], //done
+    'wis': ['*Top10CasinoSites: Co-Branded + 50 FS', '*Sportwettenvergleich: Co-Branded'], //done
     'admin': []
 };
 
@@ -220,23 +214,17 @@ for (const partner in partnerPages) {
 
 // Partner to Affiliate ID mapping
 const partnerToAffiliateIdMap = {
-    'gennci': '2960602116f3dce96c4525219fdedb72',
-    'cryptomaniaks': '97ab6f554e12167d3dd796c1487c78b4',
-    'globalextramoney': 'abcdef345678',
-    'kryptobuchmacher': '2dc3fe853e50c7a2bab32b806f885e11',
-    'sportwettenvergleich': 'abcdef567890',
-    'actufinance': 'abcdef678901',
-    'casinodaddy': '25b1e5b3f6bcd84862024dce0b99b871',
-    'casinoguide': 'abcdef890123',
-    'casinosblockchain': 'abcdef901234',
-    'coincierge': 'abcdef012345',
-    'cryptocasinos': 'abcdef123457',
-    'cryptonaute': 'abcdef234568',
-    'gamingnet': 'abcdef345679',
-    'insidebitcoins': 'abcdef456780',
-    'kryptoszene': 'abcdef567891',
-    'top10casinosites': 'abcdef678902',
-    'casinotest': 'abcdef789013',
+    'gennci': '2960602116f3dce96c4525219fdedb72', //done - influencer
+    'cryptomaniaks': '97ab6f554e12167d3dd796c1487c78b4', //done - agile
+    'cryptobetting': 'bb8af9ed6a06f7285216258ebd165ae0', //done - agile
+    'globalextramoney': '25e9169d3571b9d047972eaab227c981', //done 
+    'finixio': 'ae4254b0cbbf0760d3442112d77a6748', //done
+    'jsweb': 'a14aaadaca11e21b036ce69f6c473a20', //done
+    'casinodaddy': '25b1e5b3f6bcd84862024dce0b99b871', //done
+    'casinosblockchain': 'aa938b8c991e47071094b255abd00cfd', //done
+    'elevatedleads': '67b9cd11f6f47ee71d0a14eecf201a16', //done
+    'blockventures': '4924e418445b3b21d4e8bbee05ec9207', //done
+    'wis': '14b8da7b2de3be3c93cb0082264a3733', //done
     'casinoblockchain': 'aa938b8c991e47071094b255abd00cfd',
     'admin': 'admin',
     // ... more mappings as needed
