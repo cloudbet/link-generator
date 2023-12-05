@@ -193,7 +193,7 @@ const defaultPages = [
 const partnerPages = {
     'gennci': ['*Gennci: Co-Branded'],
     'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS'],
-    'cryptobetting': ['*CryptoBetting.org: Sports']
+    'cryptobetting': ['*CryptoBetting.org: Sports'],
     'globalextramoney': ['*GlobalExtraMoney: Co-Branded + 100 FS', '*[OLD] GlobalExtraMoney: Co-Branded + 100 FS'],
     'finixio': ['*ActuFinance: Co-Branded + 200 FS', '*CoinCierge: Co-Branded + 200 FS', '*Cryptonaute: Co-Branded + 200 FS', '*InsideBitcoins: Co-Branded + 200 FS', '*Kryptoszene: Co-Branded + 200 FS'],
     'casinodaddy': ['*CasinoDaddy: Co-Branded + 200 FS'],
