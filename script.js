@@ -175,7 +175,14 @@ const pages = [
         "languages": [
             {"code": "en", "id": "casinosblockchain"},
         ]
-    }
+    },
+    {
+        "name": "Winter Tournament",
+        "languages": [
+            {"code": "en", "id": "winter-tournament-en"},
+            // Add other languages if necessary
+        ]
+    },
 ];
 
 
@@ -300,10 +307,17 @@ generateBtn.addEventListener("click", function() {
     const aftmContent = document.getElementById("label4").value;
     const selectedLanguageCode = languageSelector.value;
 
-    const selectedPage = pages.find(page => page.name === pageSelector.value);
-    const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
+    const selectedPageName = pageSelector.value;
+    let url;
 
-    let url = `https://cldbt.cloud/go/${selectedLanguageCode}/landing/${selectedLanguageId}?af_token=${personalId}`;
+    if (selectedPageName === "Winter Tournament") {
+        url = `https://cldbt.cloud/go/beta/${selectedLanguageCode}/tournaments/k-yme4wB6RVVS-7RsGoj/b-yme4wB6RVVS-7Ru2vh?af_token=${personalId}`;
+    } else {
+        const selectedPage = pages.find(page => page.name === selectedPageName);
+        const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/landing/${selectedLanguageId}?af_token=${personalId}`;
+    }
+    
     if (aftmCampaign) {
         url += `&aftm_campaign=${encodeURIComponent(aftmCampaign)}`;
     }   
