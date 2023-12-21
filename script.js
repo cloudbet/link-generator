@@ -175,6 +175,12 @@ const pages = [
         "languages": [
             {"code": "en", "id": "casinosblockchain"},
         ]
+    },
+    {
+        "name": "**Win-Win-Winter Tournament",
+        "languages": [
+            {"code": "beta/en", "id": "tournaments/k-yme4wB6RVVS-7RsGoj/b-yme4wB6RVVS-7Ru2vh"},
+        ]
     }
 ];
 
@@ -187,6 +193,7 @@ const defaultPages = [
     'Influencer: Casino',
     'Influencer: Sports/eSports',
     'Sports: NFL',
+    'winter',
 ];
 
 // Special access pages for specific partners
