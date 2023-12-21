@@ -194,6 +194,7 @@ const defaultPages = [
     'Influencer: Casino',
     'Influencer: Sports/eSports',
     'Sports: NFL',
+    'Winter Tournament',
 ];
 
 // Special access pages for specific partners
