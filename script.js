@@ -8,7 +8,7 @@ const pages = [
             {"code": "es", "id": "bitcoin-betting"},
             {"code": "fr", "id": "bitcoin-betting"},
             {"code": "it", "id": "bitcoin-betting"},
-            {"code": "pt", "id": "bitcoin-betting"},
+            {"code": "pt-br", "id": "bitcoin-betting"},
             {"code": "ja", "id": "bitcoin-betting"},
             {"code": "tr", "id": "bitcoin-betting"},
         ]
@@ -57,7 +57,8 @@ const pages = [
             {"code": "es", "id": "bitcoin-bonus"},
             {"code": "fr", "id": "bitcoin-bonus"},
             {"code": "it", "id": "bitcoin-bonus"},
-            {"code": "pt", "id": "bitcoin-bonus"},
+            {"code": "pt-br", "id": "bitcoin-bonus"},
+            {"code": "ja", "id": "bitcoin-bonus"},
             {"code": "ja", "id": "bitcoin-bonus"},
         ]
     },
@@ -65,6 +66,13 @@ const pages = [
         "name": "Affiliate: Casino",
         "languages": [
             {"code": "en", "id": "bitcoin-casino"},
+            {"code": "de", "id": "bitcoin-casino"},
+            {"code": "es", "id": "bitcoin-casino"},
+            {"code": "fr", "id": "bitcoin-casino"},
+            {"code": "it", "id": "bitcoin-casino"},
+            {"code": "pt-br", "id": "bitcoin-casino"},
+            {"code": "ja", "id": "bitcoin-casino"},
+            {"code": "tr", "id": "bitcoin-casino"},
         ]
     },
     {
