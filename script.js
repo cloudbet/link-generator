@@ -184,13 +184,6 @@ const pages = [
             {"code": "en", "id": "casinosblockchain"},
         ]
     },
-    {
-        "name": "Winter Tournament",
-        "languages": [
-            {"code": "en", "id": "winter-tournament-en"},
-            // Add other languages if necessary
-        ]
-    },
 ];
 
 
@@ -202,7 +195,6 @@ const defaultPages = [
     'Affiliate: Sports',
     'Influencer: Casino',
     'Influencer: Sports/eSports',
-    'Winter Tournament',
 ];
 
 // Special access pages for specific partners
@@ -319,8 +311,8 @@ generateBtn.addEventListener("click", function() {
     const selectedPageName = pageSelector.value;
     let url;
 
-    if (selectedPageName === "Winter Tournament") {
-        url = `https://cldbt.cloud/go/beta/${selectedLanguageCode}/tournaments/k-yme4wB6RVVS-7RsGoj/b-yme4wB6RVVS-7Ru2vh?af_token=${personalId}`;
+    if (selectedPageName === "**NEW: Superbowl XVIII") {
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-super-bowl?af_token=${personalId}`;
     } else {
         const selectedPage = pages.find(page => page.name === selectedPageName);
         const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
