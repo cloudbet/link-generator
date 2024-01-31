@@ -154,7 +154,7 @@ const pages = [
         ]
     },
     {
-        "name": "**NEW**: Superbowl XVIII",
+        "name": "**NEW: Superbowl XVIII",
         "languages": [
             {"code": "en", "id": "lp-super-bowl"},
         ]
@@ -196,12 +196,12 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
+    '**NEW: Superbowl XVIII',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
     'Influencer: Casino',
     'Influencer: Sports/eSports',
-    '**NEW**: Superbowl XVIII',
     'Winter Tournament',
 ];
 
