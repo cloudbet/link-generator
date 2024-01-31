@@ -154,9 +154,9 @@ const pages = [
         ]
     },
     {
-        "name": "Sports: NFL",
+        "name": "***NEW: Superbowl XVIII",
         "languages": [
-            {"code": "en", "id": "bet-on-nfl"},
+            {"code": "en", "id": "lp-super-bowl"},
         ]
     },
     {
