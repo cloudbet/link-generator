@@ -154,9 +154,9 @@ const pages = [
         ]
     },
     {
-        "name": "**NEW: Superbowl XVIII",
+        "name": "**NEW: March Madness",
         "languages": [
-            {"code": "en", "id": "lp-super-bowl"},
+            {"code": "en", "id": "lp-march-madness"},
         ]
     },
     {
@@ -189,7 +189,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
-    '**NEW: Superbowl XVIII',
+    '**NEW: March Madness',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
@@ -311,8 +311,8 @@ generateBtn.addEventListener("click", function() {
     const selectedPageName = pageSelector.value;
     let url;
 
-    if (selectedPageName === "**NEW: Superbowl XVIII") {
-        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-super-bowl?af_token=${personalId}`;
+    if (selectedPageName === "**NEW: March Madness") {
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-march-madness?af_token=${personalId}`;
     } else {
         const selectedPage = pages.find(page => page.name === selectedPageName);
         const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
