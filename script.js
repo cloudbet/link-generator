@@ -189,7 +189,6 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
-    '**NEW: March Madness',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
@@ -210,6 +209,7 @@ const partnerPages = {
     'elevatedleads': ['*CryptoCasinos: Co-Branded + 200 FS'], //done
     'blockventures': ['*Gaming.net: Co-Branded + 100 FS'], //done
     'wis': ['*Top10CasinoSites: Co-Branded + 50 FS', '*Sportwettenvergleich: Co-Branded'], //done
+    'archive': ['**NEW: March Madness'],
     'admin': []
 };
 
