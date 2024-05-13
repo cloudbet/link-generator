@@ -195,6 +195,7 @@ const pages = [
         "languages": [
             {"code": "en", "id": "legendaffiliates"},
         ]
+    },
 ];
 
 
