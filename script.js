@@ -221,7 +221,7 @@ const partnerPages = {
     'blockventures': ['*Gaming.net: Co-Branded + 100 FS'], //done
     'wis': ['*Top10CasinoSites: Co-Branded + 50 FS', '*Sportwettenvergleich: Co-Branded'], //done
     'legend': ['*Legend Affiliates: Co-Branded'],
-    'bitcoin-com': ['*Bitcoin.com: Co-Branded'],
+    'bitcoincom': ['*Bitcoin.com: Co-Branded'],
     'archive': ['**NEW: March Madness'],
     'admin': []
 };
@@ -247,7 +247,7 @@ const partnerToAffiliateIdMap = {
     'blockventures': '4924e418445b3b21d4e8bbee05ec9207', //done
     'wis': '14b8da7b2de3be3c93cb0082264a3733', //done
     'legend': 'XYZ'',
-    'bitcoin-com': 'ABC',
+    'bitcoincom': 'ABC',
     'admin': 'admin',
     // ... more mappings as needed
 };
