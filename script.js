@@ -207,7 +207,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
-    '**NEW: IPL 2024'
+    '**NEW: IPL 2024',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
