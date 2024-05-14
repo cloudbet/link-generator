@@ -152,6 +152,12 @@ const pages = [
         "languages": [
             {"code": "de", "id": "casinotest-de"},
         ]
+     },
+     {
+        "name": "**NEW: IPL 2024",
+        "languages": [
+            {"code": "en", "id": "indian-premier-league"},
+        ]
     },
     {
         "name": "**NEW: March Madness",
@@ -201,6 +207,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
+    '**NEW: IPL 2024'
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
