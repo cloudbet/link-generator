@@ -254,7 +254,7 @@ const partnerToAffiliateIdMap = {
     'elevatedleads': '67b9cd11f6f47ee71d0a14eecf201a16', //done
     'blockventures': '4924e418445b3b21d4e8bbee05ec9207', //done
     'wis': '14b8da7b2de3be3c93cb0082264a3733', //done
-    'casinoorg': 'b5cb83b00d49a56ccdabb385d0941db3',
+    'casinoorg': '1bde6efda905c6daa0af01d24d7f451d',
     'bitcoincom': '47d0c9888ff3270e6d2c5076eced6942',
     'admin': 'admin',
     // ... more mappings as needed
