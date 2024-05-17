@@ -334,8 +334,8 @@ generateBtn.addEventListener("click", function() {
     const selectedPageName = pageSelector.value;
     let url;
 
-    if (selectedPageName === "**NEW: March Madness") {
-        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-march-madness?af_token=${personalId}`;
+    if (selectedPageName === "*Bitcoin.com: Co-Branded") {
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-bitcoin-com?af_token=${personalId}`;
     } else {
         const selectedPage = pages.find(page => page.name === selectedPageName);
         const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
