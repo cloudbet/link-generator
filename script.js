@@ -197,9 +197,9 @@ const pages = [
         ]
     },
     {
-        "name": "*Legend Affiliates: Co-Branded",
+        "name": "*Casino.org: Co-Branded",
         "languages": [
-            {"code": "en", "id": "legendaffiliates"},
+            {"code": "en", "id": "casinoorg"},
         ]
     },
 ];
@@ -228,7 +228,7 @@ const partnerPages = {
     'elevatedleads': ['*CryptoCasinos: Co-Branded + 200 FS'], //done
     'blockventures': ['*Gaming.net: Co-Branded + 100 FS'], //done
     'wis': ['*Top10CasinoSites: Co-Branded + 50 FS', '*Sportwettenvergleich: Co-Branded'], //done
-    'legend': ['*Legend Affiliates: Co-Branded'],
+    'casinoorg': ['*Casino.org: Co-Branded'],
     'bitcoincom': ['*Bitcoin.com: Co-Branded'],
     'archive': ['**NEW: March Madness'],
     'admin': []
@@ -254,7 +254,7 @@ const partnerToAffiliateIdMap = {
     'elevatedleads': '67b9cd11f6f47ee71d0a14eecf201a16', //done
     'blockventures': '4924e418445b3b21d4e8bbee05ec9207', //done
     'wis': '14b8da7b2de3be3c93cb0082264a3733', //done
-    'legend': 'b5cb83b00d49a56ccdabb385d0941db3',
+    'casinoorg': 'b5cb83b00d49a56ccdabb385d0941db3',
     'bitcoincom': '47d0c9888ff3270e6d2c5076eced6942',
     'admin': 'admin',
     // ... more mappings as needed
