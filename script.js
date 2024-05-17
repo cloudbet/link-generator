@@ -193,7 +193,7 @@ const pages = [
     {
         "name": "*Bitcoin.com: Co-Branded",
         "languages": [
-            {"code": "en", "id": "bitcoincom"},
+            {"code": "en", "id": "lp-bitcoin-com"},
         ]
     },
     {
