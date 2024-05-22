@@ -166,6 +166,12 @@ const pages = [
         ]
     },
     {
+        "name": "**NEW: EURO2024",
+        "languages": [
+            {"code": "en", "id": "lp-euros-2024"},
+        ]
+    },
+    {
         "name": "Influencer: Casino",
         "languages": [
             {"code": "en", "id": "creator-offer"},
@@ -207,7 +213,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
-    '**NEW: IPL 2024',
+    '**NEW: EURO2024',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
@@ -230,7 +236,7 @@ const partnerPages = {
     'wis': ['*Top10CasinoSites: Co-Branded + 50 FS', '*Sportwettenvergleich: Co-Branded'], //done
     'casinoorg': ['*Casino.org: Co-Branded'],
     'bitcoincom': ['*Bitcoin.com: Co-Branded'],
-    'archive': ['**NEW: March Madness'],
+    'archive': ['**NEW: March Madness', '**NEW: IPL 2024'],
     'admin': []
 };
 
@@ -322,6 +328,7 @@ function updateLanguageSelector() {
 // Event listener for page selector change
 pageSelector.addEventListener("change", updateLanguageSelector);
 
+
 // Event listener for generate button click
 generateBtn.addEventListener("click", function() {
     const personalId = affiliateIdInput.value;
@@ -336,6 +343,10 @@ generateBtn.addEventListener("click", function() {
 
     if (selectedPageName === "*Bitcoin.com: Co-Branded") {
         url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-bitcoin-com?af_token=${personalId}`;
+
+     } else if (selectedPageName === "**NEW: EURO2024") {
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-euros-2024?af_token=${personalId}`;    
+        
     } else {
         const selectedPage = pages.find(page => page.name === selectedPageName);
         const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
