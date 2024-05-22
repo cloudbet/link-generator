@@ -203,6 +203,12 @@ const pages = [
         ]
     },
     {
+        "name": "*Casino.org: 150 Free Spins",
+        "languages": [
+            {"code": "en", "id": "bitcoin-casino-150-free-spins"},
+        ]
+    },
+    {
         "name": "*Casino.org: Co-Branded",
         "languages": [
             {"code": "en", "id": "casinoorg"},
@@ -234,7 +240,7 @@ const partnerPages = {
     'elevatedleads': ['*CryptoCasinos: Co-Branded + 200 FS'], //done
     'blockventures': ['*Gaming.net: Co-Branded + 100 FS'], //done
     'wis': ['*Top10CasinoSites: Co-Branded + 50 FS', '*Sportwettenvergleich: Co-Branded'], //done
-    'casinoorg': ['*Casino.org: Co-Branded'],
+    'casinoorg': ['*Casino.org: Co-Branded', '*Casino.org: 150 Free Spins'],
     'bitcoincom': ['*Bitcoin.com: Co-Branded'],
     'archive': ['**NEW: March Madness', '**NEW: IPL 2024'],
     'admin': []
