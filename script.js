@@ -274,6 +274,7 @@ const partnerToAffiliateIdMap = {
     'wis': '14b8da7b2de3be3c93cb0082264a3733', //done
     'casinoorg': '1bde6efda905c6daa0af01d24d7f451d',
     'bitcoincom': '47d0c9888ff3270e6d2c5076eced6942',
+    'nextgen': '60d0ba734d53f238120bf903c8cd25e9', // TA.net
     'admin': 'admin',
     // ... more mappings as needed
 };
