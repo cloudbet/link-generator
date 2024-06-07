@@ -14,6 +14,12 @@ const pages = [
         ]
     },
     {
+    "name": "**NEW: US Presidential Elections",
+    "languages": [
+        {"code": "en", "id": "lp-us-presidential-elections"},
+    ]
+    },
+    {
         "name": "*CryptoBetting.org: Sports",
         "languages": [
             {"code": "en", "id": "cryptobetting"},
@@ -226,11 +232,13 @@ const pages = [
 // Default pages available to all partners
 const defaultPages = [
     '**NEW: EURO2024',
+    '**NEW: US Presidential Elections',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
     'Affiliate: Sports',
     'Influencer: Casino',
     'Influencer: Sports/eSports',
+    '**NEW: US Presidential Elections',
 ];
 
 // Special access pages for specific partners
@@ -358,7 +366,10 @@ generateBtn.addEventListener("click", function() {
         url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-bitcoin-com?af_token=${personalId}`;
 
      } else if (selectedPageName === "**NEW: EURO2024") {
-        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-euros-2024?af_token=${personalId}`;    
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-euros-2024?af_token=${personalId}`;
+
+    } else if (selectedPageName === "**NEW: US Presidential Elections") {
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-us-presidential-elections?af_token=${personalId}`;
         
     } else {
         const selectedPage = pages.find(page => page.name === selectedPageName);
