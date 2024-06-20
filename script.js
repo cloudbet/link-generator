@@ -20,6 +20,12 @@ const pages = [
     ]
     },
     {
+    "name": "**NEW: Copa America",
+    "languages": [
+        {"code": "en", "id": "lp-copa-america"},
+    ]
+    },
+    {
         "name": "*CryptoBetting.org: Sports",
         "languages": [
             {"code": "en", "id": "cryptobetting"},
@@ -232,6 +238,7 @@ const pages = [
 // Default pages available to all partners
 const defaultPages = [
     '**NEW: EURO2024',
+    '**NEW: Copa America',
     '**NEW: US Presidential Elections',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
@@ -353,6 +360,7 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
     "**NEW: EURO2024": "lp-euros-2024",
+    "**NEW: Copa America": "lp-copa-america",
     "**NEW: US Presidential Elections": "lp-us-presidential-elections",
 };
 
