@@ -238,7 +238,6 @@ const defaultPages = [
     'Affiliate: Sports',
     'Influencer: Casino',
     'Influencer: Sports/eSports',
-    '**NEW: US Presidential Elections',
 ];
 
 // Special access pages for specific partners
@@ -350,7 +349,13 @@ function updateLanguageSelector() {
 pageSelector.addEventListener("change", updateLanguageSelector);
 
 
-// Event listener for generate button click
+// Mapping for special pages
+const specialPages = {
+    "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
+    "**NEW: EURO2024": "lp-euros-2024",
+    "**NEW: US Presidential Elections": "lp-us-presidential-elections",
+};
+
 generateBtn.addEventListener("click", function() {
     const personalId = affiliateIdInput.value;
     const aftmCampaign = document.getElementById("label1").value;
@@ -358,44 +363,30 @@ generateBtn.addEventListener("click", function() {
     const aftmSource = document.getElementById("label3").value;
     const aftmContent = document.getElementById("label4").value;
     const selectedLanguageCode = languageSelector.value;
-
     const selectedPageName = pageSelector.value;
+
     let url;
 
-    if (selectedPageName === "*Bitcoin.com: Co-Branded") {
-        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-bitcoin-com?af_token=${personalId}`;
-
-     } else if (selectedPageName === "**NEW: EURO2024") {
-        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-euros-2024?af_token=${personalId}`;
-
-    } else if (selectedPageName === "**NEW: US Presidential Elections") {
-        url = `https://cldbt.cloud/go/${selectedLanguageCode}/lp-us-presidential-elections?af_token=${personalId}`;
-        
+    if (specialPages[selectedPageName]) {
+        url = `https://cldbt.cloud/go/${selectedLanguageCode}/${specialPages[selectedPageName]}?af_token=${personalId}`;
     } else {
         const selectedPage = pages.find(page => page.name === selectedPageName);
         const selectedLanguageId = selectedPage ? selectedPage.languages.find(lang => lang.code === selectedLanguageCode).id : '';
         url = `https://cldbt.cloud/go/${selectedLanguageCode}/landing/${selectedLanguageId}?af_token=${personalId}`;
     }
-    
-    if (aftmCampaign) {
-        url += `&aftm_campaign=${encodeURIComponent(aftmCampaign)}`;
-    }   
-    if (aftmSource) {
-        url += `&aftm_source=${encodeURIComponent(aftmSource)}`;
-    }
-    if (aftmMedium) {
-        url += `&aftm_medium=${encodeURIComponent(aftmMedium)}`;
-    }
-    if (aftmContent) {
-        url += `&aftm_content=${encodeURIComponent(aftmContent)}`;
-    }
+
+    const params = new URLSearchParams();
+    if (aftmCampaign) params.set('aftm_campaign', aftmCampaign);
+    if (aftmSource) params.set('aftm_source', aftmSource);
+    if (aftmMedium) params.set('aftm_medium', aftmMedium);
+    if (aftmContent) params.set('aftm_content', aftmContent);
+
+    url += `&${params.toString()}`;
 
     result.innerText = url;
 
-    // New: Copy URL to clipboard
     navigator.clipboard.writeText(result.innerText).then(() => {
-        // New: Call the function to show a temporary message
-        showTemporaryMessage("URL copied to clipboard!", 2500); // 2000 ms = 2 seconds
+        showTemporaryMessage("URL copied to clipboard!", 2500);
     }).catch(err => {
         console.error('Error in copying text: ', err);
     });
