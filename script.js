@@ -389,7 +389,10 @@ generateBtn.addEventListener("click", function() {
     if (aftmMedium) params.set('aftm_medium', aftmMedium);
     if (aftmContent) params.set('aftm_content', aftmContent);
 
-    url += `&${params.toString()}`;
+    const queryString = params.toString();
+    if (queryString) {
+        url += `&${queryString}`;
+    }
 
     result.innerText = url;
 
