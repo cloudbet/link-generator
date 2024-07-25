@@ -20,9 +20,9 @@ const pages = [
     ]
     },
     {
-    "name": "**NEW: Copa America",
+    "name": "**NEW: Summer Olympics",
     "languages": [
-        {"code": "en", "id": "lp-copa-america"},
+        {"code": "en", "id": "lp-paris-olympics-2024"},
     ]
     },
     {
@@ -178,9 +178,9 @@ const pages = [
         ]
     },
     {
-        "name": "**NEW: EURO2024",
+        "name": "**NEW: Esports World Cup 2024",
         "languages": [
-            {"code": "en", "id": "lp-euros-2024"},
+            {"code": "en", "id": "lp-esports-world-cup"},
         ]
     },
     {
@@ -237,8 +237,8 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
-    '**NEW: EURO2024',
-    '**NEW: Copa America',
+    '**NEW: Esports World Cup 2024',
+    '**NEW: Summer Olympics',
     '**NEW: US Presidential Elections',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
@@ -359,8 +359,8 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 // Mapping for special pages
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
-    "**NEW: EURO2024": "lp-euros-2024",
-    "**NEW: Copa America": "lp-copa-america",
+    "**NEW: Esports World Cup 2024": "lp-esports-world-cup",
+    "**NEW: Summer Olympics": "lp-paris-olympics-2024",
     "**NEW: US Presidential Elections": "lp-us-presidential-elections",
 };
 
