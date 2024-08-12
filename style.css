@@ -1,6 +1,6 @@
 body {
     background-color: #0F1032; /* Dark Blue background */
-    font-family: 'Inter', sans-serif; /* Updated to Inter font */
+    font-family: 'Inter', sans-serif; /* Use Inter for body text */
     font-size: 16px;
     line-height: 1.5;
     color: #EDE0FF; /* Pale Purple text color for readability */
@@ -40,8 +40,8 @@ input:focus, select:focus {
 }
 
 .GreenBG {
-    background-color: #EDE0FF; /* Green for numbered steps */
-    color: #8D52DA; /* Pale Purple text for contrast */
+    background-color: #4B7C39; /* Green for numbered steps */
+    color: #EDE0FF; /* Pale Purple text for contrast */
     border-radius: 50%;
     padding: 5px;
     font-size: 14px;
@@ -75,6 +75,7 @@ input:focus, select:focus {
 }
 
 .item h2 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
     font-size: 22px;
     margin-bottom: 20px;
     color: #EDE0FF; /* Pale Purple for headings */
@@ -126,6 +127,10 @@ input:focus, select:focus {
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.customButtonContainer a {
+    text-decoration: none; /* Remove underline from button link */
 }
 
 #copy {
