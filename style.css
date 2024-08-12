@@ -15,6 +15,10 @@ body {
     margin: 0 auto; /* Center the logo horizontally */
 }
 
+.labels {
+    margin-right: 10px; /* Adjust this value to add more space */
+}
+
 /* Input and Select Styles */
 input, select {
     min-width: 300px; /* Maintain a reasonable minimum width */
