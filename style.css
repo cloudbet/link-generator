@@ -1,9 +1,9 @@
 body {
-    background-color: #0F1032; /* Dark Blue background for a deep, rich canvas */
+    background-color: #0F1032; /* Dark Blue background */
     font-family: 'Arial', sans-serif; /* Clean, modern font */
     font-size: 16px;
     line-height: 1.5;
-    color: #EDE0FF; /* Pale Purple text for readability */
+    color: #EDE0FF; /* Pale Purple text color for readability */
     margin: 0;
     padding: 0;
 }
@@ -17,17 +17,17 @@ input, select {
     padding: 10px;
     margin-bottom: 12px;
     border-radius: 8px;
-    border: 1px solid #9BCA75; /* Light Green border for a fresh contrast */
+    border: 1px solid #99AAFF; /* Light Blue/Purple border */
     font-size: 16px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 input:focus, select:focus {
-    border-color: #FF9A59; /* Light Orange focus to draw attention */
+    border-color: #99AAFF; /* Light Blue/Purple focus to draw attention */
 }
 
 .accentBG {
-    background-color: #9BCA75; /* Light Green for accent elements */
+    background-color: #99AAFF; /* Light Blue/Purple for accent elements */
     color: #0F1032; /* Dark Blue text for contrast */
     border-radius: 50%;
     padding: 3px;
@@ -64,7 +64,7 @@ input:focus, select:focus {
     font-size: 22px;
     margin-bottom: 20px;
     color: #EDE0FF; /* Pale Purple for headings */
-    border-bottom: 2px solid #9BCA75; /* Light Green underline for emphasis */
+    border-bottom: 2px solid #99AAFF; /* Light Blue/Purple underline for emphasis */
     padding-bottom: 8px;
 }
 
@@ -73,8 +73,8 @@ input:focus, select:focus {
     width: 100%;
     max-width: 250px;
     margin: 20px auto;
-    background-color: #9BCA75; /* Light Green for buttons */
-    color: #0F1032; /* Dark Blue text for contrast */
+    background-color: #99AAFF; /* Light Blue/Purple for buttons */
+    color: #0F1032; /* Dark Blue text for buttons */
     border: none;
     border-radius: 8px;
     padding: 12px 20px;
@@ -86,7 +86,7 @@ input:focus, select:focus {
 }
 
 #generate-btn:hover, #custom-btn:hover {
-    background-color: #7BAF58; /* Slightly darker green on hover */
+    background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
     transform: translateY(-2px); /* Subtle lift on hover for interactivity */
 }
 
@@ -96,7 +96,7 @@ input:focus, select:focus {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    border: 3px solid #FF9A59; /* Light Orange border for a subtle highlight */
+    border: 3px solid #99AAFF; /* Light Blue/Purple border */
     border-radius: 12px;
     margin-top: 20px;
 }
@@ -111,7 +111,7 @@ input:focus, select:focus {
 
 #copy {
     text-align: center;
-    color: #9BCA75; /* Light Green text for links or additional information */
+    color: #EDE0FF; /* Pale Purple text */
     padding: 10px 0;
     font-size: 14px;
     margin-top: 30px;
