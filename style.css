@@ -8,19 +8,14 @@ body {
     padding: 0;
 }
 
-.input-group {
-    display: flex;
-    align-items: center;
-}
-
-.inputFields, .selectFields {
+input, select {
     min-width: 300px;
     width: 50%;
     background-color: #0F1032; /* Dark Blue input background for consistency */
     color: #EDE0FF; /* Pale Purple text for inputs */
     outline: none;
     padding: 10px;
-    margin-right: 10px;
+    margin-bottom: 12px;
     border-radius: 8px;
     border: 1px solid #99AAFF; /* Light Blue/Purple border */
     font-size: 16px;
@@ -31,46 +26,46 @@ input:focus, select:focus {
     border-color: #99AAFF; /* Light Blue/Purple focus to draw attention */
 }
 
-.info-icon {
-    position: relative;
+.accentBG {
+    background-color: #99AAFF; /* Light Blue/Purple for accent elements */
+    color: #0F1032; /* Dark Blue text for contrast */
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 12px;
     display: inline-block;
-    cursor: pointer;
-    font-size: 18px;
-    color: #99AAFF; /* Light Blue/Purple */
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 16px;
 }
 
-.tooltip {
-    visibility: hidden;
-    width: 220px;
-    background-color: #1A1A40; /* Slightly lighter dark blue for the tooltip */
-    color: #EDE0FF; /* Pale Purple for the tooltip text */
-    text-align: left;
-    padding: 10px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position above the icon */
-    left: 50%;
-    margin-left: -110px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+#mainTitle {
+    text-align: center;
+    margin: 30px 0;
 }
 
-.tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #1A1A40 transparent transparent transparent;
+.grid-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
-.info-icon:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
+.item {
+    padding: 20px;
+    background-color: #1A1A40; /* Slightly lighter dark blue for item background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}
+
+.item h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #EDE0FF; /* Pale Purple for headings */
+    border-bottom: 2px solid #99AAFF; /* Light Blue/Purple underline for emphasis */
+    padding-bottom: 8px;
 }
 
 #generate-btn, #custom-btn {
