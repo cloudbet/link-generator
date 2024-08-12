@@ -99,6 +99,10 @@ input:focus, select:focus {
     border: 3px solid #99AAFF; /* Light Blue/Purple border */
     border-radius: 12px;
     margin-top: 20px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a slight shadow for prominence */
 }
 
 .resultContainer {
@@ -132,5 +136,11 @@ input:focus, select:focus {
         width: 100%;
         max-width: 100%; /* Full width within the container */
         padding: 10px 20px; /* Adjusted padding on smaller screens */
+    }
+
+    #result {
+        position: relative;
+        top: auto;
+        margin-bottom: 20px;
     }
 }
