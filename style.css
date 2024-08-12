@@ -10,7 +10,7 @@ body {
 
 input, select {
     min-width: 300px;
-    width: 50%;
+    width: 100%; /* Ensure full width for inputs and dropdowns */
     background-color: #0F1032; /* Dark Blue input background for consistency */
     color: #EDE0FF; /* Pale Purple text for inputs */
     outline: none;
@@ -20,6 +20,7 @@ input, select {
     border: 1px solid #99AAFF; /* Light Blue/Purple border */
     font-size: 16px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in width and height */
 }
 
 input:focus, select:focus {
@@ -156,6 +157,7 @@ input:focus, select:focus {
     display: flex; /* Use flexbox to align items horizontally */
     align-items: center; /* Vertically align the items */
     margin-bottom: 15px; /* Add space between input groups */
+    overflow: hidden; /* Prevent overflow */
 }
 
 .labels {
@@ -210,11 +212,13 @@ select {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    box-sizing: border-box;
 }
 
 /* Ensure dropdowns don't overflow their container */
 .input-group {
-    overflow: visible;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Responsive adjustments */
@@ -233,6 +237,7 @@ select {
     .input-group {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%; /* Ensure full width for the input group */
     }
 
     .labels {
@@ -240,7 +245,7 @@ select {
     }
 
     .inputFields, select {
-        width: 100%;
+        width: 100%; /* Ensure inputs and dropdowns take full width */
         min-width: auto;
     }
 
