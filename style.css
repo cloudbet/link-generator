@@ -69,18 +69,46 @@ input:focus, select:focus {
 }
 
 .item {
-    flex: 1 1 100%; /* Allow items to grow and shrink, taking full width on smaller screens */
+    flex: 1 1 100%; /* Full width for smaller screens */
     padding: 20px;
     background-color: #1A1A40; /* Slightly lighter dark blue for item background */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 20px 0;
+    display: flex; /* Make the item a flex container */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Space between children (header and button) */
+    min-height: 350px; /* Ensure containers have enough height for alignment */
 }
 
+/* Media query for larger screens */
 @media screen and (min-width: 768px) {
     .item {
         flex: 1 1 calc(50% - 24px); /* Two items side by side with space between them */
     }
+}
+
+#generate-btn, #custom-btn {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 0 auto; /* Center the buttons horizontally */
+    background-color: #99AAFF; /* Light Blue/Purple for buttons */
+    color: #0F1032; /* Dark Blue text for buttons */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold; /* Makes the text bold */
+    font-size: 16px;
+    text-align: center;
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+#generate-btn:hover, #custom-btn:hover {
+    background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
+    transform: translateY(-2px); /* Subtle lift on hover for interactivity */
 }
 
 
@@ -99,28 +127,6 @@ input:focus, select:focus {
     border-bottom: 2px solid #99AAFF; /* Light Blue/Purple underline for emphasis */
     padding-bottom: 8px;
     font-weight: 600; /* Bold heading */
-}
-
-#generate-btn, #custom-btn {
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    margin: 20px auto;
-    background-color: #99AAFF; /* Light Blue/Purple for buttons */
-    color: #0F1032; /* Dark Blue text for buttons */
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-weight: bold; /* Makes the text bold */
-    font-size: 16px;
-    text-align: center;
-}
-
-#generate-btn:hover, #custom-btn:hover {
-    background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
-    transform: translateY(-2px); /* Subtle lift on hover for interactivity */
 }
 
 #result {
