@@ -20,12 +20,6 @@ const pages = [
     ]
     },
     {
-    "name": "**NEW: Summer Olympics",
-    "languages": [
-        {"code": "en", "id": "lp-paris-olympics-2024"},
-    ]
-    },
-    {
         "name": "*CryptoBetting.org: Sports",
         "languages": [
             {"code": "en", "id": "cryptobetting"},
@@ -238,7 +232,6 @@ const pages = [
 // Default pages available to all partners
 const defaultPages = [
     '**NEW: Esports World Cup 2024',
-    '**NEW: Summer Olympics',
     '**NEW: US Presidential Elections',
     'Affiliate: Bitcoin Bonus',
     'Affiliate: Casino',
@@ -360,7 +353,6 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
     "**NEW: Esports World Cup 2024": "lp-esports-world-cup",
-    "**NEW: Summer Olympics": "lp-paris-olympics-2024",
     "**NEW: US Presidential Elections": "lp-us-presidential-elections",
 };
 
