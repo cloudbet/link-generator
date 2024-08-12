@@ -9,7 +9,8 @@ body {
 }
 
 #mainTitle img {
-    max-width: 600px; /* Adjust the max width as needed */
+    width: 600px; /* Default width of 600px */
+    max-width: 600px; /* Ensures the logo doesn't exceed 600px */
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
