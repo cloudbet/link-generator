@@ -1,28 +1,28 @@
 body {
-    background-color: #1A1A1D; /* Dark background color */
+    background-color: #300931; /* Dark Purple background */
     font-family: sans-serif;
     font-size: 16px;
     line-height: 20px;
-    color: white;
+    color: #FFF6EC; /* Pale Orange text color for readability */
 }
 
 input, select {
     min-width: 300px;
     width: 50%;
-    background-color: #4E4E50; /* Slightly lighter dark grey for inputs */
-    color: white;
+    background-color: #4B2639; /* Darker Purple for inputs */
+    color: #FFF6EC; /* Pale Orange text for inputs */
     outline: none;
     padding: 8px;
     margin-bottom: 8px;
     border-radius: 8px;
-    border: 1px solid #6F2232; /* Border color consistent with accent color */
+    border: 1px solid #CCA6FF; /* Light Purple border */
     font-size: 16px;
     transition: width 0.3s ease;
 }
 
 .accentBG {
-    background-color: #6F2232; /* Consistent accent color */
-    color: white;
+    background-color: #CCA6FF; /* Light Purple for accent */
+    color: #300931; /* Dark Purple text for contrast */
     border-radius: 50%;
     padding: 2px 2px;
     font-size: 12px;
@@ -50,7 +50,7 @@ input, select {
     padding: 20px;
     padding-bottom: 60px; /* Increased bottom padding */
     position: relative; /* Set position to relative */
-    background-color: #2D2D34; /* Darker grey for item background */
+    background-color: #4B2639; /* Darker Purple for item background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 16px;
@@ -60,7 +60,7 @@ input, select {
 .item h2 {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #C3073F; /* Accent color for headings */
+    color: #CCA6FF; /* Light Purple for headings */
 }
 
 #generate-btn, #custom-btn {
@@ -71,8 +71,8 @@ input, select {
     bottom: 40px; /* Position from bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Align center */
-    background-color: #C3073F; /* Accent color for buttons */
-    color: white;
+    background-color: #CCA6FF; /* Light Purple for buttons */
+    color: #300931; /* Dark Purple text for buttons */
     border: none;
     border-radius: 8px;
     padding: 12px 24px;
@@ -83,16 +83,16 @@ input, select {
 }
 
 #generate-btn:hover, #custom-btn:hover {
-    background-color: #950740; /* Slightly darker shade for hover effect */
+    background-color: #9B6BCC; /* Slightly darker Light Purple on hover */
 }
 
 #result {
-    background-color: #FFFFFF;
-    color: #1A1A1D;
+    background-color: #FFF6EC; /* Pale Orange background for result */
+    color: #300931; /* Dark Purple text for result */
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    border: 4px solid #C3073F; /* Accent color for result border */
+    border: 4px solid #CCA6FF; /* Light Purple border */
     border-radius: 12px;
 }
 
@@ -106,18 +106,11 @@ input, select {
 
 #copy {
     text-align: center;
-    color: white;
+    color: #FFF6EC; /* Pale Orange text */
     padding: 4px 0;
     font-size: 14px;
     margin-top: 30px;
 }
 
 /* Responsive grid layout for smaller screens */
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack items vertically on small screens */
-    }
-
-    .item-1, .item-2 {
-        grid-column: auto; /* Adjust grid column settings */
-        padding-bottom: 90px
+@media screen and (max-width:
