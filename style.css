@@ -153,15 +153,27 @@ input:focus, select:focus {
 
 .input-group {
     position: relative;
-    display: inline-block;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically align the items */
+    margin-bottom: 15px; /* Add space between input groups */
+}
+
+.labels {
+    margin-right: 10px; /* Space between label and input field */
+    white-space: nowrap; /* Prevent label from wrapping */
+}
+
+.inputFields {
+    flex-grow: 1; /* Allow input fields to take available space */
+    min-width: 0; /* Prevent input fields from stretching too much */
 }
 
 .info-icon {
+    margin-left: 8px; /* Space between input field and icon */
     width: 16px;
     height: 16px;
     cursor: pointer;
-    margin-left: 8px;
-    vertical-align: middle; /* Aligns the icon with the text */
+    vertical-align: middle; /* Aligns the icon with the input field */
 }
 
 .tooltip {
