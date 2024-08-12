@@ -148,21 +148,11 @@ input:focus, select:focus {
 }
 
 .info-icon {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px; /* Slightly larger font size for the "i" */
-    font-style: italic; /* Italicize the "i" character */
-    color: #EDE0FF; /* Light text color for the "i" */
-    background-color: #1A1A40; /* Dark Blue background for the circle */
-    border: 2px solid #99AAFF; /* Light Blue/Purple border around the circle */
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
     margin-left: 8px;
-    position: relative;
+    vertical-align: middle; /* Aligns the icon with text */
 }
 
 .tooltip {
