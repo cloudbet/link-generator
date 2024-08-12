@@ -142,16 +142,26 @@ input:focus, select:focus {
 }
 
 .input-group {
-    position: relative;
-    display: inline-block;
+    display: block; /* Ensure each input group is treated as a block */
+    width: auto; /* Keep the width of input fields as per their content */
+    margin-bottom: 15px; /* Add some space between input groups */
+    clear: both; /* Ensure that no elements float next to each other */
+}
+
+.inputFields, .labels {
+    width: auto; /* Maintain the current width of input fields and labels */
+    display: inline-block; /* Allow elements to fit their content */
+    vertical-align: middle; /* Align labels and inputs vertically */
+}
+
+.inputFields {
+    min-width: 300px; /* Set a minimum width for better alignment */
 }
 
 .info-icon {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    margin-left: 8px;
-    vertical-align: middle; /* Aligns the icon with the text */
+    display: inline-block; /* Ensure the info icon stays inline with other elements */
+    vertical-align: middle; /* Align the icon with the input field */
+    margin-left: 5px; /* Add some space between the input field and the info icon */
 }
 
 .tooltip {
