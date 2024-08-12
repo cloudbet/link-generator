@@ -16,8 +16,8 @@ body {
 }
 
 input, select {
-    min-width: 300px;
-    width: 50%;
+    min-width: 300px; /* Maintain a reasonable minimum width */
+    width: auto; /* Automatically size based on content or set value */
     background-color: #0F1032; /* Dark Blue input background for consistency */
     color: #EDE0FF; /* Pale Purple text for inputs */
     outline: none;
