@@ -8,9 +8,16 @@ body {
     padding: 0;
 }
 
+#mainTitle img {
+    max-width: 400px; /* Adjust the max width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
 input, select {
     min-width: 300px;
-    width: 100%; /* Ensure full width for inputs and dropdowns */
+    width: 50%;
     background-color: #0F1032; /* Dark Blue input background for consistency */
     color: #EDE0FF; /* Pale Purple text for inputs */
     outline: none;
@@ -20,7 +27,6 @@ input, select {
     border: 1px solid #99AAFF; /* Light Blue/Purple border */
     font-size: 16px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
-    box-sizing: border-box; /* Include padding and border in width and height */
 }
 
 input:focus, select:focus {
@@ -60,71 +66,19 @@ input:focus, select:focus {
 }
 
 .grid-container {
-    display: flex; /* Use Flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap onto a new line if needed */
-    justify-content: space-between; /* Space between items */
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
-    padding: 0 20px; /* Add padding for smaller screens */
-    max-width: 1200px; /* Limit the width for large screens */
-    margin: 0 auto; /*center the container
 }
 
 .item {
-    flex: 1 1 100%; /* Full width for smaller screens */
     padding: 20px;
     background-color: #1A1A40; /* Slightly lighter dark blue for item background */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 20px 0;
-    display: flex; /* Make the item a flex container */
-    flex-direction: column; /* Arrange children in a column */
-    justify-content: space-between; /* Space between children (header and button) */
-    min-height: 350px; /* Ensure containers have enough height for alignment */
-}
-
-/* Media query for larger screens */
-@media screen and (min-width: 768px) {
-    .item {
-        flex: 1 1 calc(50% - 24px); /* Two items side by side with space between them */
-    }
-}
-
-/* Media query for even larger screens */
-@media screen and (min-width: 1024px) {
-    .item {
-        flex: 1 1 calc(50% - 24px); /* Adjust this value to have two columns with space */
-    }
-}
-
-#generate-btn, #custom-btn {
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto 0 auto; /* Center the buttons horizontally */
-    background-color: #99AAFF; /* Light Blue/Purple for buttons */
-    color: #0F1032; /* Dark Blue text for buttons */
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-weight: bold; /* Makes the text bold */
-    font-size: 16px;
-    text-align: center;
-    margin-top: auto; /* Push the button to the bottom */
-}
-
-#generate-btn:hover, #custom-btn:hover {
-    background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
-    transform: translateY(-2px); /* Subtle lift on hover for interactivity */
-}
-
-
-#mainTitle img {
-    max-width: 250px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 .item h2 {
@@ -135,6 +89,28 @@ input:focus, select:focus {
     border-bottom: 2px solid #99AAFF; /* Light Blue/Purple underline for emphasis */
     padding-bottom: 8px;
     font-weight: 600; /* Bold heading */
+}
+
+#generate-btn, #custom-btn {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px auto;
+    background-color: #99AAFF; /* Light Blue/Purple for buttons */
+    color: #0F1032; /* Dark Blue text for buttons */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold; /* Makes the text bold */
+    font-size: 16px;
+    text-align: center;
+}
+
+#generate-btn:hover, #custom-btn:hover {
+    background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
+    transform: translateY(-2px); /* Subtle lift on hover for interactivity */
 }
 
 #result {
@@ -173,29 +149,26 @@ input:focus, select:focus {
 }
 
 .input-group {
-    position: relative;
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: center; /* Vertically align the items */
-    margin-bottom: 15px; /* Add space between input groups */
-    overflow: hidden; /* Prevent overflow */
+    display: block; /* Ensure each input group is treated as a block */
+    width: auto; /* Keep the width of input fields as per their content */
+    margin-bottom: 15px; /* Add some space between input groups */
+    clear: both; /* Ensure that no elements float next to each other */
 }
 
-.labels {
-    margin-right: 10px; /* Space between label and input field */
-    white-space: nowrap; /* Prevent label from wrapping */
+.inputFields, .labels {
+    width: auto; /* Maintain the current width of input fields and labels */
+    display: inline-block; /* Allow elements to fit their content */
+    vertical-align: middle; /* Align labels and inputs vertically */
 }
 
 .inputFields {
-    flex-grow: 1; /* Allow input fields to take available space */
-    min-width: 0; /* Prevent input fields from stretching too much */
+    min-width: 300px; /* Set a minimum width for better alignment */
 }
 
 .info-icon {
-    margin-left: 8px; /* Space between input field and icon */
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    vertical-align: middle; /* Aligns the icon with the input field */
+    display: inline-block; /* Ensure the info icon stays inline with other elements */
+    vertical-align: middle; /* Align the icon with the input field */
+    margin-left: 5px; /* Add some space between the input field and the info icon */
 }
 
 .tooltip {
@@ -226,53 +199,21 @@ input:focus, select:focus {
     left: 100%; /* Slide into view from the right */
 }
 
-/* Dropdown menu specific styles */
-select {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-
-/* Ensure dropdowns don't overflow their container */
-.input-group {
-    overflow: hidden;
-    position: relative;
-}
-
-/* Responsive adjustments */
+/* Responsive grid layout for smaller screens */
 @media screen and (max-width: 768px) {
     .grid-container {
-        flex-direction: column;
-        padding: 0 10px;
+        grid-template-columns: 1fr; /* Stack items vertically on small screens */
     }
 
-    .item {
-        width: 100%;
-        min-width: auto;
-        margin: 10px 0;
-    }
-
-    .input-group {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%; /* Ensure full width for the input group */
-    }
-
-    .labels {
-        margin-bottom: 5px;
-    }
-
-    .inputFields, select {
-        width: 100%; /* Ensure inputs and dropdowns take full width */
-        min-width: auto;
+    .item-1, .item-2 {
+        padding-bottom: 90px;
+        font-size: 14px;
     }
 
     #generate-btn, #custom-btn {
         width: 100%;
-        max-width: 100%;
-        padding: 10px 20px;
+        max-width: 100%; /* Full width within the container */
+        padding: 10px 20px; /* Adjusted padding on smaller screens */
     }
 
     #result {
@@ -282,31 +223,7 @@ select {
     }
 
     .tooltip {
-        left: 0;
-        top: 100%;
-        transform: none;
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .info-icon:hover + .tooltip,
-    .tooltip:hover {
-        left: 0;
-    }
-}
-
-/* Additional adjustments for very small screens */
-@media screen and (max-width: 480px) {
-    .tooltip {
-        position: static;
-        visibility: visible;
-        opacity: 1;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-
-    .item {
-        padding-bottom: 90px;
-        font-size: 14px;
+        width: 180px; /* Slightly smaller on small screens */
+        left: 110%; /* Keep it to the right */
     }
 }
