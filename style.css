@@ -150,17 +150,20 @@ input:focus, select:focus {
 .info-icon {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    color: #99AAFF;
-    background-color: #1A1A40;
+    color: #EDE0FF; /* Light text color for the "i" */
+    background-color: #1A1A40; /* Dark Blue background for the circle */
+    border: 2px solid #99AAFF; /* Light Blue/Purple border around the circle */
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     margin-left: 8px;
     position: relative;
+    font-weight: bold; /* Bold "i" character */
+    font-size: 16px; /* Slightly larger font size for the "i" */
 }
 
 .tooltip {
