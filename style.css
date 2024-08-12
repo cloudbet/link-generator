@@ -40,8 +40,8 @@ input:focus, select:focus {
 }
 
 .GreenBG {
-    background-color: #4B7C39; /* Green for numbered steps */
-    color: #EDE0FF; /* Pale Purple text for contrast */
+    background-color: #EDE0FF; /* Green for numbered steps */
+    color: #8D52DA; /* Pale Purple text for contrast */
     border-radius: 50%;
     padding: 5px;
     font-size: 14px;
