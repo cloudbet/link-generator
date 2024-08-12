@@ -66,6 +66,7 @@ input:focus, select:focus {
     gap: 24px;
     padding: 0 20px; /* Add padding for smaller screens */
     max-width: 1200px; /* Limit the width for large screens */
+    margin: 0 auto; /*center the container
 }
 
 .item {
@@ -85,6 +86,13 @@ input:focus, select:focus {
 @media screen and (min-width: 768px) {
     .item {
         flex: 1 1 calc(50% - 24px); /* Two items side by side with space between them */
+    }
+}
+
+/* Media query for even larger screens */
+@media screen and (min-width: 1024px) {
+    .item {
+        flex: 1 1 calc(50% - 24px); /* Adjust this value to have two columns with space */
     }
 }
 
