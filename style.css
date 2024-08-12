@@ -165,27 +165,28 @@ input:focus, select:focus {
 
 .tooltip {
     visibility: hidden;
-    background-color: #0F1032;
-    color: #EDE0FF;
-    text-align: center;
+    background-color: #2A2A52; /* Darker background for the tooltip box */
+    color: #EDE0FF; /* Light text color for readability */
+    text-align: left;
     border-radius: 6px;
     padding: 8px;
     position: absolute;
     z-index: 1;
-    bottom: 100%; /* Position the tooltip above the icon */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
+    left: 110%; /* Position to the right of the "i" icon */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically with the icon */
+    width: 220px;
     opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 12px;
+    transition: opacity 0.3s, left 0.3s;
+    font-size: 14px; /* Slightly larger font size */
     line-height: 1.4;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
 
 .info-icon:hover .tooltip {
     visibility: visible;
     opacity: 1;
+    left: 100%; /* Slide into view from the right */
 }
 
 /* Responsive grid layout for smaller screens */
@@ -209,5 +210,10 @@ input:focus, select:focus {
         position: relative;
         top: auto;
         margin-bottom: 20px;
+    }
+
+    .tooltip {
+        width: 180px; /* Slightly smaller on small screens */
+        left: 110%; /* Keep it to the right */
     }
 }
