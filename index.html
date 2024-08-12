@@ -1,14 +1,8 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> <!-- Example of a similar font -->
-        <meta charset="UTF-8">
-        <title>Cloudbet Link Generator</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title>Cloudbet Link Generator</title>
         <link rel="stylesheet" href="style.css">
@@ -24,26 +18,63 @@
                 <!-- Header for the left column -->
                 <h2>Generate Your Link</h2>
 
-                <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:</label> 
-                <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token"><br><br>
-                <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
-                <select class="selectFields" id="page-selector" name="page-selector"></select><br><br>
-                <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:</label>
-                <select class="selectFields" id="language-selector" name="language-selector"></select><br>
+                <div class="input-group">
+                    <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:</label>
+                    <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token">
+                    <span class="info-icon">i
+                        <div class="tooltip">This is your unique affiliate token.</div>
+                    </span><br><br>
+                </div>
+
+                <div class="input-group">
+                    <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
+                    <select class="selectFields" id="page-selector" name="page-selector"></select>
+                    <span class="info-icon">i
+                        <div class="tooltip">Choose the specific page you want to link to.</div>
+                    </span><br><br>
+                </div>
+
+                <div class="input-group">
+                    <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:</label>
+                    <select class="selectFields" id="language-selector" name="language-selector"></select>
+                    <span class="info-icon">i
+                        <div class="tooltip">Select the language in which the page will be displayed.</div>
+                    </span><br><br>
+                </div>
 
                 <p><span class="greenBG">4</span> Additional Campaign Parameters:</p>
 
-                <label class="labels" for="label1">Campaign Name:</label>
-                <input class="inputFields" type="text" id="label1" name="label1" placeholder="set a campaign name"><br>
+                <div class="input-group">
+                    <label class="labels" for="label1">Campaign Name:</label>
+                    <input class="inputFields" type="text" id="label1" name="label1" placeholder="Set a campaign name">
+                    <span class="info-icon">i
+                        <div class="tooltip">Name your campaign for tracking purposes, e.g., 'FreeSpinsOffer'.</div>
+                    </span><br>
+                </div>
 
-                <label class="labels" for="label2">Medium:</label>
-                <input class="inputFields" type="text" id="label2" name="label2" placeholder="type of marketing medium"><br>
+                <div class="input-group">
+                    <label class="labels" for="label2">Medium:</label>
+                    <input class="inputFields" type="text" id="label2" name="label2" placeholder="Type of marketing medium">
+                    <span class="info-icon">i
+                        <div class="tooltip">Specify the medium, e.g., 'social', 'email', 'organic'.</div>
+                    </span><br>
+                </div>
 
-                <label class="labels" for="label3">Source:</label>
-                <input class="inputFields" type="text" id="label3" name="label3" placeholder="origin of campaign traffic"><br>
+                <div class="input-group">
+                    <label class="labels" for="label3">Source:</label>
+                    <input class="inputFields" type="text" id="label3" name="label3" placeholder="Origin of campaign traffic">
+                    <span class="info-icon">i
+                        <div class="tooltip">Identify the source, e.g., 'facebook', 'newsletterA'.</div>
+                    </span><br>
+                </div>
 
-                <label class="labels" for="label4">Content:</label>
-                <input class="inputFields" type="text" id="label4" name="label4" placeholder="track different content blocks"><br><br>
+                <div class="input-group">
+                    <label class="labels" for="label4">Content:</label>
+                    <input class="inputFields" type="text" id="label4" name="label4" placeholder="Track different content blocks">
+                    <span class="info-icon">i
+                        <div class="tooltip">Track content variations, e.g., 'ImageA', 'TextB'.</div>
+                    </span><br><br>
+                </div>
 
                 <button id="generate-btn">Generate Link</button><br><br>
             </div>
@@ -59,13 +90,12 @@
                 
                 <h2>Additional Campaign Parameters</h2>
                 <ul style="line-height:140%">
-                <li><font color="#F58635">aftm_token=</font> You can find your Affiliate Token on the <i><a href="https://affiliates.cloudbet.com/affiliates/sign_in" style="color:#F58635;">Affiliate Portal</a></i></li>
-                <li><font color="F58635">aftm_campaign=</font> Give your name a campaign so you can track its performance <i>'FreeSpinsOffer'</i> </li>
-                <li><font color="F58635">aftm_medium=</font> Your main traffic source </i>'social', 'email', 'organic'</i></li>
-                <li><font color="F58635">aftm_source=</font> Where within your medium are your sales coming from? <i>'facebook', 'newsletterA', 'website'</i> </li>
-                <li><font color="F58635">aftm_content=</font> Where is your link nested? </i>'ImageA', 'TextB', 'Video1'</i></li>
+                    <li><font color="#F58635">aftm_token=</font> You can find your Affiliate Token on the <i><a href="https://affiliates.cloudbet.com/affiliates/sign_in" style="color:#F58635;">Affiliate Portal</a></i></li>
+                    <li><font color="F58635">aftm_campaign=</font> Give your name a campaign so you can track its performance <i>'FreeSpinsOffer'</i> </li>
+                    <li><font color="F58635">aftm_medium=</font> Your main traffic source </i>'social', 'email', 'organic'</i></li>
+                    <li><font color="F58635">aftm_source=</font> Where within your medium are your sales coming from? <i>'facebook', 'newsletterA', 'website'</i> </li>
+                    <li><font color="F58635">aftm_content=</font> Where is your link nested? </i>'ImageA', 'TextB', 'Video1'</i></li>
                 </ul>
-
 
                 <!-- New custom button container -->
                 <div class="customButtonContainer">
@@ -76,15 +106,11 @@
             </div>
         </div>
 
-        
-
         <section class="resultContainer">
             <p id="result">Enter your details and click the "Generate Link" button</p>
         </section>
 
-    
-        
-<p id="copy">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
+        <p id="copy">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
 
         <script src="script.js"></script>
     </body>
