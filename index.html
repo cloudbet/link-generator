@@ -1,92 +1,82 @@
-<div class="grid-container">
-    <div class="item item-1">
-        <h2>Generate Your Link</h2>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloudbet Link Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="mainTitle">
+            <img src="images/ver_3_resize.png">
+        </div>
+
+        <div class="grid-container">
+            <div class="item item-1">
+                <!-- Header for the left column -->
+                <h2>Generate Your Link</h2>
+
+                <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:</label> 
+                <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token"><br><br>
+                <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:</label>
+                <select class="selectFields" id="page-selector" name="page-selector"></select><br><br>
+                <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:</label>
+                <select class="selectFields" id="language-selector" name="language-selector"></select><br>
+
+                <p><span class="greenBG">4</span> Additional Campaign Parameters:</p>
+
+                <label class="labels" for="label1">Campaign Name:</label>
+                <input class="inputFields" type="text" id="label1" name="label1" placeholder="set a campaign name"><br>
+
+                <label class="labels" for="label2">Medium:</label>
+                <input class="inputFields" type="text" id="label2" name="label2" placeholder="type of marketing medium"><br>
+
+                <label class="labels" for="label3">Source:</label>
+                <input class="inputFields" type="text" id="label3" name="label3" placeholder="origin of campaign traffic"><br>
+
+                <label class="labels" for="label4">Content:</label>
+                <input class="inputFields" type="text" id="label4" name="label4" placeholder="track different content blocks"><br><br>
+
+                <button id="generate-btn">Generate Link</button><br><br>
+            </div>
+
+            <div class="item item-2">
+                <h2>How To Use</h2>
+
+                <p><span class="greenBG">1</span> Enter your Affiliate ID in the provided field.</p>
+                <p><span class="greenBG">2</span> Select the desired page from the dropdown menu.</p>
+                <p><span class="greenBG">3</span> Choose the language for the page from another dropdown menu.</p>
+                <p><span class="greenBG">4</span> Add 'Source' and 'Medium' parameters for more detailed tracking.</p>
+                <br></br>
+                
+                <h2>Additional Campaign Parameters</h2>
+                <ul style="line-height:140%">
+                <li><font color="#F58635">aftm_token=</font> You can find your Affiliate Token on the <i><a href="https://affiliates.cloudbet.com/affiliates/sign_in" style="color:#F58635;">Affiliate Portal</a></i></li>
+                <li><font color="F58635">aftm_campaign=</font> Give your name a campaign so you can track its performance <i>'FreeSpinsOffer'</i> </li>
+                <li><font color="F58635">aftm_medium=</font> Your main traffic source </i>'social', 'email', 'organic'</i></li>
+                <li><font color="F58635">aftm_source=</font> Where within your medium are your sales coming from? <i>'facebook', 'newsletterA', 'website'</i> </li>
+                <li><font color="F58635">aftm_content=</font> Where is your link nested? </i>'ImageA', 'TextB', 'Video1'</i></li>
+                </ul>
+
+
+                <!-- New custom button container -->
+                <div class="customButtonContainer">
+                    <a href="https://www.dropbox.com/scl/fo/1rf6go8rjisfzdfblih68/h?rlkey=4uaa972jplqp4dap9aij54xqq&dl=0" target="_blank">
+                        <button id="custom-btn">Get Banners & Creative Assets HERE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         
-        <label class="labels" for="personal-id">
-            <span class="accentBG">1</span> Enter your Affiliate Token:
-        </label>
-        <div class="input-group">
-            <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token">
-            <div class="info-icon">
-                <span class="info-text">ℹ</span>
-                <div class="tooltip">
-                    Enter the unique token assigned to you as an affiliate.
-                </div>
-            </div>
-        </div><br><br>
+
+        <section class="resultContainer">
+            <p id="result">Enter your details and click the "Generate Link" button</p>
+        </section>
+
+    
         
-        <label class="labels" for="page-selector">
-            <span class="accentBG">2</span> Select a page:
-        </label>
-        <div class="input-group">
-            <select class="selectFields" id="page-selector" name="page-selector"></select>
-            <div class="info-icon">
-                <span class="info-text">ℹ</span>
-                <div class="tooltip">
-                    Choose the page you want your users to land on after clicking your link.
-                </div>
-            </div>
-        </div><br><br>
-        
-        <label class="labels" for="language-selector">
-            <span class="accentBG">3</span> Select a language:
-        </label>
-        <div class="input-group">
-            <select class="selectFields" id="language-selector" name="language-selector"></select>
-            <div class="info-icon">
-                <span class="info-text">ℹ</span>
-                <div class="tooltip">
-                    Select the language that the landing page should be displayed in.
-                </div>
-            </div>
-        </div><br>
+<p id="copy">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
 
-        <p><span class="accentBG">4</span> Additional Campaign Parameters:</p>
-        
-        <label class="labels" for="label1">Campaign Name:</label>
-        <div class="input-group">
-            <input class="inputFields" type="text" id="label1" name="label1" placeholder="Set a campaign name">
-            <div class="info-icon">
-                <span class="info-text">ℹ</span>
-                <div class="tooltip">
-                    Name your campaign for easier tracking.
-                </div>
-            </div>
-        </div><br>
-
-        <label class="labels" for="label2">Medium:</label>
-        <div class="input-group">
-            <input class="inputFields" type="text" id="label2" name="label2" placeholder="Type of marketing medium">
-            <div class="info-icon">
-                <span class="info-text">ℹ</span>
-                <div class="tooltip">
-                    Specify the type of marketing medium (e.g., social, email).
-                </div>
-            </div>
-        </div><br>
-
-        <label class="labels" for="label3">Source:</label>
-        <div class="input-group">
-            <input class="inputFields" type="text" id="label3" name="label3" placeholder="Origin of campaign traffic">
-            <div class="info-icon">
-                <span class="info-text">ℹ</span>
-                <div class="tooltip">
-                    Identify the source of traffic (e.g., Facebook, newsletter).
-                </div>
-            </div>
-        </div><br>
-
-        <label class="labels" for="label4">Content:</label>
-        <div class="input-group">
-            <input class="inputFields" type="text" id="label4" name="label4" placeholder="Track different content blocks">
-            <div class="info-icon">
-                <span class="info-text">ℹ</span>
-                <div class="tooltip">
-                    Track the performance of specific content blocks.
-                </div>
-            </div>
-        </div><br><br>
-
-        <button id="generate-btn">Generate Link</button><br><br>
-    </div>
-</div>
+        <script src="script.js"></script>
+    </body>
+</html>
