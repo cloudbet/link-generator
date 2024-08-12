@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     background-color: #0F1032; /* Dark Blue background */
     font-family: 'Inter', sans-serif; /* Use Inter for body text */
@@ -8,17 +9,63 @@ body {
     padding: 0;
 }
 
+/* Adjusted Logo Spacing */
+#mainTitle {
+    margin-bottom: 40px; /* Reduced gap between logo and boxes */
+}
+
 #mainTitle img {
-    max-width: 700px; /* Adjust the max width as needed */
+    max-width: 250px; /* Adjust the size of the logo */
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
-    margin-bottom: 30px /* adjust the value for a smaller gap
 }
 
-input, select {
-    min-width: 300px;
-    width: 50%;
+/* Grid Container */
+.grid-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 0; /* Ensure no additional top margin */
+}
+
+.item {
+    padding: 20px;
+    background-color: #1A1A40; /* Slightly lighter dark blue for item background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 0; /* Ensure no additional top margin */
+}
+
+/* Headings */
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #EDE0FF; /* Pale Purple for headings */
+    border-bottom: 2px solid #99AAFF; /* Light Blue/Purple underline for emphasis */
+    padding-bottom: 8px;
+    font-weight: 600; /* Bold heading */
+}
+
+/* Input Fields and Labels */
+.input-group {
+    display: block; /* Ensure each input group is treated as a block */
+    width: auto; /* Keep the width of input fields as per their content */
+    margin-bottom: 15px; /* Add some space between input groups */
+    clear: both; /* Ensure that no elements float next to each other */
+}
+
+.inputFields, .labels {
+    width: auto; /* Maintain the current width of input fields and labels */
+    display: inline-block; /* Allow elements to fit their content */
+    vertical-align: middle; /* Align labels and inputs vertically */
+}
+
+.inputFields {
+    min-width: 300px; /* Set a minimum width for better alignment */
     background-color: #0F1032; /* Dark Blue input background for consistency */
     color: #EDE0FF; /* Pale Purple text for inputs */
     outline: none;
@@ -30,71 +77,48 @@ input, select {
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-input:focus, select:focus {
+.inputFields:focus {
     border-color: #99AAFF; /* Light Blue/Purple focus to draw attention */
 }
 
-.accentBG {
-    background-color: #99AAFF; /* Light Blue/Purple for accent elements */
-    color: #0F1032; /* Dark Blue text for contrast */
-    border-radius: 50%;
-    padding: 3px;
-    font-size: 12px;
+.labels {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 16px;
+    margin-right: 10px;
+    font-weight: bold;
 }
 
-.GreenBG {
-    background-color: #4B7C39; /* Green for numbered steps */
-    color: #EDE0FF; /* Pale Purple text for contrast */
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 14px;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    text-align: center;
-    line-height: 16px;
-    font-weight: 600;
+/* Info Icon */
+.info-icon {
+    display: inline-block; /* Ensure the info icon stays inline with other elements */
+    vertical-align: middle; /* Align the icon with the input field */
+    margin-left: 5px; /* Add some space between the input field and the info icon */
 }
 
-#mainTitle {
-    text-align: center;
-    margin: 30px 0;
+/* Tooltip */
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.grid-container {
-    max-width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-top: 0;
+.info-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
-.item {
-    padding: 20px;
-    background-color: #1A1A40; /* Slightly lighter dark blue for item background */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin: 20px 0;
-    margin-top: 0;
-}
-
-.item h2 {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #EDE0FF; /* Pale Purple for headings */
-    border-bottom: 2px solid #99AAFF; /* Light Blue/Purple underline for emphasis */
-    padding-bottom: 8px;
-    font-weight: 600; /* Bold heading */
-}
-
-#generate-btn, #custom-btn {
+/* Buttons */
+button {
     display: block;
     width: 100%;
     max-width: 250px;
@@ -111,12 +135,13 @@ input:focus, select:focus {
     text-align: center;
 }
 
-#generate-btn:hover, #custom-btn:hover {
+button:hover {
     background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
     transform: translateY(-2px); /* Subtle lift on hover for interactivity */
 }
 
-#result {
+/* Output Field */
+.resultContainer {
     background-color: #EDE0FF; /* Pale Purple background for the result */
     color: #0F1032; /* Dark Blue text for the result */
     padding: 10px;
@@ -131,102 +156,40 @@ input:focus, select:focus {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a slight shadow for prominence */
 }
 
-.resultContainer {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.customButtonContainer a {
-    text-decoration: none; /* Remove underline from button link */
-}
-
+/* Footer Text */
 #copy {
     text-align: center;
     color: #EDE0FF; /* Pale Purple text */
     padding: 10px 0;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 10px; /* Adjust the margin for spacing under the output field */
 }
 
-.input-group {
-    display: block; /* Ensure each input group is treated as a block */
-    width: auto; /* Keep the width of input fields as per their content */
-    margin-bottom: 15px; /* Add some space between input groups */
-    clear: both; /* Ensure that no elements float next to each other */
+#copy a {
+    color: #99AAFF; /* Match link color with the overall theme */
+    text-decoration: underline;
 }
 
-.inputFields, .labels {
-    width: auto; /* Maintain the current width of input fields and labels */
-    display: inline-block; /* Allow elements to fit their content */
-    vertical-align: middle; /* Align labels and inputs vertically */
-}
-
-.inputFields {
-    min-width: 300px; /* Set a minimum width for better alignment */
-}
-
-.info-icon {
-    display: inline-block; /* Ensure the info icon stays inline with other elements */
-    vertical-align: middle; /* Align the icon with the input field */
-    margin-left: 5px; /* Add some space between the input field and the info icon */
-}
-
-.tooltip {
-    visibility: hidden;
-    background-color: #2A2A52; /* Darker background for the tooltip box */
-    color: #EDE0FF; /* Light text color for readability */
-    text-align: left;
-    border-radius: 6px;
-    padding: 8px;
-    position: absolute;
-    z-index: 1;
-    left: 110%; /* Position to the right of the "i" icon */
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically with the icon */
-    width: 220px;
-    opacity: 0;
-    transition: opacity 0.3s ease, left 0.3s ease;
-    font-size: 14px; /* Slightly larger font size */
-    font-weight: normal; /* Normal weight for tooltip text */
-    line-height: 1.4;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
-}
-
-.info-icon:hover + .tooltip,
-.tooltip:hover {
-    visibility: visible;
-    opacity: 1;
-    left: 100%; /* Slide into view from the right */
-}
-
-/* Responsive grid layout for smaller screens */
+/* Responsive Grid Layout */
 @media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr; /* Stack items vertically on small screens */
     }
 
-    .item-1, .item-2 {
+    .item {
         padding-bottom: 90px;
         font-size: 14px;
     }
 
-    #generate-btn, #custom-btn {
+    button {
         width: 100%;
         max-width: 100%; /* Full width within the container */
         padding: 10px 20px; /* Adjusted padding on smaller screens */
     }
 
-    #result {
+    .resultContainer {
         position: relative;
         top: auto;
         margin-bottom: 20px;
-    }
-
-    .tooltip {
-        width: 180px; /* Slightly smaller on small screens */
-        left: 110%; /* Keep it to the right */
     }
 }
