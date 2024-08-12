@@ -21,7 +21,7 @@ input, select {
 }
 
 .accentBG {
-    background-color: #FFA59; /* Light Orange for accent */
+    background-color: #FF9A59; /* Light Orange for accent */
     color: #0F1032; /* Dark Blue text for contrast */
     border-radius: 50%;
     padding: 2px 2px;
@@ -71,7 +71,7 @@ input, select {
     bottom: 40px; /* Position from bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Align center */
-    background-color: #FFA59; /* Light Orange for buttons */
+    background-color: #FF9A59; /* Light Orange for buttons */
     color: #0F1032; /* Dark Blue text for buttons */
     border: none;
     border-radius: 8px;
@@ -83,7 +83,7 @@ input, select {
 }
 
 #generate-btn:hover, #custom-btn:hover {
-    background-color: #FF8A33; /* Slightly darker Light Orange on hover */
+    background-color: #FF6F32; /* Slightly darker Light Orange on hover */
 }
 
 #result {
@@ -92,7 +92,7 @@ input, select {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    border: 4px solid #FFA59; /* Light Orange border */
+    border: 4px solid #FF9A59; /* Light Orange border */
     border-radius: 12px;
 }
 
