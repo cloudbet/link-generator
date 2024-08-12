@@ -407,17 +407,23 @@ generateBtn.addEventListener("click", function() {
 function showTemporaryMessage(message, duration) {
     const tempMessage = document.createElement("div");
     tempMessage.innerText = message;
-    tempMessage.style.position = "fixed"; // Changed to 'fixed' to position relative to the viewport
-    tempMessage.style.top = "50%"; // Center vertically
+
+    // Style the temporary message
+    tempMessage.style.position = "fixed"; // Position relative to the viewport
+    tempMessage.style.top = "20px"; // 20px from the top
     tempMessage.style.left = "50%"; // Center horizontally
-    tempMessage.style.transform = "translate(-50%, -50%)"; // Adjust to center accurately
-    tempMessage.style.backgroundColor = "#90EE90";
+    tempMessage.style.transform = "translateX(-50%)"; // Adjust to center horizontally
+    tempMessage.style.backgroundColor = "#9BCA75"; // Light Green background color
+    tempMessage.style.color = "#0F1032"; // Dark Blue text color for contrast
     tempMessage.style.fontWeight = "bold";
-    tempMessage.style.padding = "10px";
-    tempMessage.style.borderRadius = "5px";
+    tempMessage.style.padding = "12px 24px"; // Padding around the text
+    tempMessage.style.borderRadius = "8px"; // Rounded corners
     tempMessage.style.zIndex = "1000"; // Ensure it's on top of other elements
-    tempMessage.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.5)"; // Optional: Adds a shadow for better visibility
-    tempMessage.style.textAlign = "center"; // Optional: Center-aligns the text
+    tempMessage.style.boxShadow = "0px 4px 12px rgba(0, 0, 0, 0.1)"; // Subtle shadow for better visibility
+    tempMessage.style.textAlign = "center"; // Center-aligns the text
+    tempMessage.style.fontFamily = "Inter, sans-serif"; // Consistent font
+
+    // Append the message to the body
     document.body.appendChild(tempMessage);
 
     // Remove the message after the specified duration
@@ -425,7 +431,6 @@ function showTemporaryMessage(message, duration) {
         document.body.removeChild(tempMessage);
     }, duration);
 }
-
 
 // Initialize the page options when the script loads
 populatePages();
