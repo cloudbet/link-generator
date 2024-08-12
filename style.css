@@ -13,6 +13,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
+    margin-bottom: 30px /* adjust the value for a smaller gap
 }
 
 input, select {
@@ -71,6 +72,7 @@ input:focus, select:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+    margin-top: 0;
 }
 
 .item {
@@ -79,6 +81,7 @@ input:focus, select:focus {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 20px 0;
+    margin-top: 0;
 }
 
 .item h2 {
