@@ -109,7 +109,7 @@ input:focus, select:focus {
     border-radius: 8px;
     padding: 12px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease; /* Only change background color on hover */
     font-weight: bold; /* Makes the text bold */
     font-size: 16px;
     text-align: center;
@@ -121,7 +121,7 @@ input:focus, select:focus {
 
 #generate-btn:hover, #custom-btn:hover {
     background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
-    transform: translateY(-2px); /* Subtle lift on hover for interactivity */
+    /* Removed transform: translateY(-2px); */
 }
 
 #result {
