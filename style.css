@@ -60,23 +60,29 @@ input:focus, select:focus {
 }
 
 .grid-container {
-    max-width: 1200px; /* Set a maximum width to prevent stretching */
-    margin: 0 auto; /* Center the grid container */
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: space-between; /* Space between the two boxes */
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap onto a new line if needed */
+    justify-content: space-between; /* Space between items */
     gap: 24px;
     padding: 0 20px; /* Add padding for smaller screens */
+    max-width: 1200px; /* Limit the width for large screens */
 }
 
 .item {
-    flex: 1; /* Allow items to grow and shrink as needed */
+    flex: 1 1 100%; /* Allow items to grow and shrink, taking full width on smaller screens */
     padding: 20px;
     background-color: #1A1A40; /* Slightly lighter dark blue for item background */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 20px 0;
-    min-width: 320px; /* Ensure a minimum width for each item */
 }
+
+@media screen and (min-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 24px); /* Two items side by side with space between them */
+    }
+}
+
 
 #mainTitle img {
     max-width: 250px;
