@@ -8,6 +8,13 @@ body {
     padding: 0;
 }
 
+#mainTitle img {
+    max-width: 400px; /* Adjust the max width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
 input, select {
     min-width: 300px;
     width: 50%;
