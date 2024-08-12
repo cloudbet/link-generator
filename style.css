@@ -59,22 +59,24 @@ input:focus, select:focus {
 }
 
 .grid-container {
-    max-width: 1200px; /* Set a maximum width to prevent stretching */
-    margin: 0 auto; /* Center the grid container */
+    max-width: 80%;
+    margin: 0 auto;
     display: flex; /* Use Flexbox for alignment */
     justify-content: space-between; /* Space between the two boxes */
     gap: 24px;
-    padding: 0 20px; /* Add padding for smaller screens */
+    align-items: center; /* Align items vertically */
 }
 
 .item {
-    flex: 1; /* Allow items to grow and shrink as needed */
     padding: 20px;
     background-color: #1A1A40; /* Slightly lighter dark blue for item background */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin: 20px 0;
-    min-width: 320px; /* Ensure a minimum width for each item */
+    flex: 1; /* Allow items to grow and shrink as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 }
 
 #mainTitle img {
