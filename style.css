@@ -15,6 +15,7 @@ body {
     margin: 0 auto; /* Center the logo horizontally */
 }
 
+/* Input and Select Styles */
 input, select {
     min-width: 300px; /* Maintain a reasonable minimum width */
     width: auto; /* Automatically size based on content or set value */
@@ -178,6 +179,7 @@ input:focus, select:focus {
     position: relative;
 }
 
+/* Tooltip Positioning */
 .tooltip {
     visibility: hidden;
     background-color: #2A2A52; /* Darker background for the tooltip box */
@@ -187,12 +189,13 @@ input:focus, select:focus {
     padding: 8px;
     position: absolute;
     z-index: 1;
-    left: 110%; /* Position to the right of the "i" icon */
+    left: 100%; /* Position directly to the right of the "i" icon */
+    margin-left: 10px; /* Small gap between the icon and the tooltip */
     top: 50%;
     transform: translateY(-50%); /* Center vertically with the icon */
     width: 220px;
     opacity: 0;
-    transition: opacity 0.3s ease, left 0.3s ease;
+    transition: opacity 0.3s ease;
     font-size: 14px; /* Slightly larger font size */
     font-weight: normal; /* Normal weight for tooltip text */
     line-height: 1.4;
