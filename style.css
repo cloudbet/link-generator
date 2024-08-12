@@ -204,21 +204,50 @@ input:focus, select:focus {
     left: 100%; /* Slide into view from the right */
 }
 
-/* Responsive grid layout for smaller screens */
+/* Dropdown menu specific styles */
+select {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Ensure dropdowns don't overflow their container */
+.input-group {
+    overflow: visible;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Stack items vertically on small screens */
+        flex-direction: column;
+        padding: 0 10px;
     }
 
-    .item-1, .item-2 {
-        padding-bottom: 90px;
-        font-size: 14px;
+    .item {
+        width: 100%;
+        min-width: auto;
+        margin: 10px 0;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .labels {
+        margin-bottom: 5px;
+    }
+
+    .inputFields, select {
+        width: 100%;
+        min-width: auto;
     }
 
     #generate-btn, #custom-btn {
         width: 100%;
-        max-width: 100%; /* Full width within the container */
-        padding: 10px 20px; /* Adjusted padding on smaller screens */
+        max-width: 100%;
+        padding: 10px 20px;
     }
 
     #result {
@@ -228,7 +257,31 @@ input:focus, select:focus {
     }
 
     .tooltip {
-        width: 180px; /* Slightly smaller on small screens */
-        left: 110%; /* Keep it to the right */
+        left: 0;
+        top: 100%;
+        transform: none;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .info-icon:hover + .tooltip,
+    .tooltip:hover {
+        left: 0;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .tooltip {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        padding-bottom: 90px;
+        font-size: 14px;
     }
 }
