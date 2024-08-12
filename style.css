@@ -27,6 +27,8 @@ input, select {
     border: 1px solid #99AAFF; /* Light Blue/Purple border */
     font-size: 16px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    position: relative;
 }
 
 input:focus, select:focus {
@@ -149,26 +151,23 @@ input:focus, select:focus {
 }
 
 .input-group {
-    display: block; /* Ensure each input group is treated as a block */
-    width: auto; /* Keep the width of input fields as per their content */
-    margin-bottom: 15px; /* Add some space between input groups */
-    clear: both; /* Ensure that no elements float next to each other */
-}
-
-.inputFields, .labels {
-    width: auto; /* Maintain the current width of input fields and labels */
-    display: inline-block; /* Allow elements to fit their content */
-    vertical-align: middle; /* Align labels and inputs vertically */
+    position: relative; /* Parent for positioning elements */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 15px; /* Add space between input groups */
 }
 
 .inputFields {
-    min-width: 300px; /* Set a minimum width for better alignment */
+    flex: 1; /* Allow the input to take up available space */
 }
 
 .info-icon {
-    display: inline-block; /* Ensure the info icon stays inline with other elements */
+    margin-left: 8px; /* Space between input field and icon */
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
     vertical-align: middle; /* Align the icon with the input field */
-    margin-left: 5px; /* Add some space between the input field and the info icon */
+    position: relative;
 }
 
 .tooltip {
