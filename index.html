@@ -1,62 +1,115 @@
-<div class="item item-1">
-    <!-- Header for the left column -->
-    <h2>Generate Your Link</h2>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Cloudbet Link Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <div class="input-group">
-        <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:</label>
-        <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token">
-        <img src="images/info.png" class="info-icon" alt="Information">
-        <div class="tooltip">
-            <span style="color: #F58635;">aftm_token=</span>
-            <br>
-            This is your unique affiliate token. You can find it in the top corner of the 
-            <a href="https://affiliates.cloudbet.com/dashboards/6167" target="_blank" style="color: #99AAFF; text-decoration: underline;">Affiliate Portal</a>.
-        </div><br><br>
-    </div>
+    <body>
+        <div id="mainTitle">
+            <img src="images/ver_3_resize.png">
+        </div>
 
-    <h2>Additional Campaign Parameters</h2> <!-- Styled similarly to "Generate Your Link" -->
+        <div class="grid-container">
+            <div class="item item-1">
+                <!-- Header for the left column -->
+                <h2>Generate Your Link</h2>
 
-    <div class="input-group">
-        <label class="labels" for="label1">Campaign Name:</label>
-        <input class="inputFields" type="text" id="label1" name="label1" placeholder="Set a campaign name">
-        <img src="images/info.png" class="info-icon" alt="Information">
-        <div class="tooltip">
-            <span style="color: #F58635;">aftm_campaign=</span>
-            <br>
-            Name your campaign for tracking purposes, e.g., 'FreeSpinsOffer'.
-        </div><br>
-    </div>
+                <div class="input-group">
+                    <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:</label>
+                    <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_token=</span>
+                        <br>
+                        This is your unique affiliate token. You can find it in the top corner of the 
+                        <a href="https://affiliates.cloudbet.com/dashboards/6167" target="_blank" style="color: #99AAFF; text-decoration: underline;">Affiliate Portal</a>.
+                    </div><br><br>
+                </div>
 
-    <div class="input-group">
-        <label class="labels" for="label2">Medium:</label>
-        <input class="inputFields" type="text" id="label2" name="label2" placeholder="Type of marketing medium">
-        <img src="images/info.png" class="info-icon" alt="Information">
-        <div class="tooltip">
-            <span style="color: #F58635;">aftm_medium=</span>
-            <br>
-            Specify the medium, e.g., 'social', 'email', 'organic'.
-        </div><br>
-    </div>
+                <h2>Additional Campaign Parameters</h2> <!-- Styled similarly to "Generate Your Link" -->
 
-    <div class="input-group">
-        <label class="labels" for="label3">Source:</label>
-        <input class="inputFields" type="text" id="label3" name="label3" placeholder="Origin of campaign traffic">
-        <img src="images/info.png" class="info-icon" alt="Information">
-        <div class="tooltip">
-            <span style="color: #F58635;">aftm_source=</span>
-            <br>
-            Identify the source, e.g., 'facebook', 'newsletterA'.
-        </div><br>
-    </div>
+                <div class="input-group">
+                    <label class="labels" for="label1">Campaign Name:</label>
+                    <input class="inputFields" type="text" id="label1" name="label1" placeholder="Set a campaign name">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_campaign=</span>
+                        <br>
+                        Name your campaign for tracking purposes, e.g., 'FreeSpinsOffer'.
+                    </div><br>
+                </div>
 
-    <div class="input-group">
-        <label class="labels" for="label4">Content:</label>
-        <input class="inputFields" type="text" id="label4" name="label4" placeholder="Track different content blocks">
-        <img src="images/info.png" class="info-icon" alt="Information">
-        <div class="tooltip">
-            <span style="color: #F58635;">aftm_content=</span>
-            <br>
-            Track content variations, e.g., 'ImageA', 'TextB'.
-        </div><br><br>
-    </div>
-</div>
+                <div class="input-group">
+                    <label class="labels" for="label2">Medium:</label>
+                    <input class="inputFields" type="text" id="label2" name="label2" placeholder="Type of marketing medium">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_medium=</span>
+                        <br>
+                        Specify the medium, e.g., 'social', 'email', 'organic'.
+                    </div><br>
+                </div>
+
+                <div class="input-group">
+                    <label class="labels" for="label3">Source:</label>
+                    <input class="inputFields" type="text" id="label3" name="label3" placeholder="Origin of campaign traffic">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_source=</span>
+                        <br>
+                        Identify the source, e.g., 'facebook', 'newsletterA'.
+                    </div><br>
+                </div>
+
+                <div class="input-group">
+                    <label class="labels" for="label4">Content:</label>
+                    <input class="inputFields" type="text" id="label4" name="label4" placeholder="Track different content blocks">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_content=</span>
+                        <br>
+                        Track content variations, e.g., 'ImageA', 'TextB'.
+                    </div><br><br>
+                </div>
+            </div>
+
+            <div class="item item-2">
+                <h2>How To Use</h2>
+
+                <p><span class="greenBG">1</span> Enter your Affiliate ID in the provided field.</p>
+                <p><span class="greenBG">2</span> Select the desired page from the dropdown menu.</p>
+                <p><span class="greenBG">3</span> Choose the language for the page from another dropdown menu.</p>
+                <p><span class="greenBG">4</span> Add 'Source' and 'Medium' parameters for more detailed tracking.</p>
+                <br></br>
+                
+                <h2>Additional Campaign Parameters</h2>
+                <ul style="line-height:140%">
+                    <li><font color="#F58635">aftm_token=</font> You can find your Affiliate Token on the <i><a href="https://affiliates.cloudbet.com/affiliates/sign_in" style="color:#F58635;">Affiliate Portal</a></i></li>
+                    <li><font color="F58635">aftm_campaign=</font> Give your name a campaign so you can track its performance <i>'FreeSpinsOffer'</i> </li>
+                    <li><font color="F58635">aftm_medium=</font> Your main traffic source </i>'social', 'email', 'organic'</i></li>
+                    <li><font color="F58635">aftm_source=</font> Where within your medium are your sales coming from? <i>'facebook', 'newsletterA', 'website'</i> </li>
+                    <li><font color="F58635">aftm_content=</font> Where is your link nested? </i>'ImageA', 'TextB', 'Video1'</i></li>
+                </ul>
+
+                <!-- New custom button container -->
+                <div class="customButtonContainer">
+                    <a href="https://www.dropbox.com/scl/fo/1rf6go8rjisfzdfblih68/h?rlkey=4uaa972jplqp4dap9aij54xqq&dl=0" target="_blank">
+                        <button id="custom-btn">Get Banners & Creative Assets HERE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="resultContainer">
+            <p id="result">Enter your details and click the "Generate Link" button</p>
+        </section>
+
+        <p id="copy">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
+
+        <script src="script.js"></script>
+    </body>
+</html>
