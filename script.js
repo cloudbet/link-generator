@@ -410,7 +410,7 @@ function showTemporaryMessage(message, duration) {
 
     // Style the temporary message
     tempMessage.style.position = "fixed"; // Position relative to the viewport
-    tempMessage.style.top = "20px"; // 20px from the top
+    tempMessage.style.top = "20%"; // 20px from the top
     tempMessage.style.left = "50%"; // Center horizontally
     tempMessage.style.transform = "translateX(-50%)"; // Adjust to center horizontally
     tempMessage.style.backgroundColor = "#9BCA75"; // Light Green background color
