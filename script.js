@@ -65,7 +65,7 @@ const pages = [
             {"code": "it", "id": "bitcoin-bonus"},
             {"code": "pt", "id": "bitcoin-bonus"},
             {"code": "ja", "id": "bitcoin-bonus"},
-            {"code": "ja", "id": "bitcoin-bonus"},
+            {"code": "tr", "id": "bitcoin-bonus"},
         ]
     },
      {
