@@ -182,12 +182,25 @@ const pages = [
         "languages": [
             {"code": "en", "id": "creator-offer"},
             {"code": "es", "id": "creator-offer"},
+            {"code": "de", "id": "creator-offer"},
+            {"code": "fr", "id": "creator-offer"},
+            {"code": "it", "id": "creator-offer"},
+            {"code": "pt", "id": "creator-offer"},
+            {"code": "ja", "id": "creator-offer"},
+            {"code": "tr", "id": "creator-offer"},
         ]
     },
     {
         "name": "Influencer: Sports/eSports",
         "languages": [
             {"code": "en", "id": "creator-offer-sport"},
+            {"code": "es", "id": "creator-offer-sport"},
+            {"code": "de", "id": "creator-offer-sport"},
+            {"code": "fr", "id": "creator-offer-sport"},
+            {"code": "it", "id": "creator-offer-sport"},
+            {"code": "pt", "id": "creator-offer-sport"},
+            {"code": "ja", "id": "creator-offer-sport"},
+            {"code": "tr", "id": "creator-offer-sport"},
         ]
     },
     {
