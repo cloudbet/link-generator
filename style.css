@@ -103,12 +103,33 @@ input:focus, select:focus {
     font-weight: 600; /* Bold heading */
 }
 
-#generate-btn, #custom-btn {
+#generate-btn {
     display: block;
     width: 100%;
     max-width: 250px;
     margin: 0 auto; /* Center the buttons horizontally */
-    background-color: #99AAFF; /* Light Blue/Purple for buttons */
+    background-color: #99AAFF; /* Light Blue/Purple for generate button */
+    color: #0F1032; /* Dark Blue text for buttons */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Only change background color on hover */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px; /* Always 30px from the bottom of the box */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+
+#custom-btn {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto; /* Center the buttons horizontally */
+    background-color: #EDE0FF; /* Light Purple for custom button */
     color: #0F1032; /* Dark Blue text for buttons */
     border: none;
     border-radius: 8px;
