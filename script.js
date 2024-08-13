@@ -56,7 +56,7 @@ const pages = [
         ]
     },
     {
-        "name": "Affiliate: Bitcoin Bonus",
+        "name": "Affiliate: Casino & Sports",
         "languages": [
             {"code": "en", "id": "bitcoin-bonus"},
             {"code": "de", "id": "bitcoin-bonus"},
@@ -233,7 +233,7 @@ const pages = [
 const defaultPages = [
     '**NEW: Esports World Cup 2024',
     '**NEW: US Presidential Elections',
-    'Affiliate: Bitcoin Bonus',
+    'Affiliate: Casino & Sports',
     'Affiliate: Casino',
     'Affiliate: Sports',
     'Influencer: Casino',
