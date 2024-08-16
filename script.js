@@ -437,48 +437,5 @@ function showTemporaryMessage(message, duration) {
     }, duration);
 }
 
-<script>
-    // Function to get user's IP address and geo-location
-    function getGeoLocation() {
-        fetch('https://ipapi.co/json/')
-            .then(response => response.json())
-            .then(data => {
-                const geoData = {
-                    ip: data.ip,
-                    city: data.city,
-                    region: data.region,
-                    country: data.country_name,
-                    latitude: data.latitude,
-                    longitude: data.longitude
-                };
-
-                // Send the geo-data to Google Sheets
-                trackClick(geoData);
-            })
-            .catch(error => console.error('Error getting geo-location:', error));
-    }
-
-    // Function to send the data to the Google Apps Script
-    function trackClick(geoData) {
-        fetch('https://script.google.com/a/macros/cloudbet.com/s/AKfycbwBYtLALk8Qeea-EZZQjNTJjkb_XaaZWFU3lkcQJB3d4TY-D8ugMXi-3LhwSEZNXRVC/exec', { // Replace with your Apps Script URL
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(geoData)
-        })
-        .then(response => response.text())
-        .then(data => console.log('Tracking success:', data))
-        .catch(error => console.error('Error tracking click:', error));
-    }
-
-    // Add event listener to track clicks on the page
-    document.addEventListener('DOMContentLoaded', function() {
-        document.body.addEventListener('click', function() {
-            getGeoLocation(); // Call the function when the body is clicked
-        });
-    });
-</script>
-
 // Initialize the page options when the script loads
 populatePages();
