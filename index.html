@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-       
         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF4Z03D2S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZFF4Z03D2S');
-</script>
-        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF4Z03D2S"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZFF4Z03D2S');
+        </script>
         
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -44,7 +41,9 @@
 
                 <div class="input-group">
                     <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:  </label>
-                    <select class="selectFields" id="page-selector" name="page-selector"></select>
+                    <select class="selectFields" id="page-selector" name="page-selector">
+                        <!-- Options should be dynamically populated -->
+                    </select>
                     <img src="images/info.png" class="info-icon" alt="Information">
                     <div class="tooltip">
                         Choose the specific page you want to link to.
@@ -53,14 +52,16 @@
 
                 <div class="input-group">
                     <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:  </label>
-                    <select class="selectFields" id="language-selector" name="language-selector"></select>
+                    <select class="selectFields" id="language-selector" name="language-selector">
+                        <!-- Options should be dynamically populated -->
+                    </select>
                     <img src="images/info.png" class="info-icon" alt="Information">
                     <div class="tooltip">
                         Select the language in which the page will be displayed.
                     </div><br><br>
                 </div>
 
-                <!-- Generate Link Button -->
+                <!-- Download Banners Button -->
                 <a href="https://www.dropbox.com/scl/fo/1rf6go8rjisfzdfblih68/h?rlkey=4uaa972jplqp4dap9aij54xqq&dl=0" target="_blank">
                     <button id="custom-btn">Download Banners 🚀</button>
                 </a><br><br>
@@ -114,7 +115,7 @@
                     </div><br><br>
                 </div>
 
-                <!-- Get Banners Button -->
+                <!-- Generate Link Button -->
                 <button id="generate-btn">Generate Link 🔗</button><br><br>
             </div>
         </div>
@@ -127,6 +128,37 @@
         <!-- Contact Information -->
         <p id="copy" style="margin-top: 10px;">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="color: #99AAFF; text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
 
-        <script src="script.js"></script>
+        <!-- JavaScript to track dropdown selections and button clicks -->
+        <script>
+            // Function to track dropdown selections and button clicks
+            function trackSelectionAndClick(action) {
+                // Get the values of the dropdowns and input fields
+                var page = document.getElementById('page-selector').value;
+                var language = document.getElementById('language-selector').value;
+                var campaignName = document.getElementById('label1').value || 'N/A';
+                var medium = document.getElementById('label2').value || 'N/A';
+                var source = document.getElementById('label3').value || 'N/A';
+                var content = document.getElementById('label4').value || 'N/A';
+
+                // Construct a label that includes all selected and entered values
+                var selectionLabel = `Page: ${page}, Language: ${language}, Campaign Name: ${campaignName}, Medium: ${medium}, Source: ${source}, Content: ${content}`;
+
+                // Send an event to Google Analytics
+                gtag('event', action, {
+                    'event_category': 'User Actions',
+                    'event_label': selectionLabel,
+                    'value': 1
+                });
+            }
+
+            // Attach event listeners to the buttons
+            document.getElementById('generate-btn').addEventListener('click', function() {
+                trackSelectionAndClick('Generate Link Clicked');
+            });
+
+            document.getElementById('custom-btn').addEventListener('click', function() {
+                trackSelectionAndClick('Download Banners Clicked');
+            });
+        </script>
     </body>
 </html>
