@@ -1,173 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloudbet Link Generator</title>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF4Z03D2S"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-ZFF4Z03D2S');
-    </script>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF4Z03D2S"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZFF4Z03D2S');
+        </script>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Cloudbet Link Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <!-- Additional styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div id="mainTitle" style="margin-bottom: 20px;">
-        <img src="images/croplogo.png" style="max-width: 600px; height: auto; display: block; margin: 0 auto;">
-    </div>
-
-    <div class="grid-container">
-        <!-- First Box: Generate Your Link -->
-        <div class="item item-1">
-            <h2>Generate Your Link</h2>
-
-            <div class="input-group">
-                <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:  </label>
-                <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token">
-                <img src="images/info.png" class="info-icon" alt="Information">
-                <div class="tooltip">
-                    <span style="color: #F58635;">af_token=</span>
-                    <br>
-                    This is your unique affiliate token. You can find it in the top corner of the 
-                    <a href="https://affiliates.cloudbet.com/dashboards/6167" target="_blank" style="color: #99AAFF; text-decoration: underline;">Affiliate Portal</a>.
-                </div><br><br>
-            </div>
-
-            <div class="input-group">
-                <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:  </label>
-                <select class="selectFields" id="page-selector" name="page-selector">
-                    <!-- Options should be dynamically populated -->
-                    <option value="home">Home</option>
-                    <option value="sports">Sports</option>
-                    <option value="casino">Casino</option>
-                </select>
-                <img src="images/info.png" class="info-icon" alt="Information">
-                <div class="tooltip">
-                    Choose the specific page you want to link to.
-                </div><br><br>
-            </div>
-
-            <div class="input-group">
-                <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:  </label>
-                <select class="selectFields" id="language-selector" name="language-selector">
-                    <!-- Options should be dynamically populated -->
-                    <option value="en">English</option>
-                    <option value="es">Spanish</option>
-                    <option value="fr">French</option>
-                </select>
-                <img src="images/info.png" class="info-icon" alt="Information">
-                <div class="tooltip">
-                    Select the language in which the page will be displayed.
-                </div><br><br>
-            </div>
-
-            <!-- Download Banners Button -->
-            <a href="https://www.dropbox.com/scl/fo/1rf6go8rjisfzdfblih68/h?rlkey=4uaa972jplqp4dap9aij54xqq&dl=0" target="_blank">
-                <button id="custom-btn">Download Banners 🚀</button>
-            </a><br><br>
+    <body>
+        <div id="mainTitle" style="margin-bottom: 20px;">
+            <img src="images/croplogo.png" style="max-width: 600px; height: auto; display: block; margin: 0 auto;">
         </div>
 
-        <!-- Second Box: Additional Campaign Parameters -->
-        <div class="item item-2">
-            <h2>Additional Campaign Parameters</h2>
+        <div class="grid-container">
+            <!-- First Box: Generate Your Link -->
+            <div class="item item-1">
+                <h2>Generate Your Link</h2>
 
-            <div class="input-group">
-                <label class="labels" for="label1">Campaign Name:  </label>
-                <input class="inputFields" type="text" id="label1" name="label1" placeholder="Set a campaign name">
-                <img src="images/info.png" class="info-icon" alt="Information">
-                <div class="tooltip">
-                    <span style="color: #F58635;">aftm_campaign=</span>
-                    <br>
-                    Name your campaign for tracking purposes, e.g., 'FreeSpinsOffer'.
-                </div><br>
+                <div class="input-group">
+                    <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:  </label>
+                    <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">af_token=</span>
+                        <br>
+                        This is your unique affiliate token. You can find it in the top corner of the 
+                        <a href="https://affiliates.cloudbet.com/dashboards/6167" target="_blank" style="color: #99AAFF; text-decoration: underline;">Affiliate Portal</a>.
+                    </div><br><br>
+                </div>
+
+                <div class="input-group">
+                    <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:  </label>
+                    <select class="selectFields" id="page-selector" name="page-selector"></select>
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        Choose the specific page you want to link to.
+                    </div><br><br>
+                </div>
+
+                <div class="input-group">
+                    <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:  </label>
+                    <select class="selectFields" id="language-selector" name="language-selector"></select>
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        Select the language in which the page will be displayed.
+                    </div><br><br>
+                </div>
+
+                <!-- Generate Link Button -->
+                <a href="https://www.dropbox.com/scl/fo/1rf6go8rjisfzdfblih68/h?rlkey=4uaa972jplqp4dap9aij54xqq&dl=0" target="_blank">
+                    <button id="custom-btn">Download Banners 🚀</button>
+                </a><br><br>
             </div>
 
-            <div class="input-group">
-                <label class="labels" for="label2">Medium:  </label>
-                <input class="inputFields" type="text" id="label2" name="label2" placeholder="Type of marketing medium">
-                <img src="images/info.png" class="info-icon" alt="Information">
-                <div class="tooltip">
-                    <span style="color: #F58635;">aftm_medium=</span>
-                    <br>
-                    Specify the medium, e.g., 'social', 'email', 'organic'.
-                </div><br>
-            </div>
+            <!-- Second Box: Additional Campaign Parameters -->
+            <div class="item item-2">
+                <h2>Additional Campaign Parameters</h2>
 
-            <div class="input-group">
-                <label class="labels" for="label3">Source:  </label>
-                <input class="inputFields" type="text" id="label3" name="label3" placeholder="Origin of campaign traffic">
-                <img src="images/info.png" class="info-icon" alt="Information">
-                <div class="tooltip">
-                    <span style="color: #F58635;">aftm_source=</span>
-                    <br>
-                    Identify the source, e.g., 'facebook', 'newsletterA'.
-                </div><br>
-            </div>
+                <div class="input-group">
+                    <label class="labels" for="label1">Campaign Name:  </label>
+                    <input class="inputFields" type="text" id="label1" name="label1" placeholder="Set a campaign name">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_campaign=</span>
+                        <br>
+                        Name your campaign for tracking purposes, e.g., 'FreeSpinsOffer'.
+                    </div><br>
+                </div>
 
-            <div class="input-group">
-                <label class="labels" for="label4">Content:  </label>
-                <input class="inputFields" type="text" id="label4" name="label4" placeholder="Track different content blocks">
-                <img src="images/info.png" class="info-icon" alt="Information">
-                <div class="tooltip">
-                    <span style="color: #F58635;">aftm_content=</span>
-                    <br>
-                    Track content variations, e.g., 'ImageA', 'TextB'.
-                </div><br><br>
-            </div>
+                <div class="input-group">
+                    <label class="labels" for="label2">Medium:  </label>
+                    <input class="inputFields" type="text" id="label2" name="label2" placeholder="Type of marketing medium">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_medium=</span>
+                        <br>
+                        Specify the medium, e.g., 'social', 'email', 'organic'.
+                    </div><br>
+                </div>
 
-            <!-- Generate Link Button -->
-            <button id="generate-btn">Generate Link 🔗</button><br><br>
+                <div class="input-group">
+                    <label class="labels" for="label3">Source:  </label>
+                    <input class="inputFields" type="text" id="label3" name="label3" placeholder="Origin of campaign traffic">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_source=</span>
+                        <br>
+                        Identify the source, e.g., 'facebook', 'newsletterA'.
+                    </div><br>
+                </div>
+
+                <div class="input-group">
+                    <label class="labels" for="label4">Content:  </label>
+                    <input class="inputFields" type="text" id="label4" name="label4" placeholder="Track different content blocks">
+                    <img src="images/info.png" class="info-icon" alt="Information">
+                    <div class="tooltip">
+                        <span style="color: #F58635;">aftm_content=</span>
+                        <br>
+                        Track content variations, e.g., 'ImageA', 'TextB'.
+                    </div><br><br>
+                </div>
+
+                <!-- Get Banners Button -->
+                <button id="generate-btn">Generate Link 🔗</button><br><br>
+            </div>
         </div>
-    </div>
 
-    <!-- Output Field Placed Underneath the Boxes -->
-    <section class="resultContainer">
-        <p id="result">Enter your details and click the "Generate Link" button</p>
-    </section>
+        <!-- Output Field Placed Underneath the Boxes -->
+        <section class="resultContainer">
+            <p id="result">Enter your details and click the "Generate Link" button</p>
+        </section>
 
-    <!-- Contact Information -->
-    <p id="copy" style="margin-top: 10px;">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="color: #99AAFF; text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
+        <!-- Contact Information -->
+        <p id="copy" style="margin-top: 10px;">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="color: #99AAFF; text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
 
-    <!-- JavaScript to track dropdown selections and button clicks -->
-    <script>
-        // Function to track dropdown selections and button clicks
-        function trackSelectionAndClick(action) {
-            // Get the values of the dropdowns and input fields
-            var page = document.getElementById('page-selector').value || 'N/A';
-            var language = document.getElementById('language-selector').value || 'N/A';
-            var campaignName = document.getElementById('label1').value || 'N/A';
-            var medium = document.getElementById('label2').value || 'N/A';
-            var source = document.getElementById('label3').value || 'N/A';
-            var content = document.getElementById('label4').value || 'N/A';
+        <!-- JavaScript to track dropdown selections and button clicks -->
+        <script>
+            // Function to track dropdown selections and button clicks
+            function trackSelectionAndClick(action) {
+                // Get the values of the dropdowns and input fields
+                var page = document.getElementById('page-selector').value || 'N/A';
+                var language = document.getElementById('language-selector').value || 'N/A';
+                var campaignName = document.getElementById('label1').value || 'N/A';
+                var medium = document.getElementById('label2').value || 'N/A';
+                var source = document.getElementById('label3').value || 'N/A';
+                var content = document.getElementById('label4').value || 'N/A';
 
-            // Construct a label that includes all selected and entered values
-            var selectionLabel = `Page: ${page}, Language: ${language}, Campaign Name: ${campaignName}, Medium: ${medium}, Source: ${source}, Content: ${content}`;
+                // Construct a label that includes all selected and entered values
+                var selectionLabel = `Page: ${page}, Language: ${language}, Campaign Name: ${campaignName}, Medium: ${medium}, Source: ${source}, Content: ${content}`;
 
-            // Send an event to Google Analytics
-            gtag('event', action, {
-                'event_category': 'User Actions',
-                'event_label': selectionLabel,
-                'value': 1
+                // Send an event to Google Analytics
+                gtag('event', action, {
+                    'event_category': 'User Actions',
+                    'event_label': selectionLabel,
+                    'value': 1
+                });
+            }
+
+            // Attach event listeners to the buttons
+            document.getElementById('generate-btn').addEventListener('click', function(event) {
+                trackSelectionAndClick('Generate Link Clicked');
             });
-        }
 
-        // Attach event listeners to the buttons
-        document.getElementById('generate-btn').addEventListener('click', function(event) {
-            trackSelectionAndClick('Generate Link Clicked');
-        });
-
-        document.getElementById('custom-btn').addEventListener('click', function(event) {
-            trackSelectionAndClick('Download Banners Clicked');
-        });
-    </script>
-</body>
+            document.getElementById('custom-btn').addEventListener('click', function(event) {
+                trackSelectionAndClick('Download Banners Clicked');
+            });
+        </script>
+    </body>
 </html>
