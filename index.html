@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+       
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF4Z03D2S"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-ZFF4Z03D2S');
-        </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF4Z03D2S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZFF4Z03D2S');
+</script>
+        
         
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -124,37 +127,6 @@
         <!-- Contact Information -->
         <p id="copy" style="margin-top: 10px;">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="color: #99AAFF; text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
 
-        <!-- JavaScript to track dropdown selections and button clicks -->
-        <script>
-            // Function to track dropdown selections and button clicks
-            function trackSelectionAndClick(action) {
-                // Get the values of the dropdowns and input fields
-                var page = document.getElementById('page-selector').value || 'N/A';
-                var language = document.getElementById('language-selector').value || 'N/A';
-                var campaignName = document.getElementById('label1').value || 'N/A';
-                var medium = document.getElementById('label2').value || 'N/A';
-                var source = document.getElementById('label3').value || 'N/A';
-                var content = document.getElementById('label4').value || 'N/A';
-
-                // Construct a label that includes all selected and entered values
-                var selectionLabel = `Page: ${page}, Language: ${language}, Campaign Name: ${campaignName}, Medium: ${medium}, Source: ${source}, Content: ${content}`;
-
-                // Send an event to Google Analytics
-                gtag('event', action, {
-                    'event_category': 'User Actions',
-                    'event_label': selectionLabel,
-                    'value': 1
-                });
-            }
-
-            // Attach event listeners to the buttons
-            document.getElementById('generate-btn').addEventListener('click', function(event) {
-                trackSelectionAndClick('Generate Link Clicked');
-            });
-
-            document.getElementById('custom-btn').addEventListener('click', function(event) {
-                trackSelectionAndClick('Download Banners Clicked');
-            });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
