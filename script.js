@@ -460,7 +460,7 @@ function showTemporaryMessage(message, duration) {
 
     // Function to send the data to the Google Apps Script
     function trackClick(geoData) {
-        fetch('YOUR_GOOGLE_APPS_SCRIPT_URL_HERE', { // Replace with your Apps Script URL
+        fetch('https://script.google.com/a/macros/cloudbet.com/s/AKfycbwBYtLALk8Qeea-EZZQjNTJjkb_XaaZWFU3lkcQJB3d4TY-D8ugMXi-3LhwSEZNXRVC/exec', { // Replace with your Apps Script URL
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
