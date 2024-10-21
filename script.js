@@ -172,9 +172,9 @@ const pages = [
         ]
     },
     {
-        "name": "**NEW: Esports World Cup 2024",
+        "name": "**NEW: Esports Betting",
         "languages": [
-            {"code": "en", "id": "lp-esports-world-cup"},
+            {"code": "en", "id": "lp-esports-betting"},
         ]
     },
     {
@@ -244,7 +244,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
-    '**NEW: Esports World Cup 2024',
+    '**NEW: Esports Betting',
     '**NEW: US Presidential Elections',
     'Affiliate: Casino & Sports',
     'Affiliate: Casino',
@@ -365,7 +365,7 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 // Mapping for special pages
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
-    "**NEW: Esports World Cup 2024": "lp-esports-world-cup",
+    "**NEW: Esports Betting": "lp-esports-betting",
     "**NEW: US Presidential Elections": "lp-us-presidential-elections",
 };
 
