@@ -174,7 +174,7 @@ const pages = [
     {
         "name": "**NEW: Esports Betting",
         "languages": [
-            {"code": "en", "id": "lp-esports-betting"},
+            {"code": "en", "id": "lp/esports-betting"},
         ]
     },
     {
@@ -365,7 +365,7 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 // Mapping for special pages
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
-    "**NEW: Esports Betting": "lp-esports-betting",
+    "**NEW: Esports Betting": "lp/esports-betting",
     "**NEW: US Presidential Elections": "lp-us-presidential-elections",
 };
 
