@@ -14,12 +14,6 @@ const pages = [
         ]
     },
     {
-    "name": "**NEW: US Presidential Elections",
-    "languages": [
-        {"code": "en", "id": "lp-us-presidential-elections"},
-    ]
-    },
-    {
         "name": "*CryptoBetting.org: Sports",
         "languages": [
             {"code": "en", "id": "cryptobetting"},
@@ -245,7 +239,6 @@ const pages = [
 // Default pages available to all partners
 const defaultPages = [
     '**NEW: Esports Betting',
-    '**NEW: US Presidential Elections',
     'Affiliate: Casino & Sports',
     'Affiliate: Casino',
     'Affiliate: Sports',
@@ -366,7 +359,6 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
     "**NEW: Esports Betting": "lp/esports-betting",
-    "**NEW: US Presidential Elections": "lp-us-presidential-elections",
 };
 
 generateBtn.addEventListener("click", function() {
