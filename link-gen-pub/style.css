@@ -1,3 +1,13 @@
+/* Firefox-specific styles */
+@-moz-document url-prefix() {
+    #generate-btn,
+    #custom-btn {
+        position: static; /* Disable absolute positioning for Firefox */
+        margin-top: auto; /* Push buttons to the bottom naturally within the flexbox */
+        align-self: center; /* Center the buttons horizontally in their containers */
+    }
+}
+
 body {
     background-color: #0F1032; /* Dark Blue background */
     font-family: 'Inter', sans-serif; /* Use Inter for body text */
@@ -150,26 +160,6 @@ input:focus, select:focus {
     /* Removed transform: translateY(-2px); */
 }
 
-@supports (-moz-appearance: none) {
-    #generate-btn, #custom-btn {
-        all: unset; /* Remove any browser-applied styling */
-        display: block;
-        width: 100%;
-        max-width: 250px;
-        margin: auto; /* Center the buttons horizontally */
-        background-color: #99AAFF; /* Light Blue/Purple */
-        color: #0F1032; /* Dark Blue text for buttons */
-        border: none;
-        border-radius: 8px;
-        padding: 12px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: center;
-        margin-top: auto; /* Push the button to the bottom of the flex container */
-        align-self: center; /* Center horizontally in the flex container */
-    }
 
 #result {
     background-color: #EDE0FF; /* Pale Purple background for the result */
