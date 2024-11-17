@@ -1,13 +1,3 @@
-/* Firefox-specific styles */
-@-moz-document url-prefix() {
-    #generate-btn,
-    #custom-btn {
-        position: static; /* Disable absolute positioning for Firefox */
-        margin-top: auto; /* Push buttons to the bottom naturally within the flexbox */
-        align-self: center; /* Center the buttons horizontally in their containers */
-    }
-}
-
 body {
     background-color: #0F1032; /* Dark Blue background */
     font-family: 'Inter', sans-serif; /* Use Inter for body text */
@@ -159,6 +149,7 @@ input:focus, select:focus {
     background-color: #8288DB; /* Slightly darker Light Blue/Purple on hover */
     /* Removed transform: translateY(-2px); */
 }
+
 
 
 #result {
