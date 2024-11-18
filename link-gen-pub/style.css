@@ -284,3 +284,7 @@ input:focus, select:focus {
         left: 110%; /* Keep it to the right */
     }
 }
+
+@-moz-document url-prefix() {
+   .item { min-height: 410px }
+}
