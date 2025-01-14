@@ -79,27 +79,9 @@ const pages = [
         ]
     },
     {
-        "name": "*ActuFinance: Co-Branded + 200 FS",
-        "languages": [
-            {"code": "fr", "id": "actufinance"},
-        ]
-    },
-    {
-        "name": "*CasinoGuide: Co-Branded + 200 FS",
-        "languages": [
-            {"code": "en", "id": "casino-guide"},
-        ]
-    },
-    {
         "name": "*CasinosBlockchain: Co-Branded + 100 FS",
         "languages": [
             {"code": "en", "id": "100-free-spins/casinosblockchain"},
-        ]
-    },
-    {
-        "name": "*CoinCierge: Co-Branded + 200 FS",
-        "languages": [
-            {"code": "de", "id": "coincierge"},
         ]
     },
     {
@@ -109,39 +91,9 @@ const pages = [
         ]
     },
     {
-        "name": "*Cryptonaute: Co-Branded + 200 FS",
-        "languages": [
-            {"code": "fr", "id": "cryptonaute"},
-        ]
-    },
-    {
         "name": "*Gaming.net: Co-Branded + 100 FS",
         "languages": [
             {"code": "en", "id": "gamingnet"},
-        ]
-    },
-    {
-        "name": "*InsideBitcoins: Co-Branded + 200 FS",
-        "languages": [
-            {"code": "en", "id": "insidebitcoins"},
-        ]
-    },
-    {
-        "name": "*Kryptoszene: Co-Branded + 200 FS",
-        "languages": [
-            {"code": "de", "id": "kryptoszene"},
-        ]
-    },
-    {
-        "name": "*CasinoTest - Co-Branded + 200 FS",
-        "languages": [
-            {"code": "de", "id": "casinotest-de"},
-        ]
-     },
-     {
-        "name": "**NEW: IPL 2024",
-        "languages": [
-            {"code": "en", "id": "indian-premier-league"},
         ]
     },
     {
@@ -300,7 +252,6 @@ const defaultPages = [
 const partnerPages = {
     'cryptomaniaks': ['*Cryptomaniaks: Co-Branded', '*Cryptomaniaks: Co-Branded + 200FS'],
     'cryptobetting': ['*CryptoBetting.org: Sports'],
-    'finixio': ['*ActuFinance: Co-Branded + 200 FS', '*CoinCierge: Co-Branded + 200 FS', '*Cryptonaute: Co-Branded + 200 FS', '*InsideBitcoins: Co-Branded + 200 FS', '*Kryptoszene: Co-Branded + 200 FS'],
     'casinosblockchain': ['*CasinosBlockchain: Co-Branded + 100 FS', '*CasinosBlockchain: Co-Branded'],
     'elevatedleads': ['*CryptoCasinos: Co-Branded + 200 FS'], //done
     'blockventures': ['*Gaming.net: Co-Branded + 100 FS'], //done
@@ -320,7 +271,6 @@ for (const partner in partnerPages) {
 const partnerToAffiliateIdMap = {
     'cryptomaniaks': '97ab6f554e12167d3dd796c1487c78b4', //done - agile
     'cryptobetting': 'bb8af9ed6a06f7285216258ebd165ae0', //done - agile
-    'finixio': 'ae4254b0cbbf0760d3442112d77a6748', //done
     'casinosblockchain': 'aa938b8c991e47071094b255abd00cfd', //done
     'elevatedleads': '67b9cd11f6f47ee71d0a14eecf201a16', //done
     'blockventures': '4924e418445b3b21d4e8bbee05ec9207', //done
