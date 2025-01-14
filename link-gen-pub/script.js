@@ -145,7 +145,7 @@ const pages = [
         ]
     },
     {
-        "name": "**NEW: Esports Betting",
+        "name": "Esports Betting",
         "languages": [
             {"code": "en", "id": "lp/esports-betting"},
             {"code": "de", "id": "lp/esports-betting"},
@@ -162,6 +162,26 @@ const pages = [
             {"code": "ko", "id": "lp/esports-betting"},
             {"code": "vi", "id": "lp/esports-betting"},
             {"code": "th", "id": "lp/esports-betting"},
+        ]
+    },
+    {
+        "name": "**NEW: PFL x Cloudbet",
+        "languages": [
+            {"code": "en", "id": "lp/pfl"},
+            {"code": "de", "id": "lp/pfl"},
+            {"code": "es", "id": "lp/pfl"},
+            {"code": "fr", "id": "lp/pfl"},
+            {"code": "tr", "id": "lp/pfl"},
+            {"code": "it", "id": "lp/pfl"},
+            {"code": "pt", "id": "lp/pfl"},
+            {"code": "pt-br", "id": "lp/pfl"},
+            {"code": "ru", "id": "lp/pfl"},
+            {"code": "sv", "id": "lp/pfl"},            
+            {"code": "hu", "id": "lp/pfl"},
+            {"code": "ja", "id": "lp/pfl"},
+            {"code": "ko", "id": "lp/pfl"},
+            {"code": "vi", "id": "lp/pfl"},
+            {"code": "th", "id": "lp/pfl"},
         ]
     },
     {
@@ -267,7 +287,8 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
-    '**NEW: Esports Betting',
+    '**NEW: PFL x Cloudbet',
+    'Esports Betting',
     'Affiliate: Casino & Sports',
     'Affiliate: Casino',
     'Affiliate: Sports',
