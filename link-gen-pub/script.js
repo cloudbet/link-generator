@@ -397,7 +397,8 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 // Mapping for special pages
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
-    "**NEW: Esports Betting": "lp/esports-betting",
+    "Esports Betting": "lp/esports-betting",
+    "**NEW: PFL x Cloudbet": "lp/pfl",
 };
 
 generateBtn.addEventListener("click", function() {
