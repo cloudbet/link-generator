@@ -119,21 +119,21 @@ const pages = [
     {
         "name": "**NEW: PFL x Cloudbet",
         "languages": [
-            {"code": "en", "id": "lp/pfl"},
-            {"code": "de", "id": "lp/pfl"},
-            {"code": "es", "id": "lp/pfl"},
-            {"code": "fr", "id": "lp/pfl"},
-            {"code": "tr", "id": "lp/pfl"},
-            {"code": "it", "id": "lp/pfl"},
-            {"code": "pt", "id": "lp/pfl"},
-            {"code": "pt-br", "id": "lp/pfl"},
-            {"code": "ru", "id": "lp/pfl"},
-            {"code": "sv", "id": "lp/pfl"},            
-            {"code": "hu", "id": "lp/pfl"},
-            {"code": "ja", "id": "lp/pfl"},
-            {"code": "ko", "id": "lp/pfl"},
-            {"code": "vi", "id": "lp/pfl"},
-            {"code": "th", "id": "lp/pfl"},
+            {"code": "en", "id": "lp-campaign/pfl"},
+            {"code": "de", "id": "lp-campaign/pfl"},
+            {"code": "es", "id": "lp-campaign/pfl"},
+            {"code": "fr", "id": "lp-campaign/pfl"},
+            {"code": "tr", "id": "lp-campaign/pfl"},
+            {"code": "it", "id": "lp-campaign/pfl"},
+            {"code": "pt", "id": "lp-campaign/pfl"},
+            {"code": "pt-br", "id": "lp-campaign/pfl"},
+            {"code": "ru", "id": "lp-campaign/pfl"},
+            {"code": "sv", "id": "lp-campaign/pfl"},            
+            {"code": "hu", "id": "lp-campaign/pfl"},
+            {"code": "ja", "id": "lp-campaign/pfl"},
+            {"code": "ko", "id": "lp-campaign/pfl"},
+            {"code": "vi", "id": "lp-campaign/pfl"},
+            {"code": "th", "id": "lp-campaign/pfl"},
         ]
     },
     {
@@ -348,7 +348,7 @@ pageSelector.addEventListener("change", updateLanguageSelector);
 const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
     "Esports Betting": "lp/esports-betting",
-    "**NEW: PFL x Cloudbet": "lp/pfl",
+    "**NEW: PFL x Cloudbet": "lp-campaign/pfl",
 };
 
 generateBtn.addEventListener("click", function() {
