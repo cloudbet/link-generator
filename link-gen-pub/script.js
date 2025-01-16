@@ -137,6 +137,26 @@ const pages = [
         ]
     },
     {
+        "name": "**NEW: Superbowl",
+        "languages": [
+            {"code": "en", "id": "lp-super-bowl"},
+            {"code": "de", "id": "lp-super-bowl"},
+            {"code": "es", "id": "lp-super-bowl"},
+            {"code": "fr", "id": "lp-super-bowl"},
+            {"code": "tr", "id": "lp-super-bowl"},
+            {"code": "it", "id": "lp-super-bowl"},
+            {"code": "pt", "id": "lp-super-bowl"},
+            {"code": "pt-br", "id": "lp-super-bowl"},
+            {"code": "ru", "id": "lp-super-bowl"},
+            {"code": "sv", "id": "lp-super-bowl"},            
+            {"code": "hu", "id": "lp-super-bowl"},
+            {"code": "ja", "id": "lp-super-bowl"},
+            {"code": "ko", "id": "lp-super-bowl"},
+            {"code": "vi", "id": "lp-super-bowl"},
+            {"code": "th", "id": "lp-super-bowl"},
+        ]
+    },
+    {
         "name": "Influencer: Casino",
         "languages": [
             {"code": "en", "id": "creator-offer"},
@@ -240,6 +260,7 @@ const pages = [
 // Default pages available to all partners
 const defaultPages = [
     '**NEW: PFL x Cloudbet',
+    '**NEW: Superbowl',
     'Esports Betting',
     'Affiliate: Casino & Sports',
     'Affiliate: Casino',
@@ -349,6 +370,7 @@ const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
     "Esports Betting": "lp/esports-betting",
     "**NEW: PFL x Cloudbet": "lp-campaign/pfl",
+    "**NEW: Superbowl": "lp-super-bowl",
 };
 
 generateBtn.addEventListener("click", function() {
