@@ -137,6 +137,26 @@ const pages = [
         ]
     },
     {
+        "name": "**NEW: Karate Combat x Cloudbet",
+        "languages": [
+            {"code": "en", "id": "lp-campaign/karate-combat"},
+            {"code": "de", "id": "lp-campaign/karate-combat"},
+            {"code": "es", "id": "lp-campaign/karate-combat"},
+            {"code": "fr", "id": "lp-campaign/karate-combat"},
+            {"code": "tr", "id": "lp-campaign/karate-combat"},
+            {"code": "it", "id": "lp-campaign/karate-combat"},
+            {"code": "pt", "id": "lp-campaign/karate-combat"},
+            {"code": "pt-br", "id": "lp-campaign/karate-combat"},
+            {"code": "ru", "id": "lp-campaign/karate-combat"},
+            {"code": "sv", "id": "lp-campaign/karate-combat"},            
+            {"code": "hu", "id": "lp-campaign/karate-combat"},
+            {"code": "ja", "id": "lp-campaign/karate-combat"},
+            {"code": "ko", "id": "lp-campaign/karate-combat"},
+            {"code": "vi", "id": "lp-campaign/karate-combat"},
+            {"code": "th", "id": "lp-campaign/karate-combat"},
+        ]
+    },
+    {
         "name": "**NEW: Superbowl",
         "languages": [
             {"code": "en", "id": "lp-super-bowl"},
@@ -259,6 +279,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
+    '**NEW: Karate Combat x Cloudbet',
     '**NEW: PFL x Cloudbet',
     '**NEW: Superbowl',
     'Esports Betting',
@@ -370,6 +391,7 @@ const specialPages = {
     "*Bitcoin.com: Co-Branded": "lp-bitcoin-com",
     "Esports Betting": "lp/esports-betting",
     "**NEW: PFL x Cloudbet": "lp-campaign/pfl",
+    "**NEW: Karate Combat x Cloudbet": "lp-campaign/karate-combat",
     "**NEW: Superbowl": "lp-super-bowl",
 };
 
