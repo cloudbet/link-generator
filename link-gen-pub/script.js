@@ -201,6 +201,7 @@ const pages = [
             {"code": "ko", "id": "creator-offer"},
             {"code": "vi", "id": "creator-offer"},
             {"code": "th", "id": "creator-offer"},
+            {"code": "pl", "id": "creator-offer"},
         ]
     },
     {
@@ -221,6 +222,7 @@ const pages = [
             {"code": "ko", "id": "creator-offer-sport"},
             {"code": "vi", "id": "creator-offer-sport"},
             {"code": "th", "id": "creator-offer-sport"},
+            {"code": "pl", "id": "creator-offer-sport"},
         ]
     },
     {
@@ -247,6 +249,7 @@ const pages = [
             {"code": "ko", "id": "lp-bitcoin-com"},
             {"code": "vi", "id": "lp-bitcoin-com"},
             {"code": "th", "id": "lp-bitcoin-com"},
+            {"code": "pl", "id": "lp-bitcoin-com"},
         ]
     },
     {
