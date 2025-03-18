@@ -18,6 +18,7 @@ const pages = [
             {"code": "ko", "id": "bitcoin-betting"},
             {"code": "vi", "id": "bitcoin-betting"},
             {"code": "th", "id": "bitcoin-betting"},
+            {"code": "pl", "id": "bitcoin-betting"},
         ]
     },
     {
@@ -56,6 +57,7 @@ const pages = [
             {"code": "ko", "id": "bitcoin-bonus"},
             {"code": "vi", "id": "bitcoin-bonus"},
             {"code": "th", "id": "bitcoin-bonus"},
+            {"code": "pl", "id": "bitcoin-bonus"},
         ]
     },
      {
@@ -76,6 +78,7 @@ const pages = [
             {"code": "ko", "id": "bitcoin-casino"},
             {"code": "vi", "id": "bitcoin-casino"},
             {"code": "th", "id": "bitcoin-casino"},
+            {"code": "pl", "id": "bitcoin-casino"},
         ]
     },
     {
@@ -114,6 +117,7 @@ const pages = [
             {"code": "ko", "id": "lp/esports-betting"},
             {"code": "vi", "id": "lp/esports-betting"},
             {"code": "th", "id": "lp/esports-betting"},
+            {"code": "pl", "id": "lp/esports-betting"},
         ]
     },
     {
@@ -134,6 +138,7 @@ const pages = [
             {"code": "ko", "id": "lp-campaign/pfl"},
             {"code": "vi", "id": "lp-campaign/pfl"},
             {"code": "th", "id": "lp-campaign/pfl"},
+            {"code": "pl", "id": "lp-campaign/pfl"},
         ]
     },
     {
@@ -154,26 +159,28 @@ const pages = [
             {"code": "ko", "id": "lp-campaign/karate-combat"},
             {"code": "vi", "id": "lp-campaign/karate-combat"},
             {"code": "th", "id": "lp-campaign/karate-combat"},
+            {"code": "pl", "id": "lp-campaign/karate-combat"},
         ]
     },
     {
-        "name": "**NEW: Superbowl",
+        "name": "**NEW: March Madness",
         "languages": [
-            {"code": "en", "id": "lp-super-bowl"},
-            {"code": "de", "id": "lp-super-bowl"},
-            {"code": "es", "id": "lp-super-bowl"},
-            {"code": "fr", "id": "lp-super-bowl"},
-            {"code": "tr", "id": "lp-super-bowl"},
-            {"code": "it", "id": "lp-super-bowl"},
-            {"code": "pt", "id": "lp-super-bowl"},
-            {"code": "pt-br", "id": "lp-super-bowl"},
-            {"code": "ru", "id": "lp-super-bowl"},
-            {"code": "sv", "id": "lp-super-bowl"},            
-            {"code": "hu", "id": "lp-super-bowl"},
-            {"code": "ja", "id": "lp-super-bowl"},
-            {"code": "ko", "id": "lp-super-bowl"},
-            {"code": "vi", "id": "lp-super-bowl"},
-            {"code": "th", "id": "lp-super-bowl"},
+            {"code": "en", "id": "lp-march-madness"},
+            {"code": "de", "id": "lp-march-madness"},
+            {"code": "es", "id": "lp-march-madness"},
+            {"code": "fr", "id": "lp-march-madness"},
+            {"code": "tr", "id": "lp-march-madness"},
+            {"code": "it", "id": "lp-march-madness"},
+            {"code": "pt", "id": "lp-march-madness"},
+            {"code": "pt-br", "id": "lp-march-madness"},
+            {"code": "ru", "id": "lp-march-madness"},
+            {"code": "sv", "id": "lp-march-madness"},            
+            {"code": "hu", "id": "lp-march-madness"},
+            {"code": "ja", "id": "lp-march-madness"},
+            {"code": "ko", "id": "lp-march-madness"},
+            {"code": "vi", "id": "lp-march-madness"},
+            {"code": "th", "id": "lp-march-madness"},
+            {"code": "pl", "id": "lp-march-madness"},
         ]
     },
     {
@@ -281,7 +288,7 @@ const pages = [
 const defaultPages = [
     '**NEW: Karate Combat x Cloudbet',
     '**NEW: PFL x Cloudbet',
-    '**NEW: Superbowl',
+    '**NEW: March Madness',
     'Esports Betting',
     'Affiliate: Casino & Sports',
     'Affiliate: Casino',
@@ -392,7 +399,7 @@ const specialPages = {
     "Esports Betting": "lp/esports-betting",
     "**NEW: PFL x Cloudbet": "lp-campaign/pfl",
     "**NEW: Karate Combat x Cloudbet": "lp-campaign/karate-combat",
-    "**NEW: Superbowl": "lp-super-bowl",
+    "**NEW: March Madness": "lp-march-madness",
 };
 
 generateBtn.addEventListener("click", function() {
