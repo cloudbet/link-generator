@@ -121,6 +121,27 @@ const pages = [
         ]
     },
     {
+        "name": "**NEW: IPL 2025",
+        "languages": [
+            {"code": "en", "id": "lp/indian-premier-league-offer"},
+            {"code": "de", "id": "lp/indian-premier-league-offer"},
+            {"code": "es", "id": "lp/indian-premier-league-offer"},
+            {"code": "fr", "id": "lp/indian-premier-league-offer"},
+            {"code": "tr", "id": "lp/indian-premier-league-offer"},
+            {"code": "it", "id": "lp/indian-premier-league-offer"},
+            {"code": "pt", "id": "lp/indian-premier-league-offer"},
+            {"code": "pt-br", "id": "lp/indian-premier-league-offer"},
+            {"code": "ru", "id": "lp/indian-premier-league-offer"},
+            {"code": "sv", "id": "lp/indian-premier-league-offer"},            
+            {"code": "hu", "id": "lp/indian-premier-league-offer"},
+            {"code": "ja", "id": "lp/indian-premier-league-offer"},
+            {"code": "ko", "id": "lp/indian-premier-league-offer"},
+            {"code": "vi", "id": "lp/indian-premier-league-offer"},
+            {"code": "th", "id": "lp/indian-premier-league-offer"},
+            {"code": "pl", "id": "lp/indian-premier-league-offer"},
+        ]
+    },
+    {
         "name": "**NEW: PFL x Cloudbet",
         "languages": [
             {"code": "en", "id": "lp-campaign/pfl"},
@@ -289,6 +310,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
+    '**NEW: IPL 2025',
     '**NEW: Karate Combat x Cloudbet',
     '**NEW: PFL x Cloudbet',
     '**NEW: March Madness',
@@ -403,6 +425,7 @@ const specialPages = {
     "**NEW: PFL x Cloudbet": "lp-campaign/pfl",
     "**NEW: Karate Combat x Cloudbet": "lp-campaign/karate-combat",
     "**NEW: March Madness": "lp-march-madness",
+    "**NEW: IPL 2025": "lp/indian-premier-league-offer",
 };
 
 generateBtn.addEventListener("click", function() {
