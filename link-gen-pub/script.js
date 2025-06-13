@@ -163,27 +163,6 @@ const pages = [
         ]
     },
     {
-        "name": "**NEW: March Madness",
-        "languages": [
-            {"code": "en", "id": "lp-march-madness"},
-            {"code": "de", "id": "lp-march-madness"},
-            {"code": "es", "id": "lp-march-madness"},
-            {"code": "fr", "id": "lp-march-madness"},
-            {"code": "tr", "id": "lp-march-madness"},
-            {"code": "it", "id": "lp-march-madness"},
-            {"code": "pt", "id": "lp-march-madness"},
-            {"code": "pt-br", "id": "lp-march-madness"},
-            {"code": "ru", "id": "lp-march-madness"},
-            {"code": "sv", "id": "lp-march-madness"},            
-            {"code": "hu", "id": "lp-march-madness"},
-            {"code": "ja", "id": "lp-march-madness"},
-            {"code": "ko", "id": "lp-march-madness"},
-            {"code": "vi", "id": "lp-march-madness"},
-            {"code": "th", "id": "lp-march-madness"},
-            {"code": "pl", "id": "lp-march-madness"},
-        ]
-    },
-    {
         "name": "Influencer: Casino",
         "languages": [
             {"code": "en", "id": "creator-offer"},
@@ -291,7 +270,6 @@ const pages = [
 const defaultPages = [
     '**NEW: Karate Combat x Cloudbet',
     '**NEW: PFL x Cloudbet',
-    '**NEW: March Madness',
     'Esports Betting',
     'Affiliate: Casino & Sports',
     'Affiliate: Casino',
@@ -402,7 +380,6 @@ const specialPages = {
     "Esports Betting": "lp/esports-betting",
     "**NEW: PFL x Cloudbet": "lp-campaign/pfl",
     "**NEW: Karate Combat x Cloudbet": "lp-campaign/karate-combat",
-    "**NEW: March Madness": "lp-march-madness",
 };
 
 generateBtn.addEventListener("click", function() {
