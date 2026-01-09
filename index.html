@@ -1,122 +1,251 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <title>Cloudbet Link Generator</title>
-        <link rel="stylesheet" href="link-gen-pub/style.css">
-    </head>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Cloudbet Link Generator</title>
+    <link rel="stylesheet" href="link-gen-pub/style.css" />
+  </head>
 
-    <body>
-        <div id="mainTitle" style="margin-bottom: 20px;">
-            <img src="link-gen-pub/images/croplogo.png" style="max-width: 600px; height: auto; display: block; margin: 0 auto;">
+  <body>
+    <div id="mainTitle" style="margin-bottom: 20px">
+      <img
+        src="link-gen-pub/images/croplogo.png"
+        style="max-width: 600px; height: auto; display: block; margin: 0 auto"
+      />
+    </div>
+
+    <div class="grid-container">
+      <!-- First Box: Generate Your Link -->
+      <div class="item item-1">
+        <h2>Generate Your Link</h2>
+
+        <div class="input-group">
+          <label class="labels" for="personal-id"
+            ><span class="greenBG">1</span> Enter your Affiliate Token:
+          </label>
+          <input
+            class="inputFields"
+            type="text"
+            id="personal-id"
+            name="personal-id"
+            placeholder="Your Affiliate Token"
+          />
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            <span style="color: #f58635">af_token=</span>
+            <br />
+            This is your unique affiliate token. You can find it in the top
+            corner of the
+            <a
+              href="https://affiliates.cloudbet.com/dashboards/6167"
+              target="_blank"
+              style="color: #99aaff; text-decoration: underline"
+              >Affiliate Portal</a
+            >.
+          </div>
+          <br /><br />
         </div>
 
-        <div class="grid-container">
-            <!-- First Box: Generate Your Link -->
-            <div class="item item-1">
-                <h2>Generate Your Link</h2>
-
-                <div class="input-group">
-                    <label class="labels" for="personal-id"><span class="greenBG">1</span> Enter your Affiliate Token:  </label>
-                    <input class="inputFields" type="text" id="personal-id" name="personal-id" placeholder="Your Affiliate Token">
-                    <img src="link-gen-pub/images/info.png" class="info-icon" alt="Information">
-                    <div class="tooltip">
-                        <span style="color: #F58635;">af_token=</span>
-                        <br>
-                        This is your unique affiliate token. You can find it in the top corner of the 
-                        <a href="https://affiliates.cloudbet.com/dashboards/6167" target="_blank" style="color: #99AAFF; text-decoration: underline;">Affiliate Portal</a>.
-                    </div><br><br>
-                </div>
-
-                <div class="input-group">
-                    <label class="labels" for="page-selector"><span class="greenBG">2</span> Select a page:  </label>
-                    <select class="selectFields" id="page-selector" name="page-selector"></select>
-                    <img src="link-gen-pub/images/info.png" class="info-icon" alt="Information">
-                    <div class="tooltip">
-                        Choose the specific page you want to link to.
-                    </div><br><br>
-                </div>
-
-                <div class="input-group">
-                    <label class="labels" for="language-selector"><span class="greenBG">3</span> Select a language:  </label>
-                    <select class="selectFields" id="language-selector" name="language-selector"></select>
-                    <img src="link-gen-pub/images/info.png" class="info-icon" alt="Information">
-                    <div class="tooltip">
-                        Select the language in which the page will be displayed.
-                    </div><br><br>
-                </div>
-
-                <!-- Generate Link Button -->
-                <a href="https://www.dropbox.com/scl/fo/1rf6go8rjisfzdfblih68/h?rlkey=4uaa972jplqp4dap9aij54xqq&dl=0" target="_blank">
-                    <button id="custom-btn">Download Banners 🚀</button>
-                </a><br><br>
-            </div>
-
-            <!-- Second Box: Additional Campaign Parameters -->
-            <div class="item item-2">
-                <h2>Additional Campaign Parameters</h2>
-
-                <div class="input-group">
-                    <label class="labels" for="label1">Campaign Name:  </label>
-                    <input class="inputFields" type="text" id="label1" name="label1" placeholder="Set a campaign name">
-                    <img src="link-gen-pub/images/info.png" class="info-icon" alt="Information">
-                    <div class="tooltip">
-                        <span style="color: #F58635;">aftm_campaign=</span>
-                        <br>
-                        Name your campaign for tracking purposes, e.g., 'FreeSpinsOffer'.
-                    </div><br>
-                </div>
-
-                <div class="input-group">
-                    <label class="labels" for="label2">Medium:  </label>
-                    <input class="inputFields" type="text" id="label2" name="label2" placeholder="Type of marketing medium">
-                    <img src="link-gen-pub/images/info.png" class="info-icon" alt="Information">
-                    <div class="tooltip">
-                        <span style="color: #F58635;">aftm_medium=</span>
-                        <br>
-                        Specify the medium, e.g., 'social', 'email', 'organic'.
-                    </div><br>
-                </div>
-
-                <div class="input-group">
-                    <label class="labels" for="label3">Source:  </label>
-                    <input class="inputFields" type="text" id="label3" name="label3" placeholder="Origin of campaign traffic">
-                    <img src="link-gen-pub/images/info.png" class="info-icon" alt="Information">
-                    <div class="tooltip">
-                        <span style="color: #F58635;">aftm_source=</span>
-                        <br>
-                        Identify the source, e.g., 'facebook', 'newsletterA'.
-                    </div><br>
-                </div>
-
-                <div class="input-group">
-                    <label class="labels" for="label4">Content:  </label>
-                    <input class="inputFields" type="text" id="label4" name="label4" placeholder="Track different content blocks">
-                    <img src="link-gen-pub/images/info.png" class="info-icon" alt="Information">
-                    <div class="tooltip">
-                        <span style="color: #F58635;">aftm_content=</span>
-                        <br>
-                        Track content variations, e.g., 'ImageA', 'TextB'.
-                    </div><br><br>
-                </div>
-
-                <!-- Get Banners Button -->
-                <button id="generate-btn">Generate Link 🔗</button><br><br>
-            </div>
+        <div class="input-group">
+          <label class="labels" for="page-selector"
+            ><span class="greenBG">2</span> Select a page:
+          </label>
+          <select
+            class="selectFields"
+            id="page-selector"
+            name="page-selector"
+          ></select>
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            Choose the specific page you want to link to.
+          </div>
+          <br /><br />
         </div>
 
-        <!-- Output Field Placed Underneath the Boxes -->
-        <section class="resultContainer">
-            <p id="result">Enter your details and click the "Generate Link" button</p>
-        </section>
+        <div class="input-group">
+          <label class="labels" for="language-selector"
+            ><span class="greenBG">3</span> Select a language:
+          </label>
+          <select
+            class="selectFields"
+            id="language-selector"
+            name="language-selector"
+          ></select>
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            Select the language in which the page will be displayed.
+          </div>
+          <br /><br />
+        </div>
 
-        <!-- Contact Information -->
-        <p id="copy" style="margin-top: 10px;">Contact your affiliate manager or email us at <a href="mailto:affiliates@cloudbet.com" style="color: #99AAFF; text-decoration: underline;">affiliates@cloudbet.com</a> if you wish to get in touch.</p>
+        <!-- Generate Link Button -->
+        <a
+          href="https://www.dropbox.com/scl/fo/1rf6go8rjisfzdfblih68/h?rlkey=4uaa972jplqp4dap9aij54xqq&dl=0"
+          target="_blank"
+        >
+          <button id="custom-btn">Download Banners 🚀</button> </a
+        ><br /><br />
+      </div>
 
-        <script src="link-gen-pub/script.js"></script>
-    </body>
+      <!-- Second Box: Additional Campaign Parameters -->
+      <div class="item item-2">
+        <h2>Additional Campaign Parameters</h2>
+
+        <div class="input-group">
+          <label class="labels" for="label1">Campaign Name: </label>
+          <input
+            class="inputFields"
+            type="text"
+            id="label1"
+            name="label1"
+            placeholder="Set a campaign name"
+          />
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            <span style="color: #f58635">aftm_campaign=</span>
+            <br />
+            Name your campaign for tracking purposes, e.g., 'FreeSpinsOffer'.
+          </div>
+          <br />
+        </div>
+
+        <div class="input-group">
+          <label class="labels" for="label2">Medium: </label>
+          <input
+            class="inputFields"
+            type="text"
+            id="label2"
+            name="label2"
+            placeholder="Type of marketing medium"
+          />
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            <span style="color: #f58635">aftm_medium=</span>
+            <br />
+            Specify the medium, e.g., 'social', 'email', 'organic'.
+          </div>
+          <br />
+        </div>
+
+        <div class="input-group">
+          <label class="labels" for="label3">Source: </label>
+          <input
+            class="inputFields"
+            type="text"
+            id="label3"
+            name="label3"
+            placeholder="Origin of campaign traffic"
+          />
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            <span style="color: #f58635">aftm_source=</span>
+            <br />
+            Identify the source, e.g., 'facebook', 'newsletterA'.
+          </div>
+          <br />
+        </div>
+
+        <div class="input-group">
+          <label class="labels" for="label4">Content: </label>
+          <input
+            class="inputFields"
+            type="text"
+            id="label4"
+            name="label4"
+            placeholder="Track different content blocks"
+          />
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            <span style="color: #f58635">aftm_content=</span>
+            <br />
+            Track content variations, e.g., 'ImageA', 'TextB'.
+          </div>
+          <br />
+        </div>
+
+        <div class="input-group">
+          <label class="labels" for="label5"
+            >Click ID
+            <span style="color: #888; font-size: 0.85em">(optional)</span>:
+          </label>
+          <input
+            class="inputFields"
+            type="text"
+            id="label5"
+            name="label5"
+            placeholder="Unique click identifier"
+          />
+          <img
+            src="link-gen-pub/images/info.png"
+            class="info-icon"
+            alt="Information"
+          />
+          <div class="tooltip">
+            <span style="color: #f58635">aftm_cid=</span>
+            <br />
+            Pass a unique click ID for tracking, e.g., '{clickid}' or a specific
+            identifier.
+          </div>
+          <br /><br />
+        </div>
+
+        <!-- Get Banners Button -->
+        <button id="generate-btn">Generate Link 🔗</button><br /><br />
+      </div>
+    </div>
+
+    <!-- Output Field Placed Underneath the Boxes -->
+    <section class="resultContainer">
+      <p id="result">Enter your details and click the "Generate Link" button</p>
+    </section>
+
+    <!-- Contact Information -->
+    <p id="copy" style="margin-top: 10px">
+      Contact your affiliate manager or email us at
+      <a
+        href="mailto:affiliates@cloudbet.com"
+        style="color: #99aaff; text-decoration: underline"
+        >affiliates@cloudbet.com</a
+      >
+      if you wish to get in touch.
+    </p>
+
+    <script src="link-gen-pub/script.js"></script>
+  </body>
 </html>

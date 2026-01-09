@@ -388,6 +388,7 @@ generateBtn.addEventListener("click", function() {
     const aftmMedium = document.getElementById("label2").value;
     const aftmSource = document.getElementById("label3").value;
     const aftmContent = document.getElementById("label4").value;
+    const aftmCid = document.getElementById("label5").value;
     const selectedLanguageCode = languageSelector.value;
     const selectedPageName = pageSelector.value;
 
@@ -406,6 +407,7 @@ generateBtn.addEventListener("click", function() {
     if (aftmSource) params.set('aftm_source', aftmSource);
     if (aftmMedium) params.set('aftm_medium', aftmMedium);
     if (aftmContent) params.set('aftm_content', aftmContent);
+    if (aftmCid) params.set('aftm_cid', aftmCid);
 
     const queryString = params.toString();
     if (queryString) {
