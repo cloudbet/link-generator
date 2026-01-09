@@ -88,7 +88,7 @@ input:focus, select:focus {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 20px 0;
     position: relative; /* Make the item a positioned element */
-    min-height: 350px; /* Ensure containers have enough height for alignment */
+    min-height: 450px; /* Increased height to accommodate Click ID field */
     display: flex;
     flex-direction: column;
 }
@@ -286,5 +286,5 @@ input:focus, select:focus {
 }
 
 @-moz-document url-prefix() {
-   .item { min-height: 410px }
+   .item { min-height: 510px }
 }
