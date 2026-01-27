@@ -88,6 +88,27 @@ const pages = [
     languages: [{ code: 'en', id: 'gamingnet' }],
   },
   {
+    name: 'Sign Up',
+    languages: [
+      { code: 'en', id: 'auth/sign-up' },
+      { code: 'de', id: 'auth/sign-up' },
+      { code: 'es', id: 'auth/sign-up' },
+      { code: 'fr', id: 'auth/sign-up' },
+      { code: 'tr', id: 'auth/sign-up' },
+      { code: 'it', id: 'auth/sign-up' },
+      { code: 'pt', id: 'auth/sign-up' },
+      { code: 'pt-br', id: 'auth/sign-up' },
+      { code: 'ru', id: 'auth/sign-up' },
+      { code: 'sv', id: 'auth/sign-up' },
+      { code: 'hu', id: 'auth/sign-up' },
+      { code: 'ja', id: 'auth/sign-up' },
+      { code: 'ko', id: 'auth/sign-up' },
+      { code: 'vi', id: 'auth/sign-up' },
+      { code: 'th', id: 'auth/sign-up' },
+      { code: 'pl', id: 'auth/sign-up' },
+    ],
+  },
+  {
     name: 'Esports Betting',
     languages: [
       { code: 'en', id: 'lp/esports-betting' },
@@ -249,6 +270,7 @@ const pages = [
 
 // Default pages available to all partners
 const defaultPages = [
+  'Sign Up',
   '**NEW: Karate Combat x Cloudbet',
   '**NEW: PFL x Cloudbet',
   'Esports Betting',
@@ -365,6 +387,7 @@ pageSelector.addEventListener('change', updateLanguageSelector);
 
 // Mapping for special pages
 const specialPages = {
+  'Sign Up': 'auth/sign-up',
   '*Bitcoin.com: Co-Branded': 'lp-bitcoin-com',
   'Esports Betting': 'lp/esports-betting',
   '**NEW: PFL x Cloudbet': 'lp-campaign/pfl',
