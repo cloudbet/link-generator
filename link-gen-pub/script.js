@@ -271,7 +271,7 @@ const pages = [
 // Default pages available to all partners
 const defaultPages = [
   'Sign Up',
-  '**NEW: Karate Combat x Cloudbet',
+  '**NEW: World Cup 2026',
   '**NEW: PFL x Cloudbet',
   'Esports Betting',
   'Affiliate: Casino & Sports',
@@ -391,7 +391,7 @@ const specialPages = {
   '*Bitcoin.com: Co-Branded': 'lp-bitcoin-com',
   'Esports Betting': 'lp/esports-betting',
   '**NEW: PFL x Cloudbet': 'lp-campaign/pfl',
-  '**NEW: Karate Combat x Cloudbet': 'lp-campaign/karate-combat',
+  '**NEW: World Cup 2026': 'lp-campaign/world-cup-26',
 };
 
 generateBtn.addEventListener('click', function () {
